@@ -1,17 +1,17 @@
 # Web_Security_Learning
-<<<<<<< HEAD
-项目地址：https://github.com/YinWC/Web_Security_Learning
-同步更新与于：[V1ZkRA: Web_Security_Learning](https://github.com/YinWC/Web_Security_Learning)
+项目地址：[Web-Security-Learning] （https://github.com/YinWC/Web_Security_Learning）
 
-目录：
+持续更新中~
+
+目录
 - [Web_Security_Learning](#websecuritylearning)
 - [Web Security](#web-security)
   - [sql注入](#sql%e6%b3%a8%e5%85%a5)
-    - [技巧和总结](#%e6%8a%80%e5%b7%a7%e5%92%8c%e6%80%bb%e7%bb%93)
     - [MySql](#mysql)
     - [MSSQL](#mssql)
     - [PostgreSQL](#postgresql)
     - [MongoDB](#mongodb)
+    - [技巧](#%e6%8a%80%e5%b7%a7)
     - [工具](#%e5%b7%a5%e5%85%b7)
   - [XSS跨站脚本攻击](#xss%e8%b7%a8%e7%ab%99%e8%84%9a%e6%9c%ac%e6%94%bb%e5%87%bb)
   - [CSRF跨站请求伪造](#csrf%e8%b7%a8%e7%ab%99%e8%af%b7%e6%b1%82%e4%bc%aa%e9%80%a0)
@@ -56,100 +56,12 @@
 - [CTF](#ctf)
   - [技巧总结](#%e6%8a%80%e5%b7%a7%e6%80%bb%e7%bb%93)
 - [杂](#%e6%9d%82)
-=======
-Web_Security_Learning
-项目地址：[Web-Security-Learning]（https://github.com/YinWC/Web_Security_Learning）
-
-持续更新中~
-
-目录
-- [Web Security](#Web-Security)
-  - [sql注入](#sql%E6%B3%A8%E5%85%A5)
-    - [MySql](#MySql)
-    - [MSSQL](#MSSQL)
-    - [PostgreSQL](#PostgreSQL)
-    - [MongoDB](#MongoDB)
-    - [技巧](#%E6%8A%80%E5%B7%A7)
-    - [工具](#%E5%B7%A5%E5%85%B7)
-  - [XSS跨站脚本攻击](#XSS%E8%B7%A8%E7%AB%99%E8%84%9A%E6%9C%AC%E6%94%BB%E5%87%BB)
-  - [CSRF跨站请求伪造](#CSRF%E8%B7%A8%E7%AB%99%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0)
-  - [其他前端安全](#%E5%85%B6%E4%BB%96%E5%89%8D%E7%AB%AF%E5%AE%89%E5%85%A8)
-  - [SSRF服务器端请求伪造](#SSRF%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%AB%AF%E8%AF%B7%E6%B1%82%E4%BC%AA%E9%80%A0)
-  - [XXE(xml外部实体注入)](#XXExml%E5%A4%96%E9%83%A8%E5%AE%9E%E4%BD%93%E6%B3%A8%E5%85%A5)
-  - [JSONP注入](#JSONP%E6%B3%A8%E5%85%A5)
-  - [SSTI服务器模板注入](#SSTI%E6%9C%8D%E5%8A%A1%E5%99%A8%E6%A8%A1%E6%9D%BF%E6%B3%A8%E5%85%A5)
-  - [代码执行 / 命令执行](#%E4%BB%A3%E7%A0%81%E6%89%A7%E8%A1%8C--%E5%91%BD%E4%BB%A4%E6%89%A7%E8%A1%8C)
-  - [文件包含](#%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB)
-  - [文件上传 / 解析漏洞](#%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0--%E8%A7%A3%E6%9E%90%E6%BC%8F%E6%B4%9E)
-  - [逻辑漏洞](#%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E)
-  - [其他漏洞](#%E5%85%B6%E4%BB%96%E6%BC%8F%E6%B4%9E)
-    - [RPO(relative path overwrite)](#RPOrelative-path-overwrite)
-    - [Web Cache](#Web-Cache)
-    - [redis](#redis)
-  - [PHP相关](#PHP%E7%9B%B8%E5%85%B3)
-    - [弱类型](#%E5%BC%B1%E7%B1%BB%E5%9E%8B)
-    - [随机数问题](#%E9%9A%8F%E6%9C%BA%E6%95%B0%E9%97%AE%E9%A2%98)
-    - [伪协议](#%E4%BC%AA%E5%8D%8F%E8%AE%AE)
-    - [序列化](#%E5%BA%8F%E5%88%97%E5%8C%96)
-    - [php mail header injection](#php-mail-header-injection)
-    - [其他](#%E5%85%B6%E4%BB%96)
-    - [php代码审计](#php%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1)
-  - [java-Web](#java-Web)
-    - [反序列](#%E5%8F%8D%E5%BA%8F%E5%88%97)
-    - [Struct2](#Struct2)
-    - [java-Web代码审计](#java-Web%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1)
-    - [其他](#%E5%85%B6%E4%BB%96-1)
-  - [python-Web](#python-Web)
-  - [Node-js](#Node-js)
-  - [WAF相关](#WAF%E7%9B%B8%E5%85%B3)
-- [渗透测试](#%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95)
-  - [Course](#Course)
-  - [信息收集](#%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86)
-  - [渗透](#%E6%B8%97%E9%80%8F)
-  - [渗透实战](#%E6%B8%97%E9%80%8F%E5%AE%9E%E6%88%98)
-  - [提权](#%E6%8F%90%E6%9D%83)
-  - [渗透技巧](#%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7)
-  - [运维](#%E8%BF%90%E7%BB%B4)
-  - [DDOS](#DDOS)
-- [CTF](#CTF)
-  - [技巧总结](#%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93)
-- [杂](#%E6%9D%82)
->>>>>>> f7540c32bd7866f71f61b2a64358e18dd7188a35
 
 <!-- more -->
 
 # Web Security
 
 ## sql注入
-<<<<<<< HEAD
-### 技巧和总结
-+ [我的WafBypass之道（SQL注入篇）](https://xz.aliyun.com/t/368)
-+ [Bypass 360主机卫士SQL注入防御](http://www.cnblogs.com/xiaozi/p/7275134.html)
-+ [SQL注入之骚姿势小记](https://mp.weixin.qq.com/s/ORsciwsBGQJhFdKqceprSw)
-+ [CTF比赛中SQL注入的一些经验总结 ](http://www.freebuf.com/articles/web/137094.html)
-+ [如何绕过WAF/NGWAF的libinjection实现SQL注入](http://bobao.360.cn/learning/detail/3855.html)
-+ [HackMe-SQL-Injection-Challenges](https://github.com/breakthenet/HackMe-SQL-Injection-Challenges)
-+ [绕过WAF注入](https://bbs.ichunqiu.com/thread-25397-1-1.html?from=sec)
-+ [bypassGET和POST的注入防御思路分享](https://bbs.ichunqiu.com/thread-16134-1-1.html?from=sec)
-+ [SQL注入的常规思路及奇葩技巧 ](https://mp.weixin.qq.com/s/hBkJ1M6LRgssNyQyati1ng)
-+ [Beyond SQLi: Obfuscate and Bypass](https://www.exploit-db.com/papers/17934/)
-+ [Dnslog在SQL注入中的实战](https://www.anquanke.com/post/id/98096)
-+ [SQL注入：如何通过Python CGIHTTPServer绕过CSRF tokens](https://www.anquanke.com/post/id/87022)
-+ [BypassD盾IIS防火墙SQL注入防御（多姿势）](https://xz.aliyun.com/t/40)
-+ [SQL注入绕过技巧](https://www.cnblogs.com/Vinson404/p/7253255.html)
-+ [sql注入学习总结 ](https://mp.weixin.qq.com/s?__biz=MzI5MDQ2NjExOQ==&mid=2247484372&idx=1&sn=ffcc51a88c9acf96c312421b75fc2a26&chksm=ec1e33fcdb69baea53838fd545a236c0deb8a42f3b341ee0879c9e4ac9427c2147fab95b6669#rd)
-+ [SQL注入防御与绕过的几种姿势](https://www.anquanke.com/post/id/86005)
-+ [高级SQL注入:混淆和绕过](http://www.cnblogs.com/croot/p/3450262.html)
-+ [SQL注入的“冷门姿势” ](http://www.freebuf.com/articles/web/155876.html)
-
-### MySql
-+ [MySQL数据库5.X版本基本手工注入总结](https://blog.csdn.net/c_major/article/details/40301379)
-+ [MySQL时间盲注五种延时方法](https://www.cdxy.me/?p=789)
-+ [MySQL False 注入及技巧总结](https://www.anquanke.com/post/id/86021)
-+ [MySQL 注入攻击与防御](https://www.anquanke.com/post/id/85936)
-+ [MySQL偏门技巧](http://rcoil.me/2017/05/MySQL%E5%81%8F%E9%97%A8%E6%8A%80%E5%B7%A7/)
-+ [mysql注入可报错时爆表名、字段名、库名](http://www.wupco.cn/?p=4117)
-=======
 
 ### MySql
 + [MySQL False 注入及技巧总结](https://www.anquanke.com/post/id/86021)
@@ -159,15 +71,11 @@ Web_Security_Learning
 + [MySQL偏门技巧](http://rcoil.me/2017/05/MySQL%E5%81%8F%E9%97%A8%E6%8A%80%E5%B7%A7/)
 + [mysql注入可报错时爆表名、字段名、库名](http://www.wupco.cn/?p=4117)
 + [高级SQL注入:混淆和绕过](http://www.cnblogs.com/croot/p/3450262.html)
->>>>>>> f7540c32bd7866f71f61b2a64358e18dd7188a35
 + [Mysql约束攻击](https://ch1st.github.io/2017/10/19/Mysql%E7%BA%A6%E6%9D%9F%E6%94%BB%E5%87%BB/)
 + [Mysql数据库渗透及漏洞利用总结 ](https://xianzhi.aliyun.com/forum/topic/1491/)
 + [MySQL绕过WAF实战技巧 ](http://www.freebuf.com/articles/web/155570.html)
 + [NetSPI SQL Injection Wiki](https://sqlwiki.netspi.com/)
-<<<<<<< HEAD
-=======
 + [SQL注入的“冷门姿势” ](http://www.freebuf.com/articles/web/155876.html)
->>>>>>> f7540c32bd7866f71f61b2a64358e18dd7188a35
 + [时间延迟盲注的三种加速注入方式mysql](https://www.ch1st.cn/?p=44)
 + [基于时间的高效的SQL盲注-使用MySQL的位运算符](https://xz.aliyun.com/t/3054)
 + [Mysql UDF BackDoor](https://xz.aliyun.com/t/2365)
@@ -195,8 +103,6 @@ Web_Security_Learning
 + [MongoDB安全，php中的注入攻击](https://www.anquanke.com/post/id/84009)
 + [一个MongoDB注入攻击案例分析](https://www.freebuf.com/articles/web/106085.html)
 
-<<<<<<< HEAD
-=======
 ### 技巧
 + [我的WafBypass之道（SQL注入篇）](https://xz.aliyun.com/t/368)
 + [Bypass 360主机卫士SQL注入防御](http://www.cnblogs.com/xiaozi/p/7275134.html)
@@ -212,7 +118,6 @@ Web_Security_Learning
 + [SQL注入：如何通过Python CGIHTTPServer绕过CSRF tokens](https://www.anquanke.com/post/id/87022)
 + [BypassD盾IIS防火墙SQL注入防御（多姿势）](https://xz.aliyun.com/t/40)
 
->>>>>>> f7540c32bd7866f71f61b2a64358e18dd7188a35
 
 ### 工具
 + [sqlmap自带的tamper你了解多少？ ](https://mp.weixin.qq.com/s/vEEoMacmETUA4yZODY8xMQ)
