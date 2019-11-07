@@ -1,47 +1,40 @@
 # Web_Security_Learning
 项目地址：[Web-Security-Learning](https://github.com/YinWC/Web_Security_Learning)
 
+从小白入门到甲乙方入职
+
 持续更新中~
 
-目录
 - [Web_Security_Learning](#websecuritylearning)
 - [Web Security](#web-security)
-  - [sql注入](#sql%e6%b3%a8%e5%85%a5)
-    - [MySql](#mysql)
-    - [MSSQL](#mssql)
-    - [PostgreSQL](#postgresql)
-    - [MongoDB](#mongodb)
-    - [技巧](#%e6%8a%80%e5%b7%a7)
-    - [工具](#%e5%b7%a5%e5%85%b7)
-  - [XSS跨站脚本攻击](#xss%e8%b7%a8%e7%ab%99%e8%84%9a%e6%9c%ac%e6%94%bb%e5%87%bb)
-  - [CSRF跨站请求伪造](#csrf%e8%b7%a8%e7%ab%99%e8%af%b7%e6%b1%82%e4%bc%aa%e9%80%a0)
-  - [其他前端安全](#%e5%85%b6%e4%bb%96%e5%89%8d%e7%ab%af%e5%ae%89%e5%85%a8)
-  - [SSRF服务器端请求伪造](#ssrf%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%af%b7%e6%b1%82%e4%bc%aa%e9%80%a0)
-  - [XXE(xml外部实体注入)](#xxexml%e5%a4%96%e9%83%a8%e5%ae%9e%e4%bd%93%e6%b3%a8%e5%85%a5)
-  - [JSONP注入](#jsonp%e6%b3%a8%e5%85%a5)
-  - [SSTI服务器模板注入](#ssti%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%a8%a1%e6%9d%bf%e6%b3%a8%e5%85%a5)
-  - [代码执行 / 命令执行](#%e4%bb%a3%e7%a0%81%e6%89%a7%e8%a1%8c--%e5%91%bd%e4%bb%a4%e6%89%a7%e8%a1%8c)
-  - [文件包含](#%e6%96%87%e4%bb%b6%e5%8c%85%e5%90%ab)
-  - [文件上传 / 解析漏洞](#%e6%96%87%e4%bb%b6%e4%b8%8a%e4%bc%a0--%e8%a7%a3%e6%9e%90%e6%bc%8f%e6%b4%9e)
-  - [逻辑漏洞](#%e9%80%bb%e8%be%91%e6%bc%8f%e6%b4%9e)
+  - [安全的学习之路](#%e5%ae%89%e5%85%a8%e7%9a%84%e5%ad%a6%e4%b9%a0%e4%b9%8b%e8%b7%af)
+    - [职业规划](#%e8%81%8c%e4%b8%9a%e8%a7%84%e5%88%92)
+    - [一些面经](#%e4%b8%80%e4%ba%9b%e9%9d%a2%e7%bb%8f)
+  - [常见漏洞](#%e5%b8%b8%e8%a7%81%e6%bc%8f%e6%b4%9e)
+    - [sql注入](#sql%e6%b3%a8%e5%85%a5)
+    - [XSS跨站脚本攻击](#xss%e8%b7%a8%e7%ab%99%e8%84%9a%e6%9c%ac%e6%94%bb%e5%87%bb)
+    - [CSRF跨站请求伪造](#csrf%e8%b7%a8%e7%ab%99%e8%af%b7%e6%b1%82%e4%bc%aa%e9%80%a0)
+    - [其他前端安全](#%e5%85%b6%e4%bb%96%e5%89%8d%e7%ab%af%e5%ae%89%e5%85%a8)
+    - [SSRF服务器端请求伪造](#ssrf%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%af%b7%e6%b1%82%e4%bc%aa%e9%80%a0)
+    - [XXE(xml外部实体注入)](#xxexml%e5%a4%96%e9%83%a8%e5%ae%9e%e4%bd%93%e6%b3%a8%e5%85%a5)
+    - [JSONP注入](#jsonp%e6%b3%a8%e5%85%a5)
+    - [SSTI服务器模板注入](#ssti%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%a8%a1%e6%9d%bf%e6%b3%a8%e5%85%a5)
+    - [代码执行 / 命令执行](#%e4%bb%a3%e7%a0%81%e6%89%a7%e8%a1%8c--%e5%91%bd%e4%bb%a4%e6%89%a7%e8%a1%8c)
+    - [文件包含](#%e6%96%87%e4%bb%b6%e5%8c%85%e5%90%ab)
+    - [文件上传 / 解析漏洞](#%e6%96%87%e4%bb%b6%e4%b8%8a%e4%bc%a0--%e8%a7%a3%e6%9e%90%e6%bc%8f%e6%b4%9e)
+    - [逻辑漏洞](#%e9%80%bb%e8%be%91%e6%bc%8f%e6%b4%9e)
+    - [PHP相关](#php%e7%9b%b8%e5%85%b3)
+    - [DDOS](#ddos)
   - [其他漏洞](#%e5%85%b6%e4%bb%96%e6%bc%8f%e6%b4%9e)
     - [RPO(relative path overwrite)](#rporelative-path-overwrite)
     - [Web Cache](#web-cache)
     - [redis](#redis)
-  - [PHP相关](#php%e7%9b%b8%e5%85%b3)
-    - [弱类型](#%e5%bc%b1%e7%b1%bb%e5%9e%8b)
-    - [随机数问题](#%e9%9a%8f%e6%9c%ba%e6%95%b0%e9%97%ae%e9%a2%98)
-    - [伪协议](#%e4%bc%aa%e5%8d%8f%e8%ae%ae)
-    - [序列化](#%e5%ba%8f%e5%88%97%e5%8c%96)
-    - [php mail header injection](#php-mail-header-injection)
-    - [其他](#%e5%85%b6%e4%bb%96)
-    - [php代码审计](#php%e4%bb%a3%e7%a0%81%e5%ae%a1%e8%ae%a1)
-  - [java-Web](#java-web)
+  - [JAVA-WEB](#java-web)
     - [反序列](#%e5%8f%8d%e5%ba%8f%e5%88%97)
     - [Struct2](#struct2)
     - [java-Web代码审计](#java-web%e4%bb%a3%e7%a0%81%e5%ae%a1%e8%ae%a1)
-    - [其他](#%e5%85%b6%e4%bb%96-1)
-  - [python-Web](#python-web)
+    - [其他](#%e5%85%b6%e4%bb%96)
+  - [Python-Web](#python-web)
   - [Node-js](#node-js)
   - [WAF相关](#waf%e7%9b%b8%e5%85%b3)
 - [渗透测试](#%e6%b8%97%e9%80%8f%e6%b5%8b%e8%af%95)
@@ -52,18 +45,38 @@
   - [提权](#%e6%8f%90%e6%9d%83)
   - [渗透技巧](#%e6%b8%97%e9%80%8f%e6%8a%80%e5%b7%a7)
   - [运维](#%e8%bf%90%e7%bb%b4)
-  - [DDOS](#ddos)
 - [CTF](#ctf)
   - [技巧总结](#%e6%8a%80%e5%b7%a7%e6%80%bb%e7%bb%93)
+- [甲方安全](#%e7%94%b2%e6%96%b9%e5%ae%89%e5%85%a8)
 - [杂](#%e6%9d%82)
 
 <!-- more -->
 
 # Web Security
 
-## sql注入
+## 安全的学习之路
 
-### MySql
+[Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
+[Web安全中比较好的文章](https://github.com/spoock1024/web-security)
+
+### 职业规划
++ [安全从业人员的职业规划](https://mp.weixin.qq.com/s/134C13nbVtJkg-MM0eRe8g)
++ [在腾讯的八年，我的职业思考](https://yuguo.us/weblog/tencent-8-years/)
+
+### 一些面经
++ [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
++ [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
++ [信息安全面试题汇总](https://github.com/Dollarsss/sec-interview)
+
+## 常见漏洞
+[Web安全攻防实战](https://github.com/hongriSec/Web-Security-Attack)
+### sql注入
+[原理+实战掌握SQL注入](https://xz.aliyun.com/t/6677)
+[为什么参数化查询可以防止SQL注入?](https://www.waitalone.cn/sql-preparestatement.html)
+
+**MySql**
+
++ [通过MySQL LOAD DATA特性来达到任意文件读取](https://xz.aliyun.com/t/3973)
 + [MySQL False 注入及技巧总结](https://www.anquanke.com/post/id/86021)
 + [MySQL 注入攻击与防御](https://www.anquanke.com/post/id/85936)
 + [sql注入学习总结 ](https://mp.weixin.qq.com/s?__biz=MzI5MDQ2NjExOQ==&mid=2247484372&idx=1&sn=ffcc51a88c9acf96c312421b75fc2a26&chksm=ec1e33fcdb69baea53838fd545a236c0deb8a42f3b341ee0879c9e4ac9427c2147fab95b6669#rd)
@@ -85,25 +98,29 @@
 + [Mysql字符编码利用技巧](https://www.leavesongs.com/PENETRATION/mysql-charset-trick.html)
 + [MySQL Injection in Update, Insert and Delete](https://osandamalith.com/2017/02/08/mysql-injection-in-update-insert-and-delete/)
 
-### MSSQL
+**MSSQL**
+
 + [MSSQL DBA权限获取WEBSHELL的过程 ](http://fuping.site/2017/05/16/MSSQL-DBA-Permission-GET-WEBSHELL/)
 + [MSSQL 注入攻击与防御](https://www.anquanke.com/post/id/86011)
 + [CLR在SQL Server中的利用技术分](http://docs.ioin.in/writeup/cert.360.cn/_files_CLR_E5_9C_A8SQL_20Server_E4_B8_AD_E7_9A_84_E5_88_A9_E7_94_A8_E6_8A_80_E6_9C_AF_E5_88_86_E6_9E_90_pdf/index.pdf)
 + [MSSQL不使用xp_cmdshell执行命令并获取回显的两种方法](https://zhuanlan.zhihu.com/p/33322584)
 
-### PostgreSQL
+**PostgreSQL**
+
 + [postgresql数据库利用方式 ](https://mp.weixin.qq.com/s?__biz=MzI5MDQ2NjExOQ==&mid=2247484788&idx=1&sn=8a53b1c64d864cd01bab095d97a17715&chksm=ec1e355cdb69bc4a2535bc1a053bfde3ec1838d03936ba8e44156818e91bbec9b5b04a744005#rd)
 + [PostgreSQL渗透测试指南](https://www.anquanke.com/post/id/86468)
 + [渗透中利用postgresql getshell ](http://www.jianfensec.com/postgresql_getshell.html)
 
-### MongoDB
+**MongoDB**
+
 + [十分钟看懂MongoDB攻防实战](http://www.freebuf.com/articles/database/148823.html)
 + [MongoDB安全 – PHP注入检测](http://www.mottoin.com/94341.html)
 + [技术分享：如何Hacking MongoDB？](https://www.freebuf.com/articles/network/101494.html)
 + [MongoDB安全，php中的注入攻击](https://www.anquanke.com/post/id/84009)
 + [一个MongoDB注入攻击案例分析](https://www.freebuf.com/articles/web/106085.html)
 
-### 技巧
+**技巧**
+
 + [我的WafBypass之道（SQL注入篇）](https://xz.aliyun.com/t/368)
 + [Bypass 360主机卫士SQL注入防御](http://www.cnblogs.com/xiaozi/p/7275134.html)
 + [SQL注入之骚姿势小记](https://mp.weixin.qq.com/s/ORsciwsBGQJhFdKqceprSw)
@@ -118,8 +135,8 @@
 + [SQL注入：如何通过Python CGIHTTPServer绕过CSRF tokens](https://www.anquanke.com/post/id/87022)
 + [BypassD盾IIS防火墙SQL注入防御（多姿势）](https://xz.aliyun.com/t/40)
 
+**工具**
 
-### 工具
 + [sqlmap自带的tamper你了解多少？ ](https://mp.weixin.qq.com/s/vEEoMacmETUA4yZODY8xMQ)
 + [sqlmap的使用 ---- 自带绕过脚本tamper](https://xz.aliyun.com/t/2746)
 + [使用burp macros和sqlmap绕过csrf防护进行sql注入](http://bobao.360.cn/learning/detail/3557.html)
@@ -130,7 +147,8 @@
 + [记一份SQLmap使用手册小结（一）](https://xz.aliyun.com/t/3010)
 + [记一份SQLmap使用手册小结（二）](https://xz.aliyun.com/t/3011)
 
-## XSS跨站脚本攻击
+### XSS跨站脚本攻击
+
 + [漫谈同源策略攻防](https://www.anquanke.com/post/id/86078)
 + [再谈同源策略 ](https://lightless.me/archives/review-SOP.html)
 + [跨域方法总结](https://xz.aliyun.com/t/224)
@@ -161,7 +179,8 @@
 + [Browser's XSS Filter Bypass Cheat Sheet](https://github.com/masatokinugawa/filterbypass/wiki/Browser's-XSS-Filter-Bypass-Cheat-Sheet)
 + [妙用JavaScript绕过XSS过滤](https://www.anquanke.com/post/id/86849)
 
-## CSRF跨站请求伪造
+### CSRF跨站请求伪造
+
 + [Wiping Out CSRF](https://medium.com/@jrozner/wiping-out-csrf-ded97ae7e83f)
 + [CSRF攻击与防御](https://www.cnblogs.com/phpstudy2015-6/p/6771239.html)
 + [用代码来细说Csrf漏洞危害以及防御](https://bbs.ichunqiu.com/thread-24127-1-1.html?from=sec)
@@ -174,7 +193,8 @@
 + [白帽子挖洞—跨站请求伪造（CSRF）篇 ](http://www.freebuf.com/column/153543.html)
 + [读取型CSRF-需要交互的内容劫持](https://bbs.ichunqiu.com/thread-36314-1-1.html)
 
-## 其他前端安全
+### 其他前端安全
+
 + [HTML中，闭合优先的神奇标签 ](https://mp.weixin.qq.com/s?__biz=MzA4MDA1NDE3Mw==&mid=2647715481&idx=1&sn=a4d930d5a944a5a6c0361a3c6c57d3d5)
 + [JavaScript Dangerous Functions (Part 1) - HTML Manipulation ](http://blog.blueclosure.com/2017/09/javascript-dangerous-functions-part-1.html)
 + [safari本地文件读取漏洞之扩展攻击面](http://www.wupco.cn/?p=4134)
@@ -182,8 +202,8 @@
 + [当代 Web 的 JSON 劫持技巧](http://paper.seebug.org/130/?from=timeline&isappinstalled=0)
 + [从微信小程序看前端代码安全](https://share.whuboy.com/weapp.html)
 
+### SSRF服务器端请求伪造
 
-## SSRF服务器端请求伪造
 + [SSRF:CVE-2017-9993 FFmpeg + AVI + HLS](https://hackmd.io/p/H1B9zOg_W#)
 + [SSRF（服务器端请求伪造）测试资源](https://paper.seebug.org/393/)
 + [Build Your SSRF Exploit Framework SSRF](http://docs.ioin.in/writeup/fuzz.wuyun.org/_src_build_your_ssrf_exp_autowork_pdf/index.pdf)
@@ -202,9 +222,8 @@
 + [SSRF to GET SHELL](http://blog.feei.cn/ssrf/)
 + [SSRF Tips](http://blog.safebuff.com/2016/07/03/SSRF-Tips/)
 
-
-## XXE(xml外部实体注入)
-
+### XXE(xml外部实体注入)
+[一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)
 + [浅谈XXE漏洞攻击与防御](http://thief.one/2017/06/20/1/)
 + [XXE漏洞分析](http://www.4o4notfound.org/index.php/archives/29/)
 + [XML实体注入漏洞攻与防](http://www.hackersb.cn/hacker/211.html)
@@ -226,7 +245,8 @@
 + [Java XXE Vulnerability](https://joychou.org/web/java-xxe-vulnerability.html)
 + [xml-attacks.md](https://gist.github.com/mgeeky/4f726d3b374f0a34267d4f19c9004870)
 
-## JSONP注入
+### JSONP注入
+
 + [JSONP注入解析 ](http://www.freebuf.com/articles/web/126347.html)
 + [JSONP 安全攻防技术](http://blog.knownsec.com/2015/03/jsonp_security_technic/)
 + [一次关于JSONP的小实验与总结](http://www.cnblogs.com/vimsk/archive/2013/01/29/2877888.html)
@@ -234,7 +254,8 @@
 + [关于跨域和jsonp的一些理解(新手向)](https://segmentfault.com/a/1190000009577990)
 + [水坑攻击之Jsonp hijacking-信息劫持](http://www.mottoin.com/88237.html)
 
-## SSTI服务器模板注入
+### SSTI服务器模板注入
+
 + [Jinja2 template injection filter bypasses](https://0day.work/jinja2-template-injection-filter-bypasses/)
 + [乱弹Flask注入](http://www.freebuf.com/articles/web/88768.html)
 + [服务端模板注入攻击 （SSTI）之浅析 ](http://www.freebuf.com/vuls/83999.html)
@@ -250,7 +271,8 @@
 + [Ruby ERB Template Injection](https://www.trustedsec.com/2017/09/rubyerb-template-injection/)
 + [服务端模板注入攻击](https://zhuanlan.zhihu.com/p/28823933)
 
-## 代码执行 / 命令执行
+### 代码执行 / 命令执行
+
 + [从PHP源码与扩展开发谈PHP任意代码执行与防御](https://blog.zsxsoft.com/post/30)
 + [Command Injection/Shell Injection](https://www.exploit-db.com/docs/42593.pdf)
 + [PHP Code Injection Analysis](http://www.polaris-lab.com/index.php/archives/254/)
@@ -262,7 +284,9 @@
 + [基于时间反馈的RCE](http://www.mottoin.com/97678.html)
 + [正则表达式使用不当引发的系统命令执行漏洞](http://bobao.360.cn/learning/detail/3609.html)
 + [命令注入突破长度限制 ](http://www.freebuf.com/articles/web/154453.html)
-## 文件包含
+
+### 文件包含
+
 + [php文件包含漏洞 ](https://chybeta.github.io/2017/10/08/php%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E/)
 + [Turning LFI into RFI](https://l.avala.mp/?p=241)
 + [PHP文件包含漏洞总结](http://wooyun.jozxing.cc/static/drops/tips-3827.html)
@@ -272,8 +296,8 @@
 + [文件包含漏洞 一](http://drops.blbana.cc/2016/08/12/e6-96-87-e4-bb-b6-e5-8c-85-e5-90-ab-e6-bc-8f-e6-b4-9e/)
 + [文件包含漏洞 二](http://drops.blbana.cc/2016/12/03/e6-96-87-e4-bb-b6-e5-8c-85-e5-90-ab-e6-bc-8f-e6-b4-9e-ef-bc-88-e4-ba-8c-ef-bc-89/)
 
+### 文件上传 / 解析漏洞
 
-## 文件上传 / 解析漏洞
 + [文件上传和WAF的攻与防](https://www.secfree.com/article-585.html)
 + [我的WafBypass之道（upload篇）](https://xianzhi.aliyun.com/forum/read/458.html)
 + [文件上传漏洞（绕过姿势） ](http://thief.one/2016/09/22/%E4%B8%8A%E4%BC%A0%E6%9C%A8%E9%A9%AC%E5%A7%BF%E5%8A%BF%E6%B1%87%E6%80%BB-%E6%AC%A2%E8%BF%8E%E8%A1%A5%E5%85%85/)
@@ -287,7 +311,8 @@
 + [关于文件名解析的一些探索](https://landgrey.me/filetype-parsing-attack/)
 + [Web安全 — 上传漏洞绕过 ](http://www.freebuf.com/column/161357.html)
 
-## 逻辑漏洞
+### 逻辑漏洞
+
 + [A couple more common OAuth 2.0 vulnerabilities ](https://blog.avuln.com/article/4)
 + [代码审计之逻辑上传漏洞挖掘](http://wooyun.jozxing.cc/static/drops/papers-1957.html)
 + [逻辑至上——内含各种酷炫姿势](http://bobao.360.cn/learning/detail/3769.html)
@@ -301,7 +326,88 @@
 + [漏洞挖掘之逻辑漏洞挖掘](https://bbs.ichunqiu.com/thread-21161-1-1.html)
 + [tom0li: 逻辑漏洞小结](https://tom0li.github.io/2017/07/17/%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E%E5%B0%8F%E7%BB%93/)
 
+### PHP相关
+
+**弱类型**
+
++ [从弱类型利用以及对象注入到SQL注入](http://bobao.360.cn/learning/detail/3486.html)
++ [PHP中“＝＝”运算符的安全问题](http://bobao.360.cn/learning/detail/2924.html)
++ [PHP弱类型安全问题总结 ](http://blog.spoock.com/2016/06/25/weakly-typed-security/)
++ [浅谈PHP弱类型安全](http://wooyun.jozxing.cc/static/drops/tips-4483.html)
++ [php比较操作符的安全问题](http://wooyun.jozxing.cc/static/drops/tips-7679.html)
+
+**随机数问题**
+
++ [PHP mt_rand()随机数安全 ](https://mp.weixin.qq.com/s/3TgBKXHw3MC61qIYELanJg)
++ [Cracking PHP rand()](http://www.sjoerdlangkemper.nl/2016/02/11/cracking-php-rand/)
++ [php里的随机数](http://5alt.me/2017/06/php%E9%87%8C%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0/)
++ [php_mt_seed - PHP mt_rand() seed cracker](http://www.openwall.com/php_mt_seed/)
++ [The GLIBC random number generator](http://www.mscs.dal.ca/~selinger/random/)
++ [一道伪随机数的CTF题](https://github.com/wonderkun/CTF_web/blob/master/web500-2/writeup.pdf)
+
+**伪协议**
+
++ [谈一谈php://filter的妙用](www.leavesongs.com/PENETRATION/php-filter-magic.html)
++ [php 伪协议](http://lorexxar.cn/2016/09/14/php-wei/)
++ [利用 Gopher 协议拓展攻击面](https://blog.chaitin.cn/gopher-attack-surfaces/)
++ [PHP伪协议之 Phar 协议（绕过包含）](https://www.bodkin.ren/?p=902)
++ [PHP伪协议分析与应用](http://www.4o4notfound.org/index.php/archives/31/)
++ [LFI、RFI、PHP封装协议安全问题学习](http://www.cnblogs.com/LittleHann/p/3665062.html)
+
+**序列化**
+
++ [PHP反序列化漏洞](http://bobao.360.cn/learning/detail/4122.html)
++ [浅谈php反序列化漏洞 ](https://chybeta.github.io/2017/06/17/%E6%B5%85%E8%B0%88php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E/)
++ [PHP反序列化漏洞成因及漏洞挖掘技巧与案例](http://bobao.360.cn/learning/detail/3193.html)
+
+**php代码审计**
+
++ [PHP漏洞挖掘——进阶篇](http://blog.nsfocus.net/php-vulnerability-mining/)
++ [论PHP常见的漏洞](http://wooyun.jozxing.cc/static/drops/papers-4544.html)
++ [浅谈代码审计入门实战：某博客系统最新版审计之旅 ](http://www.freebuf.com/articles/rookie/143554.html)
++ [ctf中的php代码审计技巧](http://www.am0s.com/ctf/200.html)
++ [PHP代码审计tips](http://docs.ioin.in/writeup/www.91ri.org/_15074_html/index.html)
++ [代码审计之文件越权和文件上传搜索技巧](http://docs.ioin.in/writeup/blog.heysec.org/_archives_170/index.html)
++ [PHP代码审计入门集合](http://wiki.ioin.in/post/group/6Rb)
++ [PHP代码审计学习](http://phantom0301.cc/2017/06/06/codeaudit/)
++ [PHP漏洞挖掘思路+实例](http://wooyun.jozxing.cc/static/drops/tips-838.html)
++ [PHP漏洞挖掘思路+实例 第二章](http://wooyun.jozxing.cc/static/drops/tips-858.html)
++ [浅谈代码审计入门实战：某博客系统最新版审计之旅 ](http://www.freebuf.com/articles/rookie/143554.html)
++ [PHP 代码审计小结 (一) ](https://www.chery666.cn/blog/2017/12/11/Code-audit.html)
++ [2018 PHP 应用程序安全设计指北 ](https://laravel-china.org/articles/7235/2018-php-application-security-design)
+
+**php mail header injection**
+
++ [What is Email Header Injection?](https://www.acunetix.com/blog/articles/email-header-injection/)
++ [PHP Email Injection Example](http://resources.infosecinstitute.com/email-injection/)
+
+**其他**
+
++ [对于Php Shell Bypass思路总结](https://www.inksec.cn/2017/11/06/bypass_shell_4/)
++ [Decrypt PHP's eval based encryption with debugger ](https://mp.weixin.qq.com/s?__biz=MzIxNjU3ODMyOQ==&mid=2247483693&idx=1&sn=ed49fc13d8e09f12d87675adff18919f)
++ [Upgrade from LFI to RCE via PHP Sessions](https://www.rcesecurity.com/2017/08/from-lfi-to-rce-via-php-sessions/)
++ [Xdebug: A Tiny Attack Surface](https://ricterz.me/posts/Xdebug%3A%20A%20Tiny%20Attack%20Surface)
++ [Exploitable PHP functions](https://stackoverflow.com/questions/3115559/exploitable-php-functions)
++ [从WordPress SQLi谈PHP格式化字符串问题](https://paper.seebug.org/386/)
++ [php & apache2 &操作系统之间的一些黑魔法](http://wonderkun.cc/index.html/?p=626)
++ [php内存破坏漏洞exp编写和禁用函数绕过](http://blog.th3s3v3n.xyz/2016/05/01/bin/2016-5-1-php%E5%86%85%E5%AD%98%E7%A0%B4%E5%9D%8F%E6%BC%8F%E6%B4%9Eexp%E7%BC%96%E5%86%99%E5%92%8C%E7%A6%81%E7%94%A8%E5%87%BD%E6%95%B0%E7%BB%95%E8%BF%87/)
++ [挖掘PHP禁用函数绕过利用姿势](http://blog.th3s3v3n.xyz/2016/11/20/web/%E6%8C%96%E6%8E%98PHP%E7%A6%81%E7%94%A8%E5%87%BD%E6%95%B0%E7%BB%95%E8%BF%87%E5%88%A9%E7%94%A8%E5%A7%BF%E5%8A%BF/)
++ [.user.ini文件构成的PHP后门](http://wooyun.jozxing.cc/static/drops/tips-3424.html)
+
+
+### DDOS
+
++ [DDoS攻防补遗 ](https://yq.aliyun.com/articles/1795)
++ [反射DDOS攻击防御的一点小想法 ](http://www.freebuf.com/column/138163.html)
++ [DDOS攻击方式总结](https://www.secpulse.com/archives/64088.html	)
++ [DDoS防御和DDoS防护方法 你帮忙看看这7个说法靠不靠谱](http://toutiao.secjia.com/ddos-7tips)
++ [DDoS防御和DDoS防护 来看个人站长、果壳网和安全公司怎么说 ](http://toutiao.secjia.com/ddos-prevention-protection)
++ [DDoS防御之大流量DDoS防护方案 还有计算器估算损失](http://toutiao.secjia.com/ddos-prevention-protection-2)
++ [freeBuf专栏 ](http://www.freebuf.com/author/%e9%bb%91%e6%88%88%e7%88%be)
++ [遭受CC攻击的处理](http://www.xuxiaobo.com/?p=3923)
+
 ## 其他漏洞
+
 + [未授权访问漏洞总结](https://www.secpulse.com/archives/61101.html)
 + [未授权访问漏洞的检测与利用 ](https://thief.one/2017/12/08/1/)
 + [Web之困笔记](http://www.au1ge.xyz/2017/08/09/web%E4%B9%8B%E5%9B%B0%E7%AC%94%E8%AE%B0/)
@@ -326,69 +432,12 @@
 + [redis未授权访问漏洞利用总结](https://xianzhi.aliyun.com/forum/read/750.html)。
 + [【应急响应】redis未授权访问致远程植入挖矿脚本（防御篇） ](https://mp.weixin.qq.com/s/eUTZsGUGSO0AeBUaxq4Q2w)
 
-## PHP相关
-### 弱类型
-+ [从弱类型利用以及对象注入到SQL注入](http://bobao.360.cn/learning/detail/3486.html)
-+ [PHP中“＝＝”运算符的安全问题](http://bobao.360.cn/learning/detail/2924.html)
-+ [PHP弱类型安全问题总结 ](http://blog.spoock.com/2016/06/25/weakly-typed-security/)
-+ [浅谈PHP弱类型安全](http://wooyun.jozxing.cc/static/drops/tips-4483.html)
-+ [php比较操作符的安全问题](http://wooyun.jozxing.cc/static/drops/tips-7679.html)
-
-### 随机数问题
-+ [PHP mt_rand()随机数安全 ](https://mp.weixin.qq.com/s/3TgBKXHw3MC61qIYELanJg)
-+ [Cracking PHP rand()](http://www.sjoerdlangkemper.nl/2016/02/11/cracking-php-rand/)
-+ [php里的随机数](http://5alt.me/2017/06/php%E9%87%8C%E7%9A%84%E9%9A%8F%E6%9C%BA%E6%95%B0/)
-+ [php_mt_seed - PHP mt_rand() seed cracker](http://www.openwall.com/php_mt_seed/)
-+ [The GLIBC random number generator](http://www.mscs.dal.ca/~selinger/random/)
-+ [一道伪随机数的CTF题](https://github.com/wonderkun/CTF_web/blob/master/web500-2/writeup.pdf)
-
-### 伪协议
-+ [谈一谈php://filter的妙用](www.leavesongs.com/PENETRATION/php-filter-magic.html)
-+ [php 伪协议](http://lorexxar.cn/2016/09/14/php-wei/)
-+ [利用 Gopher 协议拓展攻击面](https://blog.chaitin.cn/gopher-attack-surfaces/)
-+ [PHP伪协议之 Phar 协议（绕过包含）](https://www.bodkin.ren/?p=902)
-+ [PHP伪协议分析与应用](http://www.4o4notfound.org/index.php/archives/31/)
-+ [LFI、RFI、PHP封装协议安全问题学习](http://www.cnblogs.com/LittleHann/p/3665062.html)
-
-### 序列化
-+ [PHP反序列化漏洞](http://bobao.360.cn/learning/detail/4122.html)
-+ [浅谈php反序列化漏洞 ](https://chybeta.github.io/2017/06/17/%E6%B5%85%E8%B0%88php%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E6%BC%8F%E6%B4%9E/)
-+ [PHP反序列化漏洞成因及漏洞挖掘技巧与案例](http://bobao.360.cn/learning/detail/3193.html)
-
-### php mail header injection
-+ [What is Email Header Injection?](https://www.acunetix.com/blog/articles/email-header-injection/)
-+ [PHP Email Injection Example](http://resources.infosecinstitute.com/email-injection/)
-
-### 其他
-+ [对于Php Shell Bypass思路总结](https://www.inksec.cn/2017/11/06/bypass_shell_4/)
-+ [Decrypt PHP's eval based encryption with debugger ](https://mp.weixin.qq.com/s?__biz=MzIxNjU3ODMyOQ==&mid=2247483693&idx=1&sn=ed49fc13d8e09f12d87675adff18919f)
-+ [Upgrade from LFI to RCE via PHP Sessions](https://www.rcesecurity.com/2017/08/from-lfi-to-rce-via-php-sessions/)
-+ [Xdebug: A Tiny Attack Surface](https://ricterz.me/posts/Xdebug%3A%20A%20Tiny%20Attack%20Surface)
-+ [Exploitable PHP functions](https://stackoverflow.com/questions/3115559/exploitable-php-functions)
-+ [从WordPress SQLi谈PHP格式化字符串问题](https://paper.seebug.org/386/)
-+ [php & apache2 &操作系统之间的一些黑魔法](http://wonderkun.cc/index.html/?p=626)
-+ [php内存破坏漏洞exp编写和禁用函数绕过](http://blog.th3s3v3n.xyz/2016/05/01/bin/2016-5-1-php%E5%86%85%E5%AD%98%E7%A0%B4%E5%9D%8F%E6%BC%8F%E6%B4%9Eexp%E7%BC%96%E5%86%99%E5%92%8C%E7%A6%81%E7%94%A8%E5%87%BD%E6%95%B0%E7%BB%95%E8%BF%87/)
-+ [挖掘PHP禁用函数绕过利用姿势](http://blog.th3s3v3n.xyz/2016/11/20/web/%E6%8C%96%E6%8E%98PHP%E7%A6%81%E7%94%A8%E5%87%BD%E6%95%B0%E7%BB%95%E8%BF%87%E5%88%A9%E7%94%A8%E5%A7%BF%E5%8A%BF/)
-+ [.user.ini文件构成的PHP后门](http://wooyun.jozxing.cc/static/drops/tips-3424.html)
 
 
-### php代码审计
-+ [PHP漏洞挖掘——进阶篇](http://blog.nsfocus.net/php-vulnerability-mining/)
-+ [论PHP常见的漏洞](http://wooyun.jozxing.cc/static/drops/papers-4544.html)
-+ [浅谈代码审计入门实战：某博客系统最新版审计之旅 ](http://www.freebuf.com/articles/rookie/143554.html)
-+ [ctf中的php代码审计技巧](http://www.am0s.com/ctf/200.html)
-+ [PHP代码审计tips](http://docs.ioin.in/writeup/www.91ri.org/_15074_html/index.html)
-+ [代码审计之文件越权和文件上传搜索技巧](http://docs.ioin.in/writeup/blog.heysec.org/_archives_170/index.html)
-+ [PHP代码审计入门集合](http://wiki.ioin.in/post/group/6Rb)
-+ [PHP代码审计学习](http://phantom0301.cc/2017/06/06/codeaudit/)
-+ [PHP漏洞挖掘思路+实例](http://wooyun.jozxing.cc/static/drops/tips-838.html)
-+ [PHP漏洞挖掘思路+实例 第二章](http://wooyun.jozxing.cc/static/drops/tips-858.html)
-+ [浅谈代码审计入门实战：某博客系统最新版审计之旅 ](http://www.freebuf.com/articles/rookie/143554.html)
-+ [PHP 代码审计小结 (一) ](https://www.chery666.cn/blog/2017/12/11/Code-audit.html)
-+ [2018 PHP 应用程序安全设计指北 ](https://laravel-china.org/articles/7235/2018-php-application-security-design)
+## JAVA-WEB
 
-## java-Web
 ### 反序列
+
 + [Java_JSON反序列化之殇_看雪安全开发者峰会](https://github.com/shengqi158/fastjson-remote-code-execute-poc/blob/master/Java_JSON%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%B9%8B%E6%AE%87_%E7%9C%8B%E9%9B%AA%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91%E8%80%85%E5%B3%B0%E4%BC%9A.pdf)
 + [从反射链的构造看Java反序列漏洞](http://www.freebuf.com/news/150872.html)
 + [Java反序列化漏洞从理解到实践](http://bobao.360.cn/learning/detail/4474.html)
@@ -406,6 +455,7 @@
 + [Struts2 命令执行系列回顾](http://www.zerokeeper.com/vul-analysis/struts2-command-execution-series-review.html)
 
 ### java-Web代码审计
+
 + [JAVA代码审计的一些Tips(附脚本)](https://xianzhi.aliyun.com/forum/topic/1633/)
 + [Java代码审计连载之—SQL注入](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=22170&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
 + [Java代码审计连载之—任意文件下载](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=23587&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
@@ -424,7 +474,7 @@
 + [spring任意文件读取](https://github.com/ilmila/springcss-cve-2014-3625/tree/master/src)
 + [在 Runtime.getRuntime().exec(String cmd) 中执行任意shell命令的几种方法](https://mp.weixin.qq.com/s/zCe_O37rdRqgN-Yvlq1FDg)
 
-## python-Web
+## Python-Web
 + [python web 安全总结](http://bobao.360.cn/learning/detail/4522.html)
 + [Defencely Clarifies Python Object Injection Exploitation](http://defencely.com/blog/defencely-clarifies-python-object-injection-exploitation/)
 + [Exploiting Python Deserialization Vulnerabilities](https://crowdshield.com/blog.php?name=exploiting-python-deserialization-vulnerabilities)
@@ -463,12 +513,14 @@
 
 
 # 渗透测试
+
 ## Course
 + [Web Service 渗透测试从入门到精通](http://bobao.360.cn/learning/detail/3741.html)
 + [渗透标准](https://www.processon.com/view/583e8834e4b08e31357bb727)
 + [Penetration Testing Tools Cheat Sheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
 
 ## 信息收集
++ [OneForAll一款功能强大的子域名收集工具](https://github.com/shmilylty/OneForAll)
 + [看我如何收集全网IP的whois信息 ](https://mp.weixin.qq.com/s/qz0b42DKhgo1sfitcUKhtQ)
 + [浅谈Web渗透测试中的信息收集 ](http://www.freebuf.com/articles/web/142767.html)
 + [渗透测试教程：如何侦查目标以及收集信息？](http://www.4hou.com/penetration/6850.html)
@@ -578,15 +630,7 @@
 + [Apache server security: 10 tips to secure installation](https://www.acunetix.com/blog/articles/10-tips-secure-apache-installation/)
 + [Oracle数据库运维中的攻防实战（全） ](https://mp.weixin.qq.com/s/dpvBo6Bat5u4t8kSFRcv9w)
 + [Linux服务器上监控网络带宽的18个常用命令](http://www.xuxiaobo.com/?p=3950)
-## DDOS
-+ [DDoS攻防补遗 ](https://yq.aliyun.com/articles/1795)
-+ [反射DDOS攻击防御的一点小想法 ](http://www.freebuf.com/column/138163.html)
-+ [DDOS攻击方式总结](https://www.secpulse.com/archives/64088.html	)
-+ [DDoS防御和DDoS防护方法 你帮忙看看这7个说法靠不靠谱](http://toutiao.secjia.com/ddos-7tips)
-+ [DDoS防御和DDoS防护 来看个人站长、果壳网和安全公司怎么说 ](http://toutiao.secjia.com/ddos-prevention-protection)
-+ [DDoS防御之大流量DDoS防护方案 还有计算器估算损失](http://toutiao.secjia.com/ddos-prevention-protection-2)
-+ [freeBuf专栏 ](http://www.freebuf.com/author/%e9%bb%91%e6%88%88%e7%88%be)
-+ [遭受CC攻击的处理](http://www.xuxiaobo.com/?p=3923)
+
 
 # CTF
 ## 技巧总结
@@ -602,7 +646,12 @@
 + [rcoil:CTF线下攻防赛总结](http://rcoil.me/2017/06/CTF%E7%BA%BF%E4%B8%8B%E8%B5%9B%E6%80%BB%E7%BB%93/)
 + [CTF内存取证入坑指南！稳！](http://www.freebuf.com/column/152545.html)
 
+# 甲方安全
+这里就不列举了，可以看我的博客：
+[甲方安全](https://yinwc.github.io/2019/10/24/%E7%94%B2%E6%96%B9%E5%AE%89%E5%85%A8/)
+
 # 杂
+
 + [细致分析Padding Oracle渗透测试全解析 ](http://www.freebuf.com/articles/database/150606.html)
 + [Exploring Compilation from TypeScript to WebAssembly](https://medium.com/web-on-the-edge/exploring-compilation-from-typescript-to-webassembly-f846d6befc12)
 + [High-Level Approaches for Finding Vulnerabilities](http://jackson.thuraisamy.me/finding-vulnerabilities.html)
