@@ -1,76 +1,88 @@
-# Web_Security_Learning
-项目地址：[Web-Security-Learning](https://github.com/YinWC/Web_Security_Learning)
+# Security_Learning
+项目地址：[Security-Learning](https://github.com/YinWC/Web_Security_Learning)
 
-从小白入门到甲乙方入职
+收集一些平时遇见的比较好的文章～
 
 持续更新中~
 
-- [Web_Security_Learning](#websecuritylearning)
+<!-- TOC -->
+
+- [Security_Learning](#security_learning)
+- [安全的学习经验](#安全的学习经验)
+  - [职业规划](#职业规划)
+  - [一些面经](#一些面经)
 - [Web Security](#web-security)
-  - [安全的学习之路](#%e5%ae%89%e5%85%a8%e7%9a%84%e5%ad%a6%e4%b9%a0%e4%b9%8b%e8%b7%af)
-    - [职业规划](#%e8%81%8c%e4%b8%9a%e8%a7%84%e5%88%92)
-    - [一些面经](#%e4%b8%80%e4%ba%9b%e9%9d%a2%e7%bb%8f)
-  - [常见漏洞](#%e5%b8%b8%e8%a7%81%e6%bc%8f%e6%b4%9e)
-    - [sql注入](#sql%e6%b3%a8%e5%85%a5)
-    - [XSS跨站脚本攻击](#xss%e8%b7%a8%e7%ab%99%e8%84%9a%e6%9c%ac%e6%94%bb%e5%87%bb)
-    - [CSRF跨站请求伪造](#csrf%e8%b7%a8%e7%ab%99%e8%af%b7%e6%b1%82%e4%bc%aa%e9%80%a0)
-    - [其他前端安全](#%e5%85%b6%e4%bb%96%e5%89%8d%e7%ab%af%e5%ae%89%e5%85%a8)
-    - [SSRF服务器端请求伪造](#ssrf%e6%9c%8d%e5%8a%a1%e5%99%a8%e7%ab%af%e8%af%b7%e6%b1%82%e4%bc%aa%e9%80%a0)
-    - [XXE(xml外部实体注入)](#xxexml%e5%a4%96%e9%83%a8%e5%ae%9e%e4%bd%93%e6%b3%a8%e5%85%a5)
-    - [JSONP注入](#jsonp%e6%b3%a8%e5%85%a5)
-    - [SSTI服务器模板注入](#ssti%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%a8%a1%e6%9d%bf%e6%b3%a8%e5%85%a5)
-    - [代码执行 / 命令执行](#%e4%bb%a3%e7%a0%81%e6%89%a7%e8%a1%8c--%e5%91%bd%e4%bb%a4%e6%89%a7%e8%a1%8c)
-    - [文件包含](#%e6%96%87%e4%bb%b6%e5%8c%85%e5%90%ab)
-    - [文件上传 / 解析漏洞](#%e6%96%87%e4%bb%b6%e4%b8%8a%e4%bc%a0--%e8%a7%a3%e6%9e%90%e6%bc%8f%e6%b4%9e)
-    - [逻辑漏洞](#%e9%80%bb%e8%be%91%e6%bc%8f%e6%b4%9e)
-    - [PHP相关](#php%e7%9b%b8%e5%85%b3)
-    - [DDOS](#ddos)
-  - [其他漏洞](#%e5%85%b6%e4%bb%96%e6%bc%8f%e6%b4%9e)
-    - [RPO(relative path overwrite)](#rporelative-path-overwrite)
-    - [Web Cache](#web-cache)
-    - [redis](#redis)
-  - [JAVA-WEB](#java-web)
-    - [反序列](#%e5%8f%8d%e5%ba%8f%e5%88%97)
+  - [安全开发](#安全开发)
+  - [漏洞](#漏洞)
+    - [常见漏洞](#常见漏洞)
+      - [sql注入](#sql注入)
+      - [XSS跨站脚本攻击](#xss跨站脚本攻击)
+      - [CSRF跨站请求伪造](#csrf跨站请求伪造)
+      - [其他前端安全](#其他前端安全)
+      - [SSRF服务器端请求伪造](#ssrf服务器端请求伪造)
+      - [XXE(xml外部实体注入)](#xxexml外部实体注入)
+      - [JSONP注入](#jsonp注入)
+      - [SSTI服务器模板注入](#ssti服务器模板注入)
+      - [代码执行 / 命令执行](#代码执行--命令执行)
+      - [文件包含](#文件包含)
+      - [文件上传 / 解析漏洞](#文件上传--解析漏洞)
+      - [逻辑漏洞](#逻辑漏洞)
+      - [PHP相关](#php相关)
+      - [DDOS](#ddos)
+      - [其他漏洞](#其他漏洞)
+        - [RPO(relative path overwrite)](#rporelative-path-overwrite)
+        - [Web Cache](#web-cache)
+        - [redis](#redis)
+  - [JAVA安全](#java安全)
+    - [反序列](#反序列)
     - [Struct2](#struct2)
-    - [java-Web代码审计](#java-web%e4%bb%a3%e7%a0%81%e5%ae%a1%e8%ae%a1)
-    - [其他](#%e5%85%b6%e4%bb%96)
-  - [Python-Web](#python-web)
+    - [JavaWeb](#javaweb)
+      - [Fastjson](#fastjson)
+      - [Shiro](#shiro)
+    - [其他](#其他)
+  - [Python安全](#python安全)
   - [Node-js](#node-js)
-  - [WAF相关](#waf%e7%9b%b8%e5%85%b3)
-- [渗透测试](#%e6%b8%97%e9%80%8f%e6%b5%8b%e8%af%95)
-  - [Course](#course)
-  - [信息收集](#%e4%bf%a1%e6%81%af%e6%94%b6%e9%9b%86)
-  - [渗透](#%e6%b8%97%e9%80%8f)
-  - [渗透实战](#%e6%b8%97%e9%80%8f%e5%ae%9e%e6%88%98)
-  - [提权](#%e6%8f%90%e6%9d%83)
-  - [渗透技巧](#%e6%b8%97%e9%80%8f%e6%8a%80%e5%b7%a7)
-  - [运维](#%e8%bf%90%e7%bb%b4)
-- [CTF](#ctf)
-  - [技巧总结](#%e6%8a%80%e5%b7%a7%e6%80%bb%e7%bb%93)
-- [甲方安全](#%e7%94%b2%e6%96%b9%e5%ae%89%e5%85%a8)
-- [杂](#%e6%9d%82)
+  - [WAF相关](#waf相关)
+  - [渗透测试](#渗透测试)
+    - [Course](#course)
+    - [信息收集](#信息收集)
+      - [渗透](#渗透)
+    - [渗透实战](#渗透实战)
+    - [提权](#提权)
+    - [渗透技巧](#渗透技巧)
+  - [运维](#运维)
+  - [CTF](#ctf)
+    - [技巧总结](#技巧总结)
+  - [杂](#杂)
+- [Code learn](#code-learn)
+  - [Python](#python)
+    - [爬虫](#爬虫)
 
-<!-- more -->
+<!-- /TOC -->
 
-# Web Security
-
-## 安全的学习之路
+# 安全的学习经验
 
 [Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
 [Web安全中比较好的文章](https://github.com/spoock1024/web-security)
 
-### 职业规划
+## 职业规划
 + [安全从业人员的职业规划](https://mp.weixin.qq.com/s/134C13nbVtJkg-MM0eRe8g)
 + [在腾讯的八年，我的职业思考](https://yuguo.us/weblog/tencent-8-years/)
 
-### 一些面经
+## 一些面经
 + [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
 + [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
 + [信息安全面试题汇总](https://github.com/Dollarsss/sec-interview)
 
-## 常见漏洞
+
+# Web Security
+## 安全开发
+[开发人员安全指南](https://github.com/FallibleInc/security-guide-for-developers)
+
+## 漏洞
+### 常见漏洞
 [Web安全攻防实战](https://github.com/hongriSec/Web-Security-Attack)
-### sql注入
+#### sql注入
 [原理+实战掌握SQL注入](https://xz.aliyun.com/t/6677)
 [为什么参数化查询可以防止SQL注入?](https://www.waitalone.cn/sql-preparestatement.html)
 
@@ -147,7 +159,7 @@
 + [记一份SQLmap使用手册小结（一）](https://xz.aliyun.com/t/3010)
 + [记一份SQLmap使用手册小结（二）](https://xz.aliyun.com/t/3011)
 
-### XSS跨站脚本攻击
+#### XSS跨站脚本攻击
 
 + [漫谈同源策略攻防](https://www.anquanke.com/post/id/86078)
 + [再谈同源策略 ](https://lightless.me/archives/review-SOP.html)
@@ -179,7 +191,7 @@
 + [Browser's XSS Filter Bypass Cheat Sheet](https://github.com/masatokinugawa/filterbypass/wiki/Browser's-XSS-Filter-Bypass-Cheat-Sheet)
 + [妙用JavaScript绕过XSS过滤](https://www.anquanke.com/post/id/86849)
 
-### CSRF跨站请求伪造
+#### CSRF跨站请求伪造
 
 + [Wiping Out CSRF](https://medium.com/@jrozner/wiping-out-csrf-ded97ae7e83f)
 + [CSRF攻击与防御](https://www.cnblogs.com/phpstudy2015-6/p/6771239.html)
@@ -193,7 +205,7 @@
 + [白帽子挖洞—跨站请求伪造（CSRF）篇 ](http://www.freebuf.com/column/153543.html)
 + [读取型CSRF-需要交互的内容劫持](https://bbs.ichunqiu.com/thread-36314-1-1.html)
 
-### 其他前端安全
+#### 其他前端安全
 
 + [HTML中，闭合优先的神奇标签 ](https://mp.weixin.qq.com/s?__biz=MzA4MDA1NDE3Mw==&mid=2647715481&idx=1&sn=a4d930d5a944a5a6c0361a3c6c57d3d5)
 + [JavaScript Dangerous Functions (Part 1) - HTML Manipulation ](http://blog.blueclosure.com/2017/09/javascript-dangerous-functions-part-1.html)
@@ -202,7 +214,7 @@
 + [当代 Web 的 JSON 劫持技巧](http://paper.seebug.org/130/?from=timeline&isappinstalled=0)
 + [从微信小程序看前端代码安全](https://share.whuboy.com/weapp.html)
 
-### SSRF服务器端请求伪造
+#### SSRF服务器端请求伪造
 
 + [SSRF:CVE-2017-9993 FFmpeg + AVI + HLS](https://hackmd.io/p/H1B9zOg_W#)
 + [SSRF（服务器端请求伪造）测试资源](https://paper.seebug.org/393/)
@@ -222,8 +234,9 @@
 + [SSRF to GET SHELL](http://blog.feei.cn/ssrf/)
 + [SSRF Tips](http://blog.safebuff.com/2016/07/03/SSRF-Tips/)
 
-### XXE(xml外部实体注入)
+#### XXE(xml外部实体注入)
 [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)
++ [PHP与JAVA之XXE漏洞详解与审计](https://xz.aliyun.com/t/6829#toc-1)
 + [浅谈XXE漏洞攻击与防御](http://thief.one/2017/06/20/1/)
 + [XXE漏洞分析](http://www.4o4notfound.org/index.php/archives/29/)
 + [XML实体注入漏洞攻与防](http://www.hackersb.cn/hacker/211.html)
@@ -245,7 +258,7 @@
 + [Java XXE Vulnerability](https://joychou.org/web/java-xxe-vulnerability.html)
 + [xml-attacks.md](https://gist.github.com/mgeeky/4f726d3b374f0a34267d4f19c9004870)
 
-### JSONP注入
+#### JSONP注入
 
 + [JSONP注入解析 ](http://www.freebuf.com/articles/web/126347.html)
 + [JSONP 安全攻防技术](http://blog.knownsec.com/2015/03/jsonp_security_technic/)
@@ -254,7 +267,7 @@
 + [关于跨域和jsonp的一些理解(新手向)](https://segmentfault.com/a/1190000009577990)
 + [水坑攻击之Jsonp hijacking-信息劫持](http://www.mottoin.com/88237.html)
 
-### SSTI服务器模板注入
+#### SSTI服务器模板注入
 
 + [Jinja2 template injection filter bypasses](https://0day.work/jinja2-template-injection-filter-bypasses/)
 + [乱弹Flask注入](http://www.freebuf.com/articles/web/88768.html)
@@ -271,7 +284,7 @@
 + [Ruby ERB Template Injection](https://www.trustedsec.com/2017/09/rubyerb-template-injection/)
 + [服务端模板注入攻击](https://zhuanlan.zhihu.com/p/28823933)
 
-### 代码执行 / 命令执行
+#### 代码执行 / 命令执行
 
 + [从PHP源码与扩展开发谈PHP任意代码执行与防御](https://blog.zsxsoft.com/post/30)
 + [Command Injection/Shell Injection](https://www.exploit-db.com/docs/42593.pdf)
@@ -285,7 +298,7 @@
 + [正则表达式使用不当引发的系统命令执行漏洞](http://bobao.360.cn/learning/detail/3609.html)
 + [命令注入突破长度限制 ](http://www.freebuf.com/articles/web/154453.html)
 
-### 文件包含
+#### 文件包含
 
 + [php文件包含漏洞 ](https://chybeta.github.io/2017/10/08/php%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E/)
 + [Turning LFI into RFI](https://l.avala.mp/?p=241)
@@ -296,7 +309,7 @@
 + [文件包含漏洞 一](http://drops.blbana.cc/2016/08/12/e6-96-87-e4-bb-b6-e5-8c-85-e5-90-ab-e6-bc-8f-e6-b4-9e/)
 + [文件包含漏洞 二](http://drops.blbana.cc/2016/12/03/e6-96-87-e4-bb-b6-e5-8c-85-e5-90-ab-e6-bc-8f-e6-b4-9e-ef-bc-88-e4-ba-8c-ef-bc-89/)
 
-### 文件上传 / 解析漏洞
+#### 文件上传 / 解析漏洞
 
 + [文件上传和WAF的攻与防](https://www.secfree.com/article-585.html)
 + [我的WafBypass之道（upload篇）](https://xianzhi.aliyun.com/forum/read/458.html)
@@ -311,7 +324,7 @@
 + [关于文件名解析的一些探索](https://landgrey.me/filetype-parsing-attack/)
 + [Web安全 — 上传漏洞绕过 ](http://www.freebuf.com/column/161357.html)
 
-### 逻辑漏洞
+#### 逻辑漏洞
 
 + [A couple more common OAuth 2.0 vulnerabilities ](https://blog.avuln.com/article/4)
 + [代码审计之逻辑上传漏洞挖掘](http://wooyun.jozxing.cc/static/drops/papers-1957.html)
@@ -326,7 +339,7 @@
 + [漏洞挖掘之逻辑漏洞挖掘](https://bbs.ichunqiu.com/thread-21161-1-1.html)
 + [tom0li: 逻辑漏洞小结](https://tom0li.github.io/2017/07/17/%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E%E5%B0%8F%E7%BB%93/)
 
-### PHP相关
+#### PHP相关
 
 **弱类型**
 
@@ -395,7 +408,7 @@
 + [.user.ini文件构成的PHP后门](http://wooyun.jozxing.cc/static/drops/tips-3424.html)
 
 
-### DDOS
+#### DDOS
 
 + [DDoS攻防补遗 ](https://yq.aliyun.com/articles/1795)
 + [反射DDOS攻击防御的一点小想法 ](http://www.freebuf.com/column/138163.html)
@@ -406,7 +419,7 @@
 + [freeBuf专栏 ](http://www.freebuf.com/author/%e9%bb%91%e6%88%88%e7%88%be)
 + [遭受CC攻击的处理](http://www.xuxiaobo.com/?p=3923)
 
-## 其他漏洞
+#### 其他漏洞
 
 + [未授权访问漏洞总结](https://www.secpulse.com/archives/61101.html)
 + [未授权访问漏洞的检测与利用 ](https://thief.one/2017/12/08/1/)
@@ -416,17 +429,17 @@
 + [Hacking iSCSI](https://ricterz.me/posts/Hacking%20iSCSI)
 + [技术详解：基于Web的LDAP注入漏洞](http://www.4hou.com/technology/9090.html)
 
-### RPO(relative path overwrite)
+##### RPO(relative path overwrite)
 + [初探 Relative Path Overwrite](https://xianzhi.aliyun.com/forum/read/1527.html?fpage=2)
 + [Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities](http://blog.portswigger.net/2015/02/prssi.html)
 + [RPO](http://www.thespanner.co.uk/2014/03/21/rpo/)
 + [A few RPO exploitation techniques](http://www.mbsd.jp/Whitepaper/rpo.pdf)
 
 
-### Web Cache
+#####  Web Cache
 + [浅析 Web Cache 欺骗攻击](http://bobao.360.cn/learning/detail/3828.html)
 
-### redis
+#####  redis
 + [利用redis写webshell](https://www.leavesongs.com/PENETRATION/write-webshell-via-redis-server.html)
 + [Redis 未授权访问配合 SSH key 文件利用分析](http://blog.knownsec.com/2015/11/analysis-of-redis-unauthorized-of-expolit/)
 + [redis未授权访问漏洞利用总结](https://xianzhi.aliyun.com/forum/read/750.html)。
@@ -434,7 +447,9 @@
 
 
 
-## JAVA-WEB
+## JAVA安全
+[JAVA安全SDK及编码规范](https://github.com/YinWC/rhizobia_J)
+[JAVA安全编码规范](https://github.com/momosecurity/rhizobia_J/wiki/JAVA%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83)
 
 ### 反序列
 
@@ -454,7 +469,9 @@
 ### Struct2
 + [Struts2 命令执行系列回顾](http://www.zerokeeper.com/vul-analysis/struts2-command-execution-series-review.html)
 
-### java-Web代码审计
+### JavaWeb
+
+ java-Web代码审计
 
 + [JAVA代码审计的一些Tips(附脚本)](https://xianzhi.aliyun.com/forum/topic/1633/)
 + [Java代码审计连载之—SQL注入](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=22170&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
@@ -463,6 +480,11 @@
 + [Java代码审计连载之—添油加醋](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=25475&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
 + [JAVA安全编码与代码审计.md](https://github.com/Cryin/JavaID/blob/master/JAVA%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E4%B8%8E%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1.md)
 + [Java代码审计PPT ](https://xianzhi.aliyun.com/forum/read/1904.html)
+#### Fastjson
++ [Fastjson反序列化漏洞史](https://paper.seebug.org/1192)
+
+#### Shiro
++ [Apache Shiro反序列化识别那些事](https://mp.weixin.qq.com/s/q5sexARASK2TI6ihnRzYjg)
 
 ### 其他
 
@@ -474,7 +496,8 @@
 + [spring任意文件读取](https://github.com/ilmila/springcss-cve-2014-3625/tree/master/src)
 + [在 Runtime.getRuntime().exec(String cmd) 中执行任意shell命令的几种方法](https://mp.weixin.qq.com/s/zCe_O37rdRqgN-Yvlq1FDg)
 
-## Python-Web
+## Python安全
+
 + [python web 安全总结](http://bobao.360.cn/learning/detail/4522.html)
 + [Defencely Clarifies Python Object Injection Exploitation](http://defencely.com/blog/defencely-clarifies-python-object-injection-exploitation/)
 + [Exploiting Python Deserialization Vulnerabilities](https://crowdshield.com/blog.php?name=exploiting-python-deserialization-vulnerabilities)
@@ -512,14 +535,15 @@
 + [会找漏洞的时光机: Pinpointing Vulnerabilities](https://www.inforsec.org/wp/?p=1993)
 
 
-# 渗透测试
+## 渗透测试
 
-## Course
+### Course
 + [Web Service 渗透测试从入门到精通](http://bobao.360.cn/learning/detail/3741.html)
 + [渗透标准](https://www.processon.com/view/583e8834e4b08e31357bb727)
 + [Penetration Testing Tools Cheat Sheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
 
-## 信息收集
+### 信息收集
+
 + [OneForAll一款功能强大的子域名收集工具](https://github.com/shmilylty/OneForAll)
 + [看我如何收集全网IP的whois信息 ](https://mp.weixin.qq.com/s/qz0b42DKhgo1sfitcUKhtQ)
 + [浅谈Web渗透测试中的信息收集 ](http://www.freebuf.com/articles/web/142767.html)
@@ -540,8 +564,8 @@
 + [乙方渗透测试之信息收集](http://www.cnnetarmy.com/%E4%B9%99%E6%96%B9%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/)
 + [挖洞技巧：信息泄露之总结](https://www.anquanke.com/post/id/94787)
 
-## 渗透
-+ [【玩转Linux系统】Linux内网渗透 ](https://mp.weixin.qq.com/s/VJBnXq3--0HBD7eVeifOKA)
+#### 渗透
++ [玩转Linux系统】Linux内网渗透](https://mp.weixin.qq.com/s/VJBnXq3--0HBD7eVeifOKA)
 + [渗透测试指南之域用户组的范围](http://www.4hou.com/penetration/7016.html)
 + [内网主机发现技巧补充](http://mp.weixin.qq.com/s/l-Avt72ajCIo5GdMEwVx7A)
 + [Linux 端口转发特征总结 ](https://mp.weixin.qq.com/s?__biz=MzA3Mzk1MDk1NA==&mid=2651903919&idx=1&sn=686cc53137aa9e8ec323dda1e54a2c23)
@@ -569,7 +593,7 @@
 + [Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 + [我所了解的内网渗透——内网渗透知识大总结](https://www.anquanke.com/post/id/92646)
 
-## 渗透实战
+### 渗透实战
 + [挖洞经验 | 看我如何综合利用4个漏洞实现GitHub Enterprise远程代码执行 ](http://www.freebuf.com/news/142680.html)
 + [Splash SSRF到获取内网服务器ROOT权限](http://bobao.360.cn/learning/detail/4113.html)
 + [Pivoting from blind SSRF to RCE with HashiCorp Consul](http://www.kernelpicnic.net/2017/05/29/Pivoting-from-blind-SSRF-to-RCE-with-Hashicorp-Consul.html)
@@ -585,7 +609,7 @@
 + [渗透测试学习笔记之案例四](http://avfisher.win/archives/784)
 + [记一次内网渗透](http://killbit.me/2017/09/11/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/)
 
-## 提权
+### 提权
 + [提权技巧](http://www.secbox.cn/skill/5583.html)
 + [linux-kernel-exploits Linux平台提权漏洞集合](https://github.com/SecWiki/linux-kernel-exploits)
 + [windows-kernel-exploits Windows平台提权漏洞集合 ](https://github.com/SecWiki/windows-kernel-exploits)
@@ -594,7 +618,7 @@
 + [Windows提权系列中篇](https://mp.weixin.qq.com/s/ERXOLhWo0-lJbMV143I8hA)
 + [获取SYSTEM权限的多种姿势](http://bobao.360.cn/learning/detail/4740.html)
 
-## 渗透技巧
+### 渗透技巧
 + [乙方渗透测试之Fuzz爆破](http://www.cnnetarmy.com/%E4%B9%99%E6%96%B9%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8BFuzz%E7%88%86%E7%A0%B4/)
 + [域渗透神器Empire安装和简单使用 ](https://mp.weixin.qq.com/s/VqrUTW9z-yi3LqNNy-lE-Q)
 + [如何将简单的Shell转换成为完全交互式的TTY ](http://www.freebuf.com/news/142195.html)
@@ -632,8 +656,8 @@
 + [Linux服务器上监控网络带宽的18个常用命令](http://www.xuxiaobo.com/?p=3950)
 
 
-# CTF
-## 技巧总结
+## CTF
+### 技巧总结
 + [CTF线下防御战 — 让你的靶机变成“铜墙铁壁”](http://bobao.360.cn/ctf/detail/210.html)
 + [ctf-wiki](https://ctf-wiki.github.io/ctf-wiki/#/introduction)
 + [CTF中那些脑洞大开的编码和加密](https://www.hackfun.org/CTF/coding-and-encryption-of-those-brain-holes-in-CTF.html)
@@ -646,11 +670,7 @@
 + [rcoil:CTF线下攻防赛总结](http://rcoil.me/2017/06/CTF%E7%BA%BF%E4%B8%8B%E8%B5%9B%E6%80%BB%E7%BB%93/)
 + [CTF内存取证入坑指南！稳！](http://www.freebuf.com/column/152545.html)
 
-# 甲方安全
-这里就不列举了，可以看我的博客：
-[甲方安全](https://yinwc.github.io/2019/10/24/%E7%94%B2%E6%96%B9%E5%AE%89%E5%85%A8/)
-
-# 杂
+## 杂
 
 + [细致分析Padding Oracle渗透测试全解析 ](http://www.freebuf.com/articles/database/150606.html)
 + [Exploring Compilation from TypeScript to WebAssembly](https://medium.com/web-on-the-edge/exploring-compilation-from-typescript-to-webassembly-f846d6befc12)
@@ -664,3 +684,7 @@
 + [Joomla 框架的程序执行流程及目录结构分析](http://bobao.360.cn/learning/detail/3909.html)
 + [如何通过恶意插件在Atom中植入后门](http://bobao.360.cn/learning/detail/4268.html)
 + [CRLF Injection and Bypass Tencent WAF ](https://zhchbin.github.io/2016/01/31/CRLF-Injection-and-Bypass-WAF/)
+# Code learn
+## Python
+### 爬虫
+https://morvanzhou.github.io/tutorials/data-manipulation/scraping/
