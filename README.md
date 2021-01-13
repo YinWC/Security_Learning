@@ -13,6 +13,7 @@
   - [一些面经](#一些面经)
 - [Web Security](#web-security)
   - [安全开发](#安全开发)
+    - [扫描器](#扫描器)
   - [漏洞](#漏洞)
     - [常见漏洞](#常见漏洞)
       - [sql注入](#sql注入)
@@ -57,6 +58,7 @@
 - [Code learn](#code-learn)
   - [Python](#python)
     - [爬虫](#爬虫)
+- [IOT Security](#iot-security)
 
 <!-- /TOC -->
 
@@ -76,12 +78,20 @@
 
 
 # Web Security
+[Web安全学习笔记](https://websec.readthedocs.io/zh/latest/index.html)
+
 ## 安全开发
 [开发人员安全指南](https://github.com/FallibleInc/security-guide-for-developers)
+### 扫描器
+[携程安全自动化测试之路](https://zhuanlan.zhihu.com/p/28115732)
 
 ## 漏洞
+
+[白阁文库漏洞汇总](https://baizesec.github.io/bylibrary/#_10)
+
 ### 常见漏洞
 [Web安全攻防实战](https://github.com/hongriSec/Web-Security-Attack)
+
 #### sql注入
 [原理+实战掌握SQL注入](https://xz.aliyun.com/t/6677)
 [为什么参数化查询可以防止SQL注入?](https://www.waitalone.cn/sql-preparestatement.html)
@@ -448,8 +458,9 @@
 
 
 ## JAVA安全
-[JAVA安全SDK及编码规范](https://github.com/YinWC/rhizobia_J)
-[JAVA安全编码规范](https://github.com/momosecurity/rhizobia_J/wiki/JAVA%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83)
+- [JAVA安全SDK及编码规范](https://github.com/YinWC/rhizobia_J)
+- [JAVA安全编码规范](https://github.com/momosecurity/rhizobia_J/wiki/JAVA%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83)
+- [Java代码审计系列文章](https://yinwc.github.io/2020/01/03/Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/)
 
 ### 反序列
 
@@ -687,4 +698,10 @@
 # Code learn
 ## Python
 ### 爬虫
+
+[爬虫之从入门到精通](https://zhuanlan.zhihu.com/pachong)
+
 https://morvanzhou.github.io/tutorials/data-manipulation/scraping/
+# IOT Security
+
+[物联网安全百科](https://iot-security.wiki/)
