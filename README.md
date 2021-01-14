@@ -1,7 +1,7 @@
 # Security_Learning
 项目地址：[Security-Learning](https://github.com/YinWC/Web_Security_Learning)
 
-收集一些平时遇见的比较好的文章～
+
 
 持续更新中~
 
@@ -62,7 +62,7 @@
 
 <!-- /TOC -->
 
-# 安全的学习经验
+# Experience
 
 [Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
 [Web安全中比较好的文章](https://github.com/spoock1024/web-security)
@@ -700,7 +700,7 @@
 + [Joomla 框架的程序执行流程及目录结构分析](http://bobao.360.cn/learning/detail/3909.html)
 + [如何通过恶意插件在Atom中植入后门](http://bobao.360.cn/learning/detail/4268.html)
 + [CRLF Injection and Bypass Tencent WAF ](https://zhchbin.github.io/2016/01/31/CRLF-Injection-and-Bypass-WAF/)
-# Code learn
+# Code Security
 ## Python
 ### 爬虫
 
