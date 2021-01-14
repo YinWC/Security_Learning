@@ -67,9 +67,10 @@
 [Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
 [Web安全中比较好的文章](https://github.com/spoock1024/web-security)
 
-## 职业规划
+## 职业规划及发展
 + [安全从业人员的职业规划](https://mp.weixin.qq.com/s/134C13nbVtJkg-MM0eRe8g)
 + [在腾讯的八年，我的职业思考](https://yuguo.us/weblog/tencent-8-years/)
++ [卓桌师傅：我在pdd的三年](https://github.com/LeadroyaL/pdd_3years)
 
 ## 一些面经
 + [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
@@ -86,6 +87,10 @@
 [携程安全自动化测试之路](https://zhuanlan.zhihu.com/p/28115732)
 
 ## 漏洞
+
+[CVE-2020:2020年的部分漏洞整理](https://github.com/r0eXpeR/CVE-2020)
+
+[红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
 
 [白阁文库漏洞汇总](https://baizesec.github.io/bylibrary/#_10)
 
