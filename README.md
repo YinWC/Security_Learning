@@ -1,16 +1,20 @@
 # Security_Learning
-项目地址：[Security-Learning](https://github.com/YinWC/Web_Security_Learning)
 
+项目地址：[Security_Learning](https://github.com/YinWC/Web_Security_Learning)
 
+分享一些平时工作生活中遇到的不错的项目，包含安全的各个方面，适合安全从业者/学习者阅读
+
+望此项目能伴随着大家的学习生活～
 
 持续更新中~
 
 <!-- TOC -->
 
 - [Security_Learning](#security_learning)
-- [安全的学习经验](#安全的学习经验)
-  - [职业规划](#职业规划)
+- [Experience](#experience)
+  - [职业规划及发展](#职业规划及发展)
   - [一些面经](#一些面经)
+  - [生活](#生活)
 - [Web Security](#web-security)
   - [安全开发](#安全开发)
     - [扫描器](#扫描器)
@@ -55,7 +59,7 @@
   - [CTF](#ctf)
     - [技巧总结](#技巧总结)
   - [杂](#杂)
-- [Code learn](#code-learn)
+- [Code Security](#code-security)
   - [Python](#python)
     - [爬虫](#爬虫)
 - [IOT Security](#iot-security)
@@ -68,14 +72,22 @@
 [Web安全中比较好的文章](https://github.com/spoock1024/web-security)
 
 ## 职业规划及发展
-+ [安全从业人员的职业规划](https://mp.weixin.qq.com/s/134C13nbVtJkg-MM0eRe8g)
-+ [在腾讯的八年，我的职业思考](https://yuguo.us/weblog/tencent-8-years/)
-+ [卓卓师傅：我在pdd的三年](https://github.com/LeadroyaL/pdd_3years)
+
+- [安全从业人员的职业规划](https://mp.weixin.qq.com/s/134C13nbVtJkg-MM0eRe8g)
+- [在腾讯的八年，我的职业思考](https://yuguo.us/weblog/tencent-8-years/)
+- [卓卓师傅：我在pdd的三年](https://github.com/LeadroyaL/pdd_3years)
+- [程序员考公指南](https://github.com/coder2gwy/coder2gwy)
 
 ## 一些面经
-+ [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
-+ [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
-+ [信息安全面试题汇总](https://github.com/Dollarsss/sec-interview)
+
+-  [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
+-  [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
+- [信息安全面试题汇总](https://github.com/Dollarsss/sec-interview)
+
+## 生活
+
+- [上海购房知识分享](https://github.com/ayuer/shanghai_house_knowledge)
+- [杭州购房知识分享](https://github.com/houshanren/hangzhou_house_knowledge)
 
 
 # Web Security
