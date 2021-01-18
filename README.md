@@ -93,12 +93,102 @@
 # Web Security
 [Web安全学习笔记](https://websec.readthedocs.io/zh/latest/index.html)
 
-## 安全开发
+## 开发安全
 [开发人员安全指南](https://github.com/FallibleInc/security-guide-for-developers)
-### 扫描器
+
+### 扫描器相关
+
 [携程安全自动化测试之路](https://zhuanlan.zhihu.com/p/28115732)
 
-## 漏洞
+### 编码规范
+
+- [JAVA安全SDK及编码规范](https://github.com/momosecurity/rhizobia_J)
+- [PHP安全SDK及编码规范](https://github.com/momosecurity/rhizobia_P/)
+
+### JAVA安全
+
+- [JAVA安全SDK及编码规范](https://github.com/YinWC/rhizobia_J)
+- [JAVA安全编码规范](https://github.com/momosecurity/rhizobia_J/wiki/JAVA%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83)
+- [Java代码审计系列文章](https://yinwc.github.io/2020/01/03/Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/)
+
+#### 反序列
+
++ [Java_JSON反序列化之殇_看雪安全开发者峰会](https://github.com/shengqi158/fastjson-remote-code-execute-poc/blob/master/Java_JSON%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%B9%8B%E6%AE%87_%E7%9C%8B%E9%9B%AA%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91%E8%80%85%E5%B3%B0%E4%BC%9A.pdf)
++ [从反射链的构造看Java反序列漏洞](http://www.freebuf.com/news/150872.html)
++ [Java反序列化漏洞从理解到实践](http://bobao.360.cn/learning/detail/4474.html)
++ [Java 序列化与反序列化安全分析 ](http://mp.weixin.qq.com/s?__biz=MzI5ODE0ODA5MQ==&mid=2652278247&idx=1&sn=044893b732e4ffa267b00ffe1d9e4727&chksm=f7486473c03fed6525f0a869cbc4ddc03051cda92bb946377c4d831054954159542350768cf3&mpshare=1&scene=23&srcid=0919MUXFBglgDUEtLOha0wbo#rd)
++ [Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
++ [如何攻击Java反序列化过程](http://bobao.360.cn/learning/detail/4267.html)
++ [深入理解JAVA反序列化漏洞](https://www.vulbox.com/knowledge/detail/?id=11)
++ [Attacking Java Deserialization](https://nickbloor.co.uk/2017/08/13/attacking-java-deserialization/)
++ [jackson反序列化详细分析](http://bobao.360.cn/learning/detail/4118.html)
++ [Java安全之反序列化漏洞分析 ](https://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=2247484200&idx=1&sn=8f3201f44e6374d65589d00d91f7148e)
++ [fastjson 反序列化漏洞 POC 分析 ](https://mp.weixin.qq.com/s/0a5krhX-V_yCkz-zDN5kGg)
++ [Apache Commons Collections反序列化漏洞学习](http://pirogue.org/2017/12/22/javaSerialKiller/)
+
+#### Struct2
+
++ [Struts2 命令执行系列回顾](http://www.zerokeeper.com/vul-analysis/struts2-command-execution-series-review.html)
+
+#### JavaWeb
+
+ java-Web代码审计
+
++ [JAVA代码审计的一些Tips(附脚本)](https://xianzhi.aliyun.com/forum/topic/1633/)
++ [Java代码审计连载之—SQL注入](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=22170&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
++ [Java代码审计连载之—任意文件下载](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=23587&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
++ [Java代码审计连载之—XSS](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=22875&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
++ [Java代码审计连载之—添油加醋](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=25475&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
++ [JAVA安全编码与代码审计.md](https://github.com/Cryin/JavaID/blob/master/JAVA%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E4%B8%8E%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1.md)
++ [Java代码审计PPT ](https://xianzhi.aliyun.com/forum/read/1904.html)
+
+#### Fastjson
+
++ [Fastjson反序列化漏洞史](https://paper.seebug.org/1192)
+
+#### Shiro
+
++ [Apache Shiro反序列化识别那些事](https://mp.weixin.qq.com/s/q5sexARASK2TI6ihnRzYjg)
+
+#### 其他
+
++ [关于 JNDI 注入](http://bobao.360.cn/learning/detail/4564.html)
++ [层层放大java审计的攻击面 ](https://mp.weixin.qq.com/s/WT1EXEryUGGqHQpSi959xw)
++ [以Java的视角来聊聊SQL注入 ](https://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=2247483954&idx=1&sn=418b7e55b16c717ee5140af990298e22&chksm=e8fe9e3bdf89172d0670690060944bf2434cc2d2e8fba4477711299a0775cf3735a2022c0778#rd)
++ [站在Java的视角，深度分析防不胜防的小偷——“XSS” ](http://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=100000340&idx=1&sn=6ca4ec15ef6338daf1d4a907351d7c08&chksm=68fe9e5d5f89174b44fd0cae2e3d5c0018859d3d1dc6d60a2e16dcde34499ba224d6ea17a982#rd)
++ [你的 Java web 配置安全吗？ ](https://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=100000318&idx=1&sn=9011af3e3968e0d87499605ef1a68291&chksm=68fe9e375f8917213297855bd9e1ab1203ae4c9b0b5ca351de7b2c0f7a7799bd1f4843cd13f4#rd)
++ [spring任意文件读取](https://github.com/ilmila/springcss-cve-2014-3625/tree/master/src)
++ [在 Runtime.getRuntime().exec(String cmd) 中执行任意shell命令的几种方法](https://mp.weixin.qq.com/s/zCe_O37rdRqgN-Yvlq1FDg)
+
+###  Python安全
+
++ [python web 安全总结](http://bobao.360.cn/learning/detail/4522.html)
++ [Defencely Clarifies Python Object Injection Exploitation](http://defencely.com/blog/defencely-clarifies-python-object-injection-exploitation/)
++ [Exploiting Python Deserialization Vulnerabilities](https://crowdshield.com/blog.php?name=exploiting-python-deserialization-vulnerabilities)
++ [Explaining and exploiting deserialization vulnerability with Python(EN)](https://dan.lousqui.fr/explaining-and-exploiting-deserialization-vulnerability-with-python-en.html)
++ [Python PyYAML反序列化漏洞实验和Payload构造](http://www.polaris-lab.com/index.php/archives/375/)
++ [Python 格式化字符串漏洞（Django为例）](https://www.leavesongs.com/PENETRATION/python-string-format-vulnerability.html)
++ [format注入](http://www.venenof.com/index.php/archives/360/)
++ [Be Careful with Python's New-Style String Format](http://lucumr.pocoo.org/2016/12/29/careful-with-str-format/)
++ [Python urllib HTTP头注入漏洞](http://www.tuicool.com/articles/2iIj2eR)
++ [Hack Redis via Python urllib HTTP Header Injection](https://security.tencent.com/index.php/blog/msg/106)
++ [Python Waf黑名单过滤下的一些Bypass思路](http://www.0aa.me/index.php/archives/123/)
++ [Python沙箱逃逸的n种姿势](https://mp.weixin.qq.com/s/PLI-yjqmA3gwk5w3KHzOyA)
++ [利用内存破坏实现Python沙盒逃逸 ](https://mp.weixin.qq.com/s/s9fAskmp4Bb42OYsiQJFaw)
++ [Python Sandbox Bypass](https://mp.weixin.qq.com/s?__biz=MzIzOTQ5NjUzOQ==&mid=2247483665&idx=1&sn=4b18de09738fdc5291634db1ca2dd55a)
++ [pyt: 针对 Python 应用程序的源码静态分析工具](https://github.com/python-security/pyt)
++ [Exploiting Python PIL Module Command Execution Vulnerability](http://docs.ioin.in/writeup/github.com/_neargle_PIL_RCE_By_GhostButt/index.html)
++ [文件解压之过 Python中的代码执行](http://bobao.360.cn/learning/detail/4503.html)
+
+###  Node-js安全
+
++ [浅谈Node.js Web的安全问题](http://www.freebuf.com/articles/web/152891.html)
++ [node.js + postgres 从注入到Getshell](https://www.leavesongs.com/PENETRATION/node-postgres-code-execution-vulnerability.html)
++ [Pentesting Node.js Application : Nodejs Application Security(需翻墙)](http://www.websecgeeks.com/2017/04/pentesting-nodejs-application-nodejs.html)
++ [从零开始学习渗透Node.js应用程序 ](https://bbs.ichunqiu.com/thread-21810-1-1.html?from=sec)
++ [Node.js 中遇到含空格 URL 的神奇“Bug”——小范围深入 HTTP 协议](https://segmentfault.com/a/1190000012407268)
+
+## 漏洞相关
 
 [CVE-2020:2020年的部分漏洞整理](https://github.com/r0eXpeR/CVE-2020)
 
@@ -474,96 +564,8 @@
 
 
 
-## JAVA安全
-- [JAVA安全SDK及编码规范](https://github.com/YinWC/rhizobia_J)
-- [JAVA安全编码规范](https://github.com/momosecurity/rhizobia_J/wiki/JAVA%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E8%A7%84%E8%8C%83)
-- [Java代码审计系列文章](https://yinwc.github.io/2020/01/03/Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1/)
 
-### 反序列
-
-+ [Java_JSON反序列化之殇_看雪安全开发者峰会](https://github.com/shengqi158/fastjson-remote-code-execute-poc/blob/master/Java_JSON%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96%E4%B9%8B%E6%AE%87_%E7%9C%8B%E9%9B%AA%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91%E8%80%85%E5%B3%B0%E4%BC%9A.pdf)
-+ [从反射链的构造看Java反序列漏洞](http://www.freebuf.com/news/150872.html)
-+ [Java反序列化漏洞从理解到实践](http://bobao.360.cn/learning/detail/4474.html)
-+ [Java 序列化与反序列化安全分析 ](http://mp.weixin.qq.com/s?__biz=MzI5ODE0ODA5MQ==&mid=2652278247&idx=1&sn=044893b732e4ffa267b00ffe1d9e4727&chksm=f7486473c03fed6525f0a869cbc4ddc03051cda92bb946377c4d831054954159542350768cf3&mpshare=1&scene=23&srcid=0919MUXFBglgDUEtLOha0wbo#rd)
-+ [Java-Deserialization-Cheat-Sheet](https://github.com/GrrrDog/Java-Deserialization-Cheat-Sheet)
-+ [如何攻击Java反序列化过程](http://bobao.360.cn/learning/detail/4267.html)
-+ [深入理解JAVA反序列化漏洞](https://www.vulbox.com/knowledge/detail/?id=11)
-+ [Attacking Java Deserialization](https://nickbloor.co.uk/2017/08/13/attacking-java-deserialization/)
-+ [jackson反序列化详细分析](http://bobao.360.cn/learning/detail/4118.html)
-+ [Java安全之反序列化漏洞分析 ](https://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=2247484200&idx=1&sn=8f3201f44e6374d65589d00d91f7148e)
-+ [fastjson 反序列化漏洞 POC 分析 ](https://mp.weixin.qq.com/s/0a5krhX-V_yCkz-zDN5kGg)
-+ [Apache Commons Collections反序列化漏洞学习](http://pirogue.org/2017/12/22/javaSerialKiller/)
-
-### Struct2
-+ [Struts2 命令执行系列回顾](http://www.zerokeeper.com/vul-analysis/struts2-command-execution-series-review.html)
-
-### JavaWeb
-
- java-Web代码审计
-
-+ [JAVA代码审计的一些Tips(附脚本)](https://xianzhi.aliyun.com/forum/topic/1633/)
-+ [Java代码审计连载之—SQL注入](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=22170&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
-+ [Java代码审计连载之—任意文件下载](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=23587&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
-+ [Java代码审计连载之—XSS](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=22875&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
-+ [Java代码审计连载之—添油加醋](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=25475&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
-+ [JAVA安全编码与代码审计.md](https://github.com/Cryin/JavaID/blob/master/JAVA%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E4%B8%8E%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1.md)
-+ [Java代码审计PPT ](https://xianzhi.aliyun.com/forum/read/1904.html)
-#### Fastjson
-+ [Fastjson反序列化漏洞史](https://paper.seebug.org/1192)
-
-#### Shiro
-+ [Apache Shiro反序列化识别那些事](https://mp.weixin.qq.com/s/q5sexARASK2TI6ihnRzYjg)
-
-### 其他
-
-+ [关于 JNDI 注入](http://bobao.360.cn/learning/detail/4564.html)
-+ [层层放大java审计的攻击面 ](https://mp.weixin.qq.com/s/WT1EXEryUGGqHQpSi959xw)
-+ [以Java的视角来聊聊SQL注入 ](https://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=2247483954&idx=1&sn=418b7e55b16c717ee5140af990298e22&chksm=e8fe9e3bdf89172d0670690060944bf2434cc2d2e8fba4477711299a0775cf3735a2022c0778#rd)
-+ [站在Java的视角，深度分析防不胜防的小偷——“XSS” ](http://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=100000340&idx=1&sn=6ca4ec15ef6338daf1d4a907351d7c08&chksm=68fe9e5d5f89174b44fd0cae2e3d5c0018859d3d1dc6d60a2e16dcde34499ba224d6ea17a982#rd)
-+ [你的 Java web 配置安全吗？ ](https://mp.weixin.qq.com/s?__biz=MzIzMzgxOTQ5NA==&mid=100000318&idx=1&sn=9011af3e3968e0d87499605ef1a68291&chksm=68fe9e375f8917213297855bd9e1ab1203ae4c9b0b5ca351de7b2c0f7a7799bd1f4843cd13f4#rd)
-+ [spring任意文件读取](https://github.com/ilmila/springcss-cve-2014-3625/tree/master/src)
-+ [在 Runtime.getRuntime().exec(String cmd) 中执行任意shell命令的几种方法](https://mp.weixin.qq.com/s/zCe_O37rdRqgN-Yvlq1FDg)
-
-## Python安全
-
-+ [python web 安全总结](http://bobao.360.cn/learning/detail/4522.html)
-+ [Defencely Clarifies Python Object Injection Exploitation](http://defencely.com/blog/defencely-clarifies-python-object-injection-exploitation/)
-+ [Exploiting Python Deserialization Vulnerabilities](https://crowdshield.com/blog.php?name=exploiting-python-deserialization-vulnerabilities)
-+ [Explaining and exploiting deserialization vulnerability with Python(EN)](https://dan.lousqui.fr/explaining-and-exploiting-deserialization-vulnerability-with-python-en.html)
-+ [Python PyYAML反序列化漏洞实验和Payload构造](http://www.polaris-lab.com/index.php/archives/375/)
-+ [Python 格式化字符串漏洞（Django为例）](https://www.leavesongs.com/PENETRATION/python-string-format-vulnerability.html)
-+ [format注入](http://www.venenof.com/index.php/archives/360/)
-+ [Be Careful with Python's New-Style String Format](http://lucumr.pocoo.org/2016/12/29/careful-with-str-format/)
-+ [Python urllib HTTP头注入漏洞](http://www.tuicool.com/articles/2iIj2eR)
-+ [Hack Redis via Python urllib HTTP Header Injection](https://security.tencent.com/index.php/blog/msg/106)
-+ [Python Waf黑名单过滤下的一些Bypass思路](http://www.0aa.me/index.php/archives/123/)
-+ [Python沙箱逃逸的n种姿势](https://mp.weixin.qq.com/s/PLI-yjqmA3gwk5w3KHzOyA)
-+ [利用内存破坏实现Python沙盒逃逸 ](https://mp.weixin.qq.com/s/s9fAskmp4Bb42OYsiQJFaw)
-+ [Python Sandbox Bypass](https://mp.weixin.qq.com/s?__biz=MzIzOTQ5NjUzOQ==&mid=2247483665&idx=1&sn=4b18de09738fdc5291634db1ca2dd55a)
-+ [pyt: 针对 Python 应用程序的源码静态分析工具](https://github.com/python-security/pyt)
-+ [Exploiting Python PIL Module Command Execution Vulnerability](http://docs.ioin.in/writeup/github.com/_neargle_PIL_RCE_By_GhostButt/index.html)
-+ [文件解压之过 Python中的代码执行](http://bobao.360.cn/learning/detail/4503.html)
-
-## Node-js
-+ [浅谈Node.js Web的安全问题](http://www.freebuf.com/articles/web/152891.html)
-+ [node.js + postgres 从注入到Getshell](https://www.leavesongs.com/PENETRATION/node-postgres-code-execution-vulnerability.html)
-+ [Pentesting Node.js Application : Nodejs Application Security(需翻墙)](http://www.websecgeeks.com/2017/04/pentesting-nodejs-application-nodejs.html)
-+ [从零开始学习渗透Node.js应用程序 ](https://bbs.ichunqiu.com/thread-21810-1-1.html?from=sec)
-+ [Node.js 中遇到含空格 URL 的神奇“Bug”——小范围深入 HTTP 协议](https://segmentfault.com/a/1190000012407268)
-
-## WAF相关
-+ [详谈WAF与静态统计分析](http://bobao.360.cn/learning/detail/4670.html)
-+ [牛逼牛逼的payload和bypass总结](https://github.com/swisskyrepo/PayloadsAllTheThings)
-+ [WAF绕过参考资料](http://www.mottoin.com/100887.html)
-+ [浅谈WAF绕过技巧](http://www.freebuf.com/articles/web/136723.html)
-+ [addslashes防注入的绕过案例](https://xianzhi.aliyun.com/forum/read/753.html?fpage=6)
-+ [浅谈json参数解析对waf绕过的影响](https://xianzhi.aliyun.com/forum/read/553.html?fpage=8)
-+ [WAF攻防研究之四个层次Bypass WAF](http://weibo.com/ttarticle/p/show?id=2309404007261092631700)
-+ [使用HTTP头去绕过WAF ](http://www.sohu.com/a/110066439_468673)
-+ [会找漏洞的时光机: Pinpointing Vulnerabilities](https://www.inforsec.org/wp/?p=1993)
-
-
-## 渗透测试
+## 安全测试
 
 ### Course
 + [Web Service 渗透测试从入门到精通](http://bobao.360.cn/learning/detail/3741.html)
@@ -665,7 +667,19 @@
 + [后门整理](https://bbs.ichunqiu.com/thread-25119-1-1.html?from=sec)
 + [Linux后门整理合集（脉搏推荐）](https://www.secpulse.com/archives/59674.html)
 
-## 运维
+### WAF相关
+
++ [详谈WAF与静态统计分析](http://bobao.360.cn/learning/detail/4670.html)
++ [牛逼牛逼的payload和bypass总结](https://github.com/swisskyrepo/PayloadsAllTheThings)
++ [WAF绕过参考资料](http://www.mottoin.com/100887.html)
++ [浅谈WAF绕过技巧](http://www.freebuf.com/articles/web/136723.html)
++ [addslashes防注入的绕过案例](https://xianzhi.aliyun.com/forum/read/753.html?fpage=6)
++ [浅谈json参数解析对waf绕过的影响](https://xianzhi.aliyun.com/forum/read/553.html?fpage=8)
++ [WAF攻防研究之四个层次Bypass WAF](http://weibo.com/ttarticle/p/show?id=2309404007261092631700)
++ [使用HTTP头去绕过WAF ](http://www.sohu.com/a/110066439_468673)
++ [会找漏洞的时光机: Pinpointing Vulnerabilities](https://www.inforsec.org/wp/?p=1993)
+
+## 安全运维
 + [安全运维那些洞 ](https://mp.weixin.qq.com/s/5TfAF5-HR8iDA_qSIJkQ0Q)
 + [美团外卖自动化业务运维系统建设](https://tech.meituan.com/digger_share.html)
 + [饿了么运维基础设施进化史 ](https://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA==&mid=2651668800&idx=1&sn=615af5f120d1298475aaf4825009cb30&chksm=8bcb82e9bcbc0bff6309d9bbaf69cfc591624206b846e00d5004a68182c934dab921b7c25794&scene=38#wechat_redirect)
