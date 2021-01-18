@@ -64,7 +64,10 @@
   - [Python](#python)
     - [爬虫](#爬虫)
 - [二进制安全](#二进制安全)
-  - [IOT Security](#iot-security)
+  - [物联网安全](#物联网安全)
+  - [移动安全](#移动安全)
+    - [Frida相关文章合集](#frida相关文章合集)
+  - [CTF PWN](#ctf-pwn)
 
 <!-- /TOC -->
 
@@ -737,7 +740,15 @@
 + [网页爬虫｜莫烦Python](https://morvanzhou.github.io/tutorials/data-manipulation/scraping/)
 
 # 二进制安全
-## IOT Security
+## 物联网安全
 
 - [物联网安全百科](https://iot-security.wiki/)
 - [OWASP TOP10 物联网漏洞一览](https://xz.aliyun.com/t/2278)
+
+## 移动安全
+
+### Frida相关文章合集
+- [FRIDA Java Hook原理](https://mabin004.github.io/2018/07/31/Mac%E4%B8%8A%E7%BC%96%E8%AF%91Frida/)
+
+## CTF PWN
+- [PWN入门指南 CTF WIKI](https://ctf-wiki.org/pwn/readme/)
