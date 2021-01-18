@@ -723,3 +723,6 @@
 # IOT Security
 
 [物联网安全百科](https://iot-security.wiki/)
+
+[OWASP TOP10 物联网漏洞一览](https://xz.aliyun.com/t/2278)
+
