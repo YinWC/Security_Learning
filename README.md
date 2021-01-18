@@ -16,9 +16,19 @@
   - [一些面经](#一些面经)
   - [生活](#生活)
 - [Web Security](#web-security)
-  - [安全开发](#安全开发)
-    - [扫描器](#扫描器)
-  - [漏洞](#漏洞)
+  - [开发安全](#开发安全)
+    - [扫描器相关](#扫描器相关)
+    - [编码规范](#编码规范)
+    - [JAVA安全](#java安全)
+      - [反序列](#反序列)
+      - [Struct2](#struct2)
+      - [JavaWeb](#javaweb)
+      - [Fastjson](#fastjson)
+      - [Shiro](#shiro)
+      - [其他](#其他)
+    - [Python安全](#python安全)
+    - [Node-js安全](#node-js安全)
+  - [漏洞相关](#漏洞相关)
     - [常见漏洞](#常见漏洞)
       - [sql注入](#sql注入)
       - [XSS跨站脚本攻击](#xss跨站脚本攻击)
@@ -38,31 +48,23 @@
         - [RPO(relative path overwrite)](#rporelative-path-overwrite)
         - [Web Cache](#web-cache)
         - [redis](#redis)
-  - [JAVA安全](#java安全)
-    - [反序列](#反序列)
-    - [Struct2](#struct2)
-    - [JavaWeb](#javaweb)
-      - [Fastjson](#fastjson)
-      - [Shiro](#shiro)
-    - [其他](#其他)
-  - [Python安全](#python安全)
-  - [Node-js](#node-js)
-  - [WAF相关](#waf相关)
-  - [渗透测试](#渗透测试)
+  - [安全测试](#安全测试)
     - [Course](#course)
     - [信息收集](#信息收集)
       - [渗透](#渗透)
     - [渗透实战](#渗透实战)
     - [提权](#提权)
     - [渗透技巧](#渗透技巧)
-  - [运维](#运维)
+    - [WAF相关](#waf相关)
+  - [安全运维](#安全运维)
   - [CTF](#ctf)
     - [技巧总结](#技巧总结)
   - [杂](#杂)
 - [Code Security](#code-security)
   - [Python](#python)
     - [爬虫](#爬虫)
-- [IOT Security](#iot-security)
+- [二进制安全](#二进制安全)
+  - [IOT Security](#iot-security)
 
 <!-- /TOC -->
 
@@ -730,13 +732,12 @@
 ## Python
 ### 爬虫
 
-[爬虫之从入门到精通](https://zhuanlan.zhihu.com/pachong)
++ [爬虫之从入门到精通](https://zhuanlan.zhihu.com/pachong)
 
-[网页爬虫｜莫烦Python](https://morvanzhou.github.io/tutorials/data-manipulation/scraping/)
++ [网页爬虫｜莫烦Python](https://morvanzhou.github.io/tutorials/data-manipulation/scraping/)
 
-# IOT Security
+# 二进制安全
+## IOT Security
 
-[物联网安全百科](https://iot-security.wiki/)
-
-[OWASP TOP10 物联网漏洞一览](https://xz.aliyun.com/t/2278)
-
+- [物联网安全百科](https://iot-security.wiki/)
+- [OWASP TOP10 物联网漏洞一览](https://xz.aliyun.com/t/2278)
