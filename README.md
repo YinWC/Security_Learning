@@ -201,6 +201,8 @@
 
 ## 漏洞相关
 
+[一些漏洞情报的网站](https://github.com/r0eXpeR/VulnerabilityIntelligence)
+
 [CVE-2020:2020年的部分漏洞整理](https://github.com/r0eXpeR/CVE-2020)
 
 [红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
@@ -725,6 +727,8 @@
 
 ## Others
 
+- [钓鱼框架 —— gophish](http://leuk0cyte.com/2020/11/06/%E9%92%93%E9%B1%BC%E6%A1%86%E6%9E%B6%20%E2%80%94%E2%80%94%20gophish/#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
+
 + [细致分析Padding Oracle渗透测试全解析 ](http://www.freebuf.com/articles/database/150606.html)
 + [Exploring Compilation from TypeScript to WebAssembly](https://medium.com/web-on-the-edge/exploring-compilation-from-typescript-to-webassembly-f846d6befc12)
 + [High-Level Approaches for Finding Vulnerabilities](http://jackson.thuraisamy.me/finding-vulnerabilities.html)
@@ -738,12 +742,12 @@
 + [如何通过恶意插件在Atom中植入后门](http://bobao.360.cn/learning/detail/4268.html)
 + [CRLF Injection and Bypass Tencent WAF ](https://zhchbin.github.io/2016/01/31/CRLF-Injection-and-Bypass-WAF/)
 # Binary security
-## 物联网安全
+## IOT Security
 
 - [物联网安全百科](https://iot-security.wiki/)
 - [OWASP TOP10 物联网漏洞一览](https://xz.aliyun.com/t/2278)
 
-## 移动安全
+## Mobile Security
 
 ### Frida相关文章合集
 - [FRIDA Java Hook原理](https://mabin004.github.io/2018/07/31/Mac%E4%B8%8A%E7%BC%96%E8%AF%91Frida/)
