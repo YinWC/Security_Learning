@@ -103,6 +103,8 @@
 ## 开发安全
 [开发人员安全指南](https://github.com/FallibleInc/security-guide-for-developers)
 
+[计算机编程类书籍汇总](https://github.com/justjavac/free-programming-books-zh_CN)
+
 ### 扫描器相关
 
 [携程安全自动化测试之路](https://zhuanlan.zhihu.com/p/28115732)
@@ -724,6 +726,12 @@
 + [CTF备忘录](https://827977014.docs.qq.com/Bt2v7IZWnYo?type=1&_wv=1&_bid=2517)
 + [rcoil:CTF线下攻防赛总结](http://rcoil.me/2017/06/CTF%E7%BA%BF%E4%B8%8B%E8%B5%9B%E6%80%BB%E7%BB%93/)
 + [CTF内存取证入坑指南！稳！](http://www.freebuf.com/column/152545.html)
+
+
+
+## SRC
+
+[一个有趣的任意密码重置](https://legoc.github.io/2020/07/07/%E4%B8%80%E4%B8%AA%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BB%BB%E6%84%8F%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/)
 
 ## Others
 
