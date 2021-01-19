@@ -59,14 +59,13 @@
   - [安全运维](#安全运维)
   - [CTF](#ctf)
     - [技巧总结](#技巧总结)
-  - [杂](#杂)
-- [Code Security](#code-security)
-  - [Python](#python)
-    - [爬虫](#爬虫)
-- [二进制安全](#二进制安全)
-  - [物联网安全](#物联网安全)
-  - [移动安全](#移动安全)
+  - [SRC](#src)
+  - [Others](#others)
+- [Binary security](#binary-security)
+  - [IOT Security](#iot-security)
+  - [Mobile Security](#mobile-security)
     - [Frida相关文章合集](#frida相关文章合集)
+    - [脱壳相关](#脱壳相关)
     - [游戏安全系列](#游戏安全系列)
   - [CTF PWN](#ctf-pwn)
 
@@ -759,6 +758,10 @@
 
 ### Frida相关文章合集
 - [FRIDA Java Hook原理](https://mabin004.github.io/2018/07/31/Mac%E4%B8%8A%E7%BC%96%E8%AF%91Frida/)
+
+### 脱壳相关
+- [Frida主动调用脱壳](https://bbs.pediy.com/thread-260540.htm)
+
 
 ### 游戏安全系列
 
