@@ -74,9 +74,6 @@
 
 # Experience
 
-[Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
-[Web安全中比较好的文章](https://github.com/spoock1024/web-security)
-
 ## 职业规划及发展
 
 - [安全从业人员的职业规划](https://mp.weixin.qq.com/s/134C13nbVtJkg-MM0eRe8g)
@@ -98,6 +95,10 @@
 
 # Web Security
 [Web安全学习笔记](https://websec.readthedocs.io/zh/latest/index.html)
+
+[Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
+
+[Web安全中比较好的文章](https://github.com/spoock1024/web-security)
 
 ## 开发安全
 [开发人员安全指南](https://github.com/FallibleInc/security-guide-for-developers)
@@ -185,6 +186,10 @@
 + [pyt: 针对 Python 应用程序的源码静态分析工具](https://github.com/python-security/pyt)
 + [Exploiting Python PIL Module Command Execution Vulnerability](http://docs.ioin.in/writeup/github.com/_neargle_PIL_RCE_By_GhostButt/index.html)
 + [文件解压之过 Python中的代码执行](http://bobao.360.cn/learning/detail/4503.html)
++ 爬虫系列
+  + [爬虫之从入门到精通](https://zhuanlan.zhihu.com/pachong)
+
+  + [网页爬虫｜莫烦Python](
 
 ###  Node-js安全
 
@@ -718,7 +723,7 @@
 + [rcoil:CTF线下攻防赛总结](http://rcoil.me/2017/06/CTF%E7%BA%BF%E4%B8%8B%E8%B5%9B%E6%80%BB%E7%BB%93/)
 + [CTF内存取证入坑指南！稳！](http://www.freebuf.com/column/152545.html)
 
-## 杂
+## Others
 
 + [细致分析Padding Oracle渗透测试全解析 ](http://www.freebuf.com/articles/database/150606.html)
 + [Exploring Compilation from TypeScript to WebAssembly](https://medium.com/web-on-the-edge/exploring-compilation-from-typescript-to-webassembly-f846d6befc12)
@@ -732,15 +737,7 @@
 + [Joomla 框架的程序执行流程及目录结构分析](http://bobao.360.cn/learning/detail/3909.html)
 + [如何通过恶意插件在Atom中植入后门](http://bobao.360.cn/learning/detail/4268.html)
 + [CRLF Injection and Bypass Tencent WAF ](https://zhchbin.github.io/2016/01/31/CRLF-Injection-and-Bypass-WAF/)
-# Code Security
-## Python
-### 爬虫
-
-+ [爬虫之从入门到精通](https://zhuanlan.zhihu.com/pachong)
-
-+ [网页爬虫｜莫烦Python](https://morvanzhou.github.io/tutorials/data-manipulation/scraping/)
-
-# 二进制安全
+# Binary security
 ## 物联网安全
 
 - [物联网安全百科](https://iot-security.wiki/)
