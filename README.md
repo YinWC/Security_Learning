@@ -108,6 +108,8 @@
 
 [携程安全自动化测试之路](https://zhuanlan.zhihu.com/p/28115732)
 
+[黑盒扫描器自研](https://milkfr.github.io/%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91/2018/11/10/dev-black-box-scanner-1/)
+
 ### 编码规范
 
 - [JAVA安全SDK及编码规范](https://github.com/momosecurity/rhizobia_J)
@@ -190,7 +192,8 @@
 + 爬虫系列
   + [爬虫之从入门到精通](https://zhuanlan.zhihu.com/pachong)
 
-  + [网页爬虫｜莫烦Python](
+    
+  
 
 ###  Node-js安全
 
