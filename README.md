@@ -630,8 +630,6 @@
 + [内网渗透中转发工具总结](http://blog.neargle.com/SecNewsBak/drops/%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F%E4%B8%AD%E8%BD%AC%E5%8F%91%E5%B7%A5%E5%85%B7%E6%80%BB%E7%BB%93.html)
 + [内网渗透思路整理与工具使用](http://bobao.360.cn/learning/detail/3683.html)
 + [Cobalt strike在内网渗透中的使用 ](http://www.freebuf.com/sectool/125237.html)
-+ [反向socks5代理(windows版)](http://x95.org/archives/reverse-socks5-proxy.html)
-+ [Windows渗透基础](http://www.mottoin.com/89355.html)
 + [通过双重跳板漫游隔离内网](https://xianzhi.aliyun.com/forum/read/768.html)
 + [A Red Teamer's guide to pivoting](https://artkond.com/2017/03/23/pivoting-guide/)
 + [穿越边界的姿势 ](https://mp.weixin.qq.com/s/l-0sWU4ijMOQWqRgsWcNFA)
