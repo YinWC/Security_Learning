@@ -66,7 +66,9 @@
   - [Mobile Security](#mobile-security)
     - [Frida相关文章合集](#frida相关文章合集)
     - [脱壳相关](#脱壳相关)
+    - [面试相关](#面试相关)
     - [游戏安全系列](#游戏安全系列)
+    - [奇淫技巧](#奇淫技巧)
   - [CTF PWN](#ctf-pwn)
 
 <!-- /TOC -->
@@ -763,9 +765,14 @@
 ### 脱壳相关
 - [Frida主动调用脱壳](https://bbs.pediy.com/thread-260540.htm)
 
+### 面试相关
+- [腾讯、阿里实习移动安全面试](https://la0s.github.io/2019/05/13/chunzhao/)
 
 ### 游戏安全系列
 - [perfare大大 <-- 游戏安全行业先锋](https://www.perfare.net/)
+
+### 奇淫技巧
+- [反调试技术整理](https://gtoad.github.io/2017/06/25/Android-Anti-Debug/)
 
 ## CTF PWN
 - [PWN入门指南 CTF WIKI](https://ctf-wiki.org/pwn/readme/)
