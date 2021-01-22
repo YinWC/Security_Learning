@@ -15,10 +15,10 @@
   - [职业规划及发展](#职业规划及发展)
   - [一些面经](#一些面经)
   - [生活](#生活)
+    - [购房知识](#购房知识)
 - [Web Security](#web-security)
   - [开发安全](#开发安全)
     - [扫描器相关](#扫描器相关)
-    - [编码规范](#编码规范)
     - [JAVA安全](#java安全)
       - [反序列](#反序列)
       - [Struct2](#struct2)
@@ -27,6 +27,7 @@
       - [Shiro](#shiro)
       - [其他](#其他)
     - [Python安全](#python安全)
+    - [PHP安全](#php安全)
     - [Node-js安全](#node-js安全)
   - [漏洞相关](#漏洞相关)
     - [常见漏洞](#常见漏洞)
@@ -45,20 +46,11 @@
       - [PHP相关](#php相关)
       - [DDOS](#ddos)
       - [其他漏洞](#其他漏洞)
-        - [RPO(relative path overwrite)](#rporelative-path-overwrite)
-        - [Web Cache](#web-cache)
-        - [redis](#redis)
   - [安全测试](#安全测试)
-    - [Course](#course)
     - [信息收集](#信息收集)
-      - [渗透](#渗透)
     - [渗透实战](#渗透实战)
-    - [提权](#提权)
     - [渗透技巧](#渗透技巧)
-    - [WAF相关](#waf相关)
   - [安全运维](#安全运维)
-  - [CTF](#ctf)
-    - [技巧总结](#技巧总结)
   - [SRC](#src)
   - [Others](#others)
 - [Binary security](#binary-security)
@@ -66,9 +58,10 @@
   - [Mobile Security](#mobile-security)
     - [Frida相关文章合集](#frida相关文章合集)
     - [脱壳相关](#脱壳相关)
-    - [面试相关](#面试相关)
     - [游戏安全系列](#游戏安全系列)
     - [奇淫技巧](#奇淫技巧)
+- [CTF](#ctf)
+  - [技巧总结](#技巧总结)
   - [CTF PWN](#ctf-pwn)
 
 <!-- /TOC -->
@@ -87,35 +80,33 @@
 -  [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
 -  [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
 - [信息安全面试题汇总](https://github.com/Dollarsss/sec-interview)
+- [腾讯、阿里实习移动安全面试](https://la0s.github.io/2019/05/13/chunzhao/)
 
 ## 生活
+
+### 购房知识
 
 - [上海购房知识分享](https://github.com/ayuer/shanghai_house_knowledge)
 - [杭州购房知识分享](https://github.com/houshanren/hangzhou_house_knowledge)
 
-
 # Web Security
+
+
 [Web安全学习笔记](https://websec.readthedocs.io/zh/latest/index.html)
-
 [Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
-
 [Web安全中比较好的文章](https://github.com/spoock1024/web-security)
 
 ## 开发安全
-[开发人员安全指南](https://github.com/FallibleInc/security-guide-for-developers)
 
-[计算机编程类书籍汇总](https://github.com/justjavac/free-programming-books-zh_CN)
+- [开发人员安全指南](https://github.com/FallibleInc/security-guide-for-developers)
+
+- [计算机编程类书籍汇总](https://github.com/justjavac/free-programming-books-zh_CN)
 
 ### 扫描器相关
 
 [携程安全自动化测试之路](https://zhuanlan.zhihu.com/p/28115732)
 
 [黑盒扫描器自研](https://milkfr.github.io/%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91/2018/11/10/dev-black-box-scanner-1/)
-
-### 编码规范
-
-- [JAVA安全SDK及编码规范](https://github.com/momosecurity/rhizobia_J)
-- [PHP安全SDK及编码规范](https://github.com/momosecurity/rhizobia_P/)
 
 ### JAVA安全
 
@@ -144,7 +135,7 @@
 
 #### JavaWeb
 
- java-Web代码审计
+**java-Web代码审计**
 
 + [JAVA代码审计的一些Tips(附脚本)](https://xianzhi.aliyun.com/forum/topic/1633/)
 + [Java代码审计连载之—SQL注入](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=22170&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
@@ -194,8 +185,12 @@
 + 爬虫系列
   + [爬虫之从入门到精通](https://zhuanlan.zhihu.com/pachong)
 
-    
-  
+
+
+
+### PHP安全
+
+[PHP安全SDK及编码规范](https://github.com/momosecurity/rhizobia_P/)
 
 ###  Node-js安全
 
@@ -565,28 +560,28 @@
 + [Hacking iSCSI](https://ricterz.me/posts/Hacking%20iSCSI)
 + [技术详解：基于Web的LDAP注入漏洞](http://www.4hou.com/technology/9090.html)
 
-##### RPO(relative path overwrite)
-+ [初探 Relative Path Overwrite](https://xianzhi.aliyun.com/forum/read/1527.html?fpage=2)
-+ [Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities](http://blog.portswigger.net/2015/02/prssi.html)
-+ [RPO](http://www.thespanner.co.uk/2014/03/21/rpo/)
-+ [A few RPO exploitation techniques](http://www.mbsd.jp/Whitepaper/rpo.pdf)
+-  RPO(relative path overwrite)
+
+   + [初探 Relative Path Overwrite](https://xianzhi.aliyun.com/forum/read/1527.html?fpage=2)
+   + [Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities](http://blog.portswigger.net/2015/02/prssi.html)
+   + [RPO](http://www.thespanner.co.uk/2014/03/21/rpo/)
+   + [A few RPO exploitation techniques](http://www.mbsd.jp/Whitepaper/rpo.pdf)
 
 
-#####  Web Cache
-+ [浅析 Web Cache 欺骗攻击](http://bobao.360.cn/learning/detail/3828.html)
+-   Web Cache
+    + [浅析 Web Cache 欺骗攻击](http://bobao.360.cn/learning/detail/3828.html)
 
-#####  redis
-+ [利用redis写webshell](https://www.leavesongs.com/PENETRATION/write-webshell-via-redis-server.html)
-+ [Redis 未授权访问配合 SSH key 文件利用分析](http://blog.knownsec.com/2015/11/analysis-of-redis-unauthorized-of-expolit/)
-+ [redis未授权访问漏洞利用总结](https://xianzhi.aliyun.com/forum/read/750.html)。
-+ [【应急响应】redis未授权访问致远程植入挖矿脚本（防御篇） ](https://mp.weixin.qq.com/s/eUTZsGUGSO0AeBUaxq4Q2w)
+-  redis
+   + [利用redis写webshell](https://www.leavesongs.com/PENETRATION/write-webshell-via-redis-server.html)
+   + [Redis 未授权访问配合 SSH key 文件利用分析](http://blog.knownsec.com/2015/11/analysis-of-redis-unauthorized-of-expolit/)
+   + [redis未授权访问漏洞利用总结](https://xianzhi.aliyun.com/forum/read/750.html)。
+   + [【应急响应】redis未授权访问致远程植入挖矿脚本（防御篇） ](https://mp.weixin.qq.com/s/eUTZsGUGSO0AeBUaxq4Q2w)
 
 
 
 
 ## 安全测试
 
-### Course
 + [Web Service 渗透测试从入门到精通](http://bobao.360.cn/learning/detail/3741.html)
 + [渗透标准](https://www.processon.com/view/583e8834e4b08e31357bb727)
 + [Penetration Testing Tools Cheat Sheet](https://highon.coffee/blog/penetration-testing-tools-cheat-sheet/)
@@ -613,7 +608,41 @@
 + [乙方渗透测试之信息收集](http://www.cnnetarmy.com/%E4%B9%99%E6%96%B9%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8B%E4%BF%A1%E6%81%AF%E6%94%B6%E9%9B%86/)
 + [挖洞技巧：信息泄露之总结](https://www.anquanke.com/post/id/94787)
 
-#### 渗透
+### 渗透实战
++ [挖洞经验 | 看我如何综合利用4个漏洞实现GitHub Enterprise远程代码执行 ](http://www.freebuf.com/news/142680.html)
++ [Splash SSRF到获取内网服务器ROOT权限](http://bobao.360.cn/learning/detail/4113.html)
++ [Pivoting from blind SSRF to RCE with HashiCorp Consul](http://www.kernelpicnic.net/2017/05/29/Pivoting-from-blind-SSRF-to-RCE-with-Hashicorp-Consul.html)
++ [我是如何通过命令执行到最终获取内网Root权限的 ](http://www.freebuf.com/articles/web/141579.html)
++ [信息收集之SVN源代码社工获取及渗透实战](https://xianzhi.aliyun.com/forum/read/1629.html)
++ [SQL注入+XXE+文件遍历漏洞组合拳渗透Deutsche Telekom](http://paper.seebug.org/256/)
++ [渗透 Hacking Team](http://blog.neargle.com/SecNewsBak/drops/%E6%B8%97%E9%80%8FHacking%20Team%E8%BF%87%E7%A8%8B.html)
++ [由视频系统SQL注入到服务器权限](https://bbs.ichunqiu.com/thread-25827-1-1.html?from=sec)
++ [From Serialized to Shell :: Exploiting Google Web Toolkit with EL Injection](http://srcincite.io/blog/2017/05/22/from-serialized-to-shell-auditing-google-web-toolkit-with-el-injection.html)
++ [浅谈渗透测试实战](http://docs.ioin.in/writeup/avfisher.win/_archives_381/index.html)
++ [渗透测试学习笔记之案例一](http://avfisher.win/archives/741)
++ [渗透测试学习笔记之案例二](http://avfisher.win/archives/756)
++ [渗透测试学习笔记之案例四](http://avfisher.win/archives/784)
++ [记一次内网渗透](http://killbit.me/2017/09/11/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/)
+
+### 渗透技巧
+
++ [乙方渗透测试之Fuzz爆破](http://www.cnnetarmy.com/%E4%B9%99%E6%96%B9%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8BFuzz%E7%88%86%E7%A0%B4/)
++ [域渗透神器Empire安装和简单使用 ](https://mp.weixin.qq.com/s/VqrUTW9z-yi3LqNNy-lE-Q)
++ [如何将简单的Shell转换成为完全交互式的TTY ](http://www.freebuf.com/news/142195.html)
++ [60字节 - 无文件渗透测试实验](https://www.n0tr00t.com/2017/03/09/penetration-test-without-file.html)
++ [内网渗透思路探索之新思路的探索与验证](http://www.tuicool.com/articles/fMFB3mY)
++ [Web端口复用正向后门研究实现与防御 ](http://www.freebuf.com/articles/web/142628.html)
++ [谈谈端口探测的经验与原理](http://www.freebuf.com/articles/network/146087.html)
++ [端口渗透总结](http://docs.ioin.in/writeup/blog.heysec.org/_archives_577/index.html)
++ [端口扫描那些事](https://mp.weixin.qq.com/s?__biz=MzI5MDQ2NjExOQ==&mid=2247484812&idx=1&sn=7d894b50b3947142fbfa3a4016f748d5&chksm=ec1e35a4db69bcb2acfe7ecb3b0cd1d366c54bfa1feaafc62c4290b3fd2eddab9aa95a98f041#rd)
++ [渗透技巧——通过cmd上传文件的N种方法 ](http://blog.neargle.com/SecNewsBak/drops/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87cmd%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E7%9A%84N%E7%A7%8D%E6%96%B9%E6%B3%95.html)
++ [域渗透TIPS：获取LAPS管理员密码 ](http://www.freebuf.com/articles/web/142659.html)
++ [域渗透——Security Support Provider](http://blog.neargle.com/SecNewsBak/drops/%E5%9F%9F%E6%B8%97%E9%80%8F%E2%80%94%E2%80%94Security%20Support%20Provider.html)
++ [内网渗透随想](http://docs.ioin.in/writeup/www.91ri.org/_14390_html/index.html)
++ [域渗透之流量劫持](http://bobao.360.cn/learning/detail/3266.html)
++ [渗透技巧——快捷方式文件的参数隐藏技巧](https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E6%96%87%E4%BB%B6%E7%9A%84%E5%8F%82%E6%95%B0%E9%9A%90%E8%97%8F%E6%8A%80%E5%B7%A7/)
++ [后门整理](https://bbs.ichunqiu.com/thread-25119-1-1.html?from=sec)
++ [Linux后门整理合集（脉搏推荐）](https://www.secpulse.com/archives/59674.html)
 + [玩转Linux系统】Linux内网渗透](https://mp.weixin.qq.com/s/VJBnXq3--0HBD7eVeifOKA)
 + [渗透测试指南之域用户组的范围](http://www.4hou.com/penetration/7016.html)
 + [内网主机发现技巧补充](http://mp.weixin.qq.com/s/l-Avt72ajCIo5GdMEwVx7A)
@@ -639,52 +668,15 @@
 + [秘密渗透内网——利用 DNS 建立 VPN 传输隧道](http://www.4hou.com/technology/3143.html)
 + [Reverse Shell Cheat Sheet](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet)
 + [我所了解的内网渗透——内网渗透知识大总结](https://www.anquanke.com/post/id/92646)
++ **提权**
+  + [提权技巧](http://www.secbox.cn/skill/5583.html)
+  + [linux-kernel-exploits Linux平台提权漏洞集合](https://github.com/SecWiki/linux-kernel-exploits)
+  + [windows-kernel-exploits Windows平台提权漏洞集合 ](https://github.com/SecWiki/windows-kernel-exploits)
+  + [Linux MySQL Udf 提权](http://www.91ri.org/16540.html)
+  + [windows提权系列上篇](http://mp.weixin.qq.com/s/uOArxXIfcI4fjqnF9BDJGA)
+  + [Windows提权系列中篇](https://mp.weixin.qq.com/s/ERXOLhWo0-lJbMV143I8hA)
+  + [获取SYSTEM权限的多种姿势](http://bobao.360.cn/learning/detail/4740.html)
 
-### 渗透实战
-+ [挖洞经验 | 看我如何综合利用4个漏洞实现GitHub Enterprise远程代码执行 ](http://www.freebuf.com/news/142680.html)
-+ [Splash SSRF到获取内网服务器ROOT权限](http://bobao.360.cn/learning/detail/4113.html)
-+ [Pivoting from blind SSRF to RCE with HashiCorp Consul](http://www.kernelpicnic.net/2017/05/29/Pivoting-from-blind-SSRF-to-RCE-with-Hashicorp-Consul.html)
-+ [我是如何通过命令执行到最终获取内网Root权限的 ](http://www.freebuf.com/articles/web/141579.html)
-+ [信息收集之SVN源代码社工获取及渗透实战](https://xianzhi.aliyun.com/forum/read/1629.html)
-+ [SQL注入+XXE+文件遍历漏洞组合拳渗透Deutsche Telekom](http://paper.seebug.org/256/)
-+ [渗透 Hacking Team](http://blog.neargle.com/SecNewsBak/drops/%E6%B8%97%E9%80%8FHacking%20Team%E8%BF%87%E7%A8%8B.html)
-+ [由视频系统SQL注入到服务器权限](https://bbs.ichunqiu.com/thread-25827-1-1.html?from=sec)
-+ [From Serialized to Shell :: Exploiting Google Web Toolkit with EL Injection](http://srcincite.io/blog/2017/05/22/from-serialized-to-shell-auditing-google-web-toolkit-with-el-injection.html)
-+ [浅谈渗透测试实战](http://docs.ioin.in/writeup/avfisher.win/_archives_381/index.html)
-+ [渗透测试学习笔记之案例一](http://avfisher.win/archives/741)
-+ [渗透测试学习笔记之案例二](http://avfisher.win/archives/756)
-+ [渗透测试学习笔记之案例四](http://avfisher.win/archives/784)
-+ [记一次内网渗透](http://killbit.me/2017/09/11/%E8%AE%B0%E4%B8%80%E6%AC%A1%E5%86%85%E7%BD%91%E6%B8%97%E9%80%8F/)
-
-### 提权
-+ [提权技巧](http://www.secbox.cn/skill/5583.html)
-+ [linux-kernel-exploits Linux平台提权漏洞集合](https://github.com/SecWiki/linux-kernel-exploits)
-+ [windows-kernel-exploits Windows平台提权漏洞集合 ](https://github.com/SecWiki/windows-kernel-exploits)
-+ [Linux MySQL Udf 提权](http://www.91ri.org/16540.html)
-+ [windows提权系列上篇](http://mp.weixin.qq.com/s/uOArxXIfcI4fjqnF9BDJGA)
-+ [Windows提权系列中篇](https://mp.weixin.qq.com/s/ERXOLhWo0-lJbMV143I8hA)
-+ [获取SYSTEM权限的多种姿势](http://bobao.360.cn/learning/detail/4740.html)
-
-### 渗透技巧
-+ [乙方渗透测试之Fuzz爆破](http://www.cnnetarmy.com/%E4%B9%99%E6%96%B9%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8BFuzz%E7%88%86%E7%A0%B4/)
-+ [域渗透神器Empire安装和简单使用 ](https://mp.weixin.qq.com/s/VqrUTW9z-yi3LqNNy-lE-Q)
-+ [如何将简单的Shell转换成为完全交互式的TTY ](http://www.freebuf.com/news/142195.html)
-+ [60字节 - 无文件渗透测试实验](https://www.n0tr00t.com/2017/03/09/penetration-test-without-file.html)
-+ [内网渗透思路探索之新思路的探索与验证](http://www.tuicool.com/articles/fMFB3mY)
-+ [Web端口复用正向后门研究实现与防御 ](http://www.freebuf.com/articles/web/142628.html)
-+ [谈谈端口探测的经验与原理](http://www.freebuf.com/articles/network/146087.html)
-+ [端口渗透总结](http://docs.ioin.in/writeup/blog.heysec.org/_archives_577/index.html)
-+ [端口扫描那些事](https://mp.weixin.qq.com/s?__biz=MzI5MDQ2NjExOQ==&mid=2247484812&idx=1&sn=7d894b50b3947142fbfa3a4016f748d5&chksm=ec1e35a4db69bcb2acfe7ecb3b0cd1d366c54bfa1feaafc62c4290b3fd2eddab9aa95a98f041#rd)
-+ [渗透技巧——通过cmd上传文件的N种方法 ](http://blog.neargle.com/SecNewsBak/drops/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7%E2%80%94%E2%80%94%E9%80%9A%E8%BF%87cmd%E4%B8%8A%E4%BC%A0%E6%96%87%E4%BB%B6%E7%9A%84N%E7%A7%8D%E6%96%B9%E6%B3%95.html)
-+ [域渗透TIPS：获取LAPS管理员密码 ](http://www.freebuf.com/articles/web/142659.html)
-+ [域渗透——Security Support Provider](http://blog.neargle.com/SecNewsBak/drops/%E5%9F%9F%E6%B8%97%E9%80%8F%E2%80%94%E2%80%94Security%20Support%20Provider.html)
-+ [内网渗透随想](http://docs.ioin.in/writeup/www.91ri.org/_14390_html/index.html)
-+ [域渗透之流量劫持](http://bobao.360.cn/learning/detail/3266.html)
-+ [渗透技巧——快捷方式文件的参数隐藏技巧](https://3gstudent.github.io/3gstudent.github.io/%E6%B8%97%E9%80%8F%E6%8A%80%E5%B7%A7-%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F%E6%96%87%E4%BB%B6%E7%9A%84%E5%8F%82%E6%95%B0%E9%9A%90%E8%97%8F%E6%8A%80%E5%B7%A7/)
-+ [后门整理](https://bbs.ichunqiu.com/thread-25119-1-1.html?from=sec)
-+ [Linux后门整理合集（脉搏推荐）](https://www.secpulse.com/archives/59674.html)
-
-### WAF相关
 
 + [详谈WAF与静态统计分析](http://bobao.360.cn/learning/detail/4670.html)
 + [牛逼牛逼的payload和bypass总结](https://github.com/swisskyrepo/PayloadsAllTheThings)
@@ -697,6 +689,7 @@
 + [会找漏洞的时光机: Pinpointing Vulnerabilities](https://www.inforsec.org/wp/?p=1993)
 
 ## 安全运维
+
 + [安全运维那些洞 ](https://mp.weixin.qq.com/s/5TfAF5-HR8iDA_qSIJkQ0Q)
 + [美团外卖自动化业务运维系统建设](https://tech.meituan.com/digger_share.html)
 + [饿了么运维基础设施进化史 ](https://mp.weixin.qq.com/s?__biz=MzA4Nzg5Nzc5OA==&mid=2651668800&idx=1&sn=615af5f120d1298475aaf4825009cb30&chksm=8bcb82e9bcbc0bff6309d9bbaf69cfc591624206b846e00d5004a68182c934dab921b7c25794&scene=38#wechat_redirect)
@@ -714,31 +707,14 @@
 + [Oracle数据库运维中的攻防实战（全） ](https://mp.weixin.qq.com/s/dpvBo6Bat5u4t8kSFRcv9w)
 + [Linux服务器上监控网络带宽的18个常用命令](http://www.xuxiaobo.com/?p=3950)
 
-
-## CTF
-### 技巧总结
-+ [CTF线下防御战 — 让你的靶机变成“铜墙铁壁”](http://bobao.360.cn/ctf/detail/210.html)
-+ [ctf-wiki](https://ctf-wiki.github.io/ctf-wiki/#/introduction)
-+ [CTF中那些脑洞大开的编码和加密](https://www.hackfun.org/CTF/coding-and-encryption-of-those-brain-holes-in-CTF.html)
-+ [CTF加密与解密 ](http://thief.one/2017/06/13/1/)
-+ [CTF中图片隐藏文件分离方法总结](https://www.hackfun.org/CTF/summary-of-image-hiding-files-in-CTF.html)
-+ [Md5扩展攻击的原理和应用](http://www.freebuf.com/articles/database/137129.html)
-+ [CTF比赛中关于zip的总结](http://bobao.360.cn/ctf/detail/203.html)
-+ [十五个Web狗的CTF出题套路](http://weibo.com/ttarticle/p/show?id=2309403980950244591011)
-+ [CTF备忘录](https://827977014.docs.qq.com/Bt2v7IZWnYo?type=1&_wv=1&_bid=2517)
-+ [rcoil:CTF线下攻防赛总结](http://rcoil.me/2017/06/CTF%E7%BA%BF%E4%B8%8B%E8%B5%9B%E6%80%BB%E7%BB%93/)
-+ [CTF内存取证入坑指南！稳！](http://www.freebuf.com/column/152545.html)
-
-
-
 ## SRC
 
-[一个有趣的任意密码重置](https://legoc.github.io/2020/07/07/%E4%B8%80%E4%B8%AA%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BB%BB%E6%84%8F%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/)
+- [一个有趣的任意密码重置](https://legoc.github.io/2020/07/07/%E4%B8%80%E4%B8%AA%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BB%BB%E6%84%8F%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/)
+- [记一次短信验证码的"梅开五度"](https://xz.aliyun.com/t/8974)
 
 ## Others
 
 - [钓鱼框架 —— gophish](http://leuk0cyte.com/2020/11/06/%E9%92%93%E9%B1%BC%E6%A1%86%E6%9E%B6%20%E2%80%94%E2%80%94%20gophish/#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
-
 + [细致分析Padding Oracle渗透测试全解析 ](http://www.freebuf.com/articles/database/150606.html)
 + [Exploring Compilation from TypeScript to WebAssembly](https://medium.com/web-on-the-edge/exploring-compilation-from-typescript-to-webassembly-f846d6befc12)
 + [High-Level Approaches for Finding Vulnerabilities](http://jackson.thuraisamy.me/finding-vulnerabilities.html)
@@ -751,7 +727,10 @@
 + [Joomla 框架的程序执行流程及目录结构分析](http://bobao.360.cn/learning/detail/3909.html)
 + [如何通过恶意插件在Atom中植入后门](http://bobao.360.cn/learning/detail/4268.html)
 + [CRLF Injection and Bypass Tencent WAF ](https://zhchbin.github.io/2016/01/31/CRLF-Injection-and-Bypass-WAF/)
+
+
 # Binary security
+
 ## IOT Security
 
 - [物联网安全百科](https://iot-security.wiki/)
@@ -760,19 +739,38 @@
 ## Mobile Security
 
 ### Frida相关文章合集
+
 - [FRIDA Java Hook原理](https://mabin004.github.io/2018/07/31/Mac%E4%B8%8A%E7%BC%96%E8%AF%91Frida/)
 
 ### 脱壳相关
+
 - [Frida主动调用脱壳](https://bbs.pediy.com/thread-260540.htm)
 
-### 面试相关
-- [腾讯、阿里实习移动安全面试](https://la0s.github.io/2019/05/13/chunzhao/)
-
 ### 游戏安全系列
+
 - [perfare大大 <-- 游戏安全行业先锋](https://www.perfare.net/)
 
 ### 奇淫技巧
+
 - [反调试技术整理](https://gtoad.github.io/2017/06/25/Android-Anti-Debug/)
 
+
+# CTF
+
+## 技巧总结
+
++ [CTF线下防御战 — 让你的靶机变成“铜墙铁壁”](http://bobao.360.cn/ctf/detail/210.html)
++ [ctf-wiki](https://ctf-wiki.github.io/ctf-wiki/#/introduction)
++ [CTF中那些脑洞大开的编码和加密](https://www.hackfun.org/CTF/coding-and-encryption-of-those-brain-holes-in-CTF.html)
++ [CTF加密与解密 ](http://thief.one/2017/06/13/1/)
++ [CTF中图片隐藏文件分离方法总结](https://www.hackfun.org/CTF/summary-of-image-hiding-files-in-CTF.html)
++ [Md5扩展攻击的原理和应用](http://www.freebuf.com/articles/database/137129.html)
++ [CTF比赛中关于zip的总结](http://bobao.360.cn/ctf/detail/203.html)
++ [十五个Web狗的CTF出题套路](http://weibo.com/ttarticle/p/show?id=2309403980950244591011)
++ [CTF备忘录](https://827977014.docs.qq.com/Bt2v7IZWnYo?type=1&_wv=1&_bid=2517)
++ [rcoil:CTF线下攻防赛总结](http://rcoil.me/2017/06/CTF%E7%BA%BF%E4%B8%8B%E8%B5%9B%E6%80%BB%E7%BB%93/)
++ [CTF内存取证入坑指南！稳！](http://www.freebuf.com/column/152545.html)
+
 ## CTF PWN
+
 - [PWN入门指南 CTF WIKI](https://ctf-wiki.org/pwn/readme/)
