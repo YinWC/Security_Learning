@@ -182,9 +182,17 @@
 + [pyt: 针对 Python 应用程序的源码静态分析工具](https://github.com/python-security/pyt)
 + [Exploiting Python PIL Module Command Execution Vulnerability](http://docs.ioin.in/writeup/github.com/_neargle_PIL_RCE_By_GhostButt/index.html)
 + [文件解压之过 Python中的代码执行](http://bobao.360.cn/learning/detail/4503.html)
-+ 爬虫系列
-  + [爬虫之从入门到精通](https://zhuanlan.zhihu.com/pachong)
 
+- **爬虫系列**
+  - [爬虫之从入门到精通](https://zhuanlan.zhihu.com/pachong)
+  - [从零开始写Python爬虫 ](https://zhuanlan.zhihu.com/p/26673214)
+  - [爬虫与反爬虫技术分析](https://blog.csdn.net/qq_25834767/article/details/104532493)
+  - [漏扫动态爬虫实践](漏扫动态爬虫实践)
+- **Python沙盒逃逸**
+  - [Python沙盒逃逸备忘 --by K0rz3n师傅](http://www.k0rz3n.com/2018/05/04/Python%20%E6%B2%99%E7%9B%92%E9%80%83%E9%80%B8%E5%A4%87%E5%BF%98/)
+  - [Python沙箱逃逸Payload收集 --by 王一航师傅](https://www.jianshu.com/p/30ece4087a8a)
+  - [从一个CTF题目学习Python沙箱逃逸](https://www.anquanke.com/post/id/85571)
+  - [Python沙箱逃逸的n种姿势](https://xz.aliyun.com/t/52#toc-10)
 
 
 
