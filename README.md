@@ -24,6 +24,7 @@
       - [JavaWeb](#javaweb)
       - [Fastjson](#fastjson)
       - [Shiro](#shiro)
+      - [Jenkins](#jenkins)
       - [其他](#其他)
     - [Python安全](#python安全)
     - [PHP安全](#php安全)
@@ -44,6 +45,7 @@
       - [逻辑漏洞](#逻辑漏洞)
       - [PHP相关](#php相关)
       - [DDOS](#ddos)
+      - [CORS漏洞](#cors漏洞)
       - [其他漏洞](#其他漏洞)
   - [安全测试](#安全测试)
     - [信息收集](#信息收集)
@@ -153,6 +155,10 @@
 
 + [Apache Shiro反序列化识别那些事](https://mp.weixin.qq.com/s/q5sexARASK2TI6ihnRzYjg)
 
+#### Jenkins
+
+- [Jenkins 未授权代码执行漏洞分析](https://www.anquanke.com/post/id/86018)
+
 #### 其他
 
 + [关于 JNDI 注入](http://bobao.360.cn/learning/detail/4564.html)
@@ -188,12 +194,13 @@
   - [从零开始写Python爬虫 ](https://zhuanlan.zhihu.com/p/26673214)
   - [爬虫与反爬虫技术分析](https://blog.csdn.net/qq_25834767/article/details/104532493)
   - [漏扫动态爬虫实践](漏扫动态爬虫实践)
+
 - **Python沙盒逃逸**
   - [Python沙盒逃逸备忘 --by K0rz3n师傅](http://www.k0rz3n.com/2018/05/04/Python%20%E6%B2%99%E7%9B%92%E9%80%83%E9%80%B8%E5%A4%87%E5%BF%98/)
   - [Python沙箱逃逸Payload收集 --by 王一航师傅](https://www.jianshu.com/p/30ece4087a8a)
+  - [关于Python sec的一些简单的总结 --by Bendawang师傅](http://bendawang.site/2018/03/01/%E5%85%B3%E4%BA%8EPython-sec%E7%9A%84%E4%B8%80%E4%BA%9B%E6%80%BB%E7%BB%93/)
   - [从一个CTF题目学习Python沙箱逃逸](https://www.anquanke.com/post/id/85571)
   - [Python沙箱逃逸的n种姿势](https://xz.aliyun.com/t/52#toc-10)
-
 
 
 ### PHP安全
@@ -211,11 +218,8 @@
 ## 漏洞相关
 
 [一些漏洞情报的网站](https://github.com/r0eXpeR/VulnerabilityIntelligence)
-
 [CVE-2020:2020年的部分漏洞整理](https://github.com/r0eXpeR/CVE-2020)
-
 [红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
-
 [白阁文库漏洞汇总](https://baizesec.github.io/bylibrary/#_10)
 
 ### 常见漏洞
@@ -355,6 +359,7 @@
 
 #### SSRF服务器端请求伪造
 
++ [SSRF安全指北](https://mp.weixin.qq.com/s/EYVFHgNClgNGrk_92PZ90A)
 + [SSRF:CVE-2017-9993 FFmpeg + AVI + HLS](https://hackmd.io/p/H1B9zOg_W#)
 + [SSRF（服务器端请求伪造）测试资源](https://paper.seebug.org/393/)
 + [Build Your SSRF Exploit Framework SSRF](http://docs.ioin.in/writeup/fuzz.wuyun.org/_src_build_your_ssrf_exp_autowork_pdf/index.pdf)
@@ -374,7 +379,8 @@
 + [SSRF Tips](http://blog.safebuff.com/2016/07/03/SSRF-Tips/)
 
 #### XXE(xml外部实体注入)
-[一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)
+
++ [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)
 + [PHP与JAVA之XXE漏洞详解与审计](https://xz.aliyun.com/t/6829#toc-1)
 + [浅谈XXE漏洞攻击与防御](http://thief.one/2017/06/20/1/)
 + [XXE漏洞分析](http://www.4o4notfound.org/index.php/archives/29/)
@@ -558,15 +564,21 @@
 + [freeBuf专栏 ](http://www.freebuf.com/author/%e9%bb%91%e6%88%88%e7%88%be)
 + [遭受CC攻击的处理](http://www.xuxiaobo.com/?p=3923)
 
+#### CORS漏洞
+
+  - cors安全完全指南https://xz.aliyun.com/t/2745
+
+
 #### 其他漏洞
 
-+ [未授权访问漏洞总结](https://www.secpulse.com/archives/61101.html)
-+ [未授权访问漏洞的检测与利用 ](https://thief.one/2017/12/08/1/)
+
 + [Web之困笔记](http://www.au1ge.xyz/2017/08/09/web%E4%B9%8B%E5%9B%B0%E7%AC%94%E8%AE%B0/)
 + [常见Web源码泄露总结](http://www.mottoin.com/95749.html)
 + [Github信息泄露升级版案例](http://www.ms509.com/?p=718)
 + [Hacking iSCSI](https://ricterz.me/posts/Hacking%20iSCSI)
 + [技术详解：基于Web的LDAP注入漏洞](http://www.4hou.com/technology/9090.html)
++ [未授权访问漏洞总结](https://www.secpulse.com/archives/61101.html)
++ [未授权访问漏洞的检测与利用 ](https://thief.one/2017/12/08/1/)
 
 -  RPO(relative path overwrite)
 
@@ -584,8 +596,6 @@
    + [Redis 未授权访问配合 SSH key 文件利用分析](http://blog.knownsec.com/2015/11/analysis-of-redis-unauthorized-of-expolit/)
    + [redis未授权访问漏洞利用总结](https://xianzhi.aliyun.com/forum/read/750.html)。
    + [【应急响应】redis未授权访问致远程植入挖矿脚本（防御篇） ](https://mp.weixin.qq.com/s/eUTZsGUGSO0AeBUaxq4Q2w)
-
-
 
 
 ## 安全测试
@@ -722,7 +732,7 @@
 
 ## Others
 
-- [钓鱼框架 —— gophish](http://leuk0cyte.com/2020/11/06/%E9%92%93%E9%B1%BC%E6%A1%86%E6%9E%B6%20%E2%80%94%E2%80%94%20gophish/#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
++ [钓鱼框架 —— gophish](http://leuk0cyte.com/2020/11/06/%E9%92%93%E9%B1%BC%E6%A1%86%E6%9E%B6%20%E2%80%94%E2%80%94%20gophish/#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
 + [细致分析Padding Oracle渗透测试全解析 ](http://www.freebuf.com/articles/database/150606.html)
 + [Exploring Compilation from TypeScript to WebAssembly](https://medium.com/web-on-the-edge/exploring-compilation-from-typescript-to-webassembly-f846d6befc12)
 + [High-Level Approaches for Finding Vulnerabilities](http://jackson.thuraisamy.me/finding-vulnerabilities.html)
