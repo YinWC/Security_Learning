@@ -75,11 +75,12 @@
 - [在腾讯的八年，我的职业思考](https://yuguo.us/weblog/tencent-8-years/)
 - [卓卓师傅：我在pdd的三年](https://github.com/LeadroyaL/pdd_3years)
 - [程序员考公指南](https://github.com/coder2gwy/coder2gwy)
+- [野生前端码农的内功修炼和自我修养笔记](https://github.com/dashnowords/blogs)
 
 ## 一些面经
 
--  [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
--  [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
+- [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
+- [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
 - [信息安全面试题汇总](https://github.com/Dollarsss/sec-interview)
 - [腾讯、阿里实习移动安全面试](https://la0s.github.io/2019/05/13/chunzhao/)
 
@@ -87,6 +88,7 @@
 
 ### 购房知识
 
+- [北京购房知识分享](https://github.com/online-books/beijing_house_knowledge)
 - [上海购房知识分享](https://github.com/ayuer/shanghai_house_knowledge)
 - [杭州购房知识分享](https://github.com/houshanren/hangzhou_house_knowledge)
 
@@ -171,6 +173,7 @@
 
 ###  Python安全
 
++ [Python-100-Days](https://github.com/jackfrued/Python-100-Days)
 + [python web 安全总结](http://bobao.360.cn/learning/detail/4522.html)
 + [Defencely Clarifies Python Object Injection Exploitation](http://defencely.com/blog/defencely-clarifies-python-object-injection-exploitation/)
 + [Exploiting Python Deserialization Vulnerabilities](https://crowdshield.com/blog.php?name=exploiting-python-deserialization-vulnerabilities)
@@ -566,7 +569,7 @@
 
 #### CORS漏洞
 
-  - cors安全完全指南https://xz.aliyun.com/t/2745
+- [cors安全完全指南](https://xz.aliyun.com/t/2745)
 
 
 #### 其他漏洞
@@ -586,7 +589,6 @@
    + [Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities](http://blog.portswigger.net/2015/02/prssi.html)
    + [RPO](http://www.thespanner.co.uk/2014/03/21/rpo/)
    + [A few RPO exploitation techniques](http://www.mbsd.jp/Whitepaper/rpo.pdf)
-
 
 -   Web Cache
     + [浅析 Web Cache 欺骗攻击](http://bobao.360.cn/learning/detail/3828.html)
@@ -729,6 +731,7 @@
 
 ## SRC
 
+- [业务漏洞挖掘笔记](https://xz.aliyun.com/t/9028)
 - [一个有趣的任意密码重置](https://legoc.github.io/2020/07/07/%E4%B8%80%E4%B8%AA%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BB%BB%E6%84%8F%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/)
 - [记一次短信验证码的"梅开五度"](https://xz.aliyun.com/t/8974)
 - [挖洞经验 | 看我如何综合利用4个漏洞实现GitHub Enterprise远程代码执行 ](http://www.freebuf.com/news/142680.html)
