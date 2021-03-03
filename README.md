@@ -11,60 +11,60 @@
 <!-- TOC -->
 
 - [Experience](#experience)
-  - [职业规划及发展](#职业规划及发展)
-  - [一些面经](#一些面经)
-  - [生活](#生活)
-    - [购房知识](#购房知识)
+    - [职业规划及发展](#职业规划及发展)
+    - [一些面经](#一些面经)
+    - [生活](#生活)
+        - [购房知识](#购房知识)
 - [Web Security](#web-security)
-  - [容器安全](#容器安全)
-  - [开发安全](#开发安全)
-    - [扫描器相关](#扫描器相关)
-    - [JAVA安全](#java安全)
-      - [反序列](#反序列)
-      - [Struct2](#struct2)
-      - [JavaWeb](#javaweb)
-      - [Fastjson](#fastjson)
-      - [Shiro](#shiro)
-      - [Jenkins](#jenkins)
-      - [其他](#其他)
-    - [Python安全](#python安全)
-    - [PHP安全](#php安全)
-    - [Node-js安全](#node-js安全)
-  - [漏洞相关](#漏洞相关)
-    - [常见漏洞](#常见漏洞)
-      - [sql注入](#sql注入)
-      - [XSS跨站脚本攻击](#xss跨站脚本攻击)
-      - [CSRF跨站请求伪造](#csrf跨站请求伪造)
-      - [其他前端安全](#其他前端安全)
-      - [SSRF服务器端请求伪造](#ssrf服务器端请求伪造)
-      - [XXE(xml外部实体注入)](#xxexml外部实体注入)
-      - [JSONP注入](#jsonp注入)
-      - [SSTI服务器模板注入](#ssti服务器模板注入)
-      - [代码执行 / 命令执行](#代码执行--命令执行)
-      - [文件包含](#文件包含)
-      - [文件上传 / 解析漏洞](#文件上传--解析漏洞)
-      - [逻辑漏洞](#逻辑漏洞)
-      - [PHP相关](#php相关)
-      - [DDOS](#ddos)
-      - [CORS漏洞](#cors漏洞)
-      - [其他漏洞](#其他漏洞)
-  - [安全测试](#安全测试)
-    - [信息收集](#信息收集)
-    - [渗透实战](#渗透实战)
-    - [渗透技巧](#渗透技巧)
-  - [安全运维](#安全运维)
-  - [SRC](#src)
-  - [Others](#others)
+    - [容器安全](#容器安全)
+    - [开发安全](#开发安全)
+        - [扫描器相关](#扫描器相关)
+        - [JAVA安全](#java安全)
+            - [反序列](#反序列)
+            - [Struct2](#struct2)
+            - [JavaWeb](#javaweb)
+            - [Fastjson](#fastjson)
+            - [Shiro](#shiro)
+            - [Jenkins](#jenkins)
+            - [其他](#其他)
+        - [Python安全](#python安全)
+        - [PHP安全](#php安全)
+        - [Node-js安全](#node-js安全)
+    - [漏洞相关](#漏洞相关)
+        - [常见漏洞](#常见漏洞)
+            - [sql注入](#sql注入)
+            - [XSS跨站脚本攻击](#xss跨站脚本攻击)
+            - [CSRF跨站请求伪造](#csrf跨站请求伪造)
+            - [其他前端安全](#其他前端安全)
+            - [SSRF服务器端请求伪造](#ssrf服务器端请求伪造)
+            - [XXE(xml外部实体注入)](#xxexml外部实体注入)
+            - [JSONP注入](#jsonp注入)
+            - [SSTI服务器模板注入](#ssti服务器模板注入)
+            - [代码执行 / 命令执行](#代码执行--命令执行)
+            - [文件包含](#文件包含)
+            - [文件上传 / 解析漏洞](#文件上传--解析漏洞)
+            - [逻辑漏洞](#逻辑漏洞)
+            - [PHP相关](#php相关)
+            - [DDOS](#ddos)
+            - [CORS漏洞](#cors漏洞)
+            - [其他漏洞](#其他漏洞)
+    - [安全测试](#安全测试)
+        - [信息收集](#信息收集)
+        - [渗透实战](#渗透实战)
+        - [渗透技巧](#渗透技巧)
+    - [安全运维](#安全运维)
+    - [SRC](#src)
+    - [Others](#others)
 - [Binary security](#binary-security)
-  - [IOT Security](#iot-security)
-  - [Mobile Security](#mobile-security)
-    - [Frida相关文章合集](#frida相关文章合集)
-    - [脱壳相关](#脱壳相关)
-    - [游戏安全系列](#游戏安全系列)
-    - [奇淫技巧](#奇淫技巧)
+    - [IOT Security](#iot-security)
+    - [Mobile Security](#mobile-security)
+        - [Frida相关文章合集](#frida相关文章合集)
+        - [脱壳相关](#脱壳相关)
+        - [游戏安全系列](#游戏安全系列)
+        - [奇淫技巧](#奇淫技巧)
 - [CTF](#ctf)
-  - [技巧总结](#技巧总结)
-  - [CTF PWN](#ctf-pwn)
+    - [技巧总结](#技巧总结)
+    - [CTF PWN](#ctf-pwn)
 
 <!-- /TOC -->
 
@@ -95,11 +95,9 @@
 
 # Web Security
 
-[Web安全学习笔记](https://websec.readthedocs.io/zh/latest/index.html)
-
-[Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
-
-[Web安全中比较好的文章](https://github.com/spoock1024/web-security)
+- [Web安全学习笔记](https://websec.readthedocs.io/zh/latest/index.html)
+- [Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
+- [Web安全中比较好的文章](https://github.com/spoock1024/web-security)
 
 ## 容器安全
 
@@ -228,10 +226,10 @@
 
 ## 漏洞相关
 
-[一些漏洞情报的网站](https://github.com/r0eXpeR/VulnerabilityIntelligence)
-[CVE-2020:2020年的部分漏洞整理](https://github.com/r0eXpeR/CVE-2020)
-[红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
-[白阁文库漏洞汇总](https://baizesec.github.io/bylibrary/#_10)
+- [一些漏洞情报的网站](https://github.com/r0eXpeR/VulnerabilityIntelligence)
+- [CVE-2020:2020年的部分漏洞整理](https://github.com/r0eXpeR/CVE-2020)
+- [红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
+- [白阁文库漏洞汇总](https://baizesec.github.io/bylibrary/#_10)
 
 ### 常见漏洞
 [Web安全攻防实战](https://github.com/hongriSec/Web-Security-Attack)
@@ -579,24 +577,19 @@
 
 - [cors安全完全指南](https://xz.aliyun.com/t/2745)
 
-
 #### 其他漏洞
 
-
-+ [Web之困笔记](http://www.au1ge.xyz/2017/08/09/web%E4%B9%8B%E5%9B%B0%E7%AC%94%E8%AE%B0/)
-+ [常见Web源码泄露总结](http://www.mottoin.com/95749.html)
-+ [Github信息泄露升级版案例](http://www.ms509.com/?p=718)
-+ [Hacking iSCSI](https://ricterz.me/posts/Hacking%20iSCSI)
-+ [技术详解：基于Web的LDAP注入漏洞](http://www.4hou.com/technology/9090.html)
-+ [未授权访问漏洞总结](https://www.secpulse.com/archives/61101.html)
-+ [未授权访问漏洞的检测与利用 ](https://thief.one/2017/12/08/1/)
+- CDN2021完全攻击指南
+  - [CDN 2021 完全攻击指南 （一）](https://www.anquanke.com/post/id/227818)
+  - [CDN 2021 完全攻击指南 （二）](https://www.anquanke.com/post/id/231437)
+  - [CDN 2021 完全攻击指南 （三）](https://www.anquanke.com/post/id/231441)
+  - https://github.com/bin-maker/2021CDN/
 
 -  RPO(relative path overwrite)
-
-   + [初探 Relative Path Overwrite](https://xianzhi.aliyun.com/forum/read/1527.html?fpage=2)
-   + [Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities](http://blog.portswigger.net/2015/02/prssi.html)
-   + [RPO](http://www.thespanner.co.uk/2014/03/21/rpo/)
-   + [A few RPO exploitation techniques](http://www.mbsd.jp/Whitepaper/rpo.pdf)
+   - [初探 Relative Path Overwrite](https://xianzhi.aliyun.com/forum/read/1527.html?fpage=2)
+   - [Detecting and exploiting path-relative stylesheet import (PRSSI) vulnerabilities](http://blog.portswigger.net/2015/02/prssi.html)
+   - [RPO](http://www.thespanner.co.uk/2014/03/21/rpo/)
+   - [A few RPO exploitation techniques](http://www.mbsd.jp/Whitepaper/rpo.pdf)
 
 -   Web Cache
     + [浅析 Web Cache 欺骗攻击](http://bobao.360.cn/learning/detail/3828.html)
@@ -606,6 +599,15 @@
    + [Redis 未授权访问配合 SSH key 文件利用分析](http://blog.knownsec.com/2015/11/analysis-of-redis-unauthorized-of-expolit/)
    + [redis未授权访问漏洞利用总结](https://xianzhi.aliyun.com/forum/read/750.html)。
    + [【应急响应】redis未授权访问致远程植入挖矿脚本（防御篇） ](https://mp.weixin.qq.com/s/eUTZsGUGSO0AeBUaxq4Q2w)
+
++ [Web之困笔记](http://www.au1ge.xyz/2017/08/09/web%E4%B9%8B%E5%9B%B0%E7%AC%94%E8%AE%B0/)
++ [常见Web源码泄露总结](http://www.mottoin.com/95749.html)
++ [Github信息泄露升级版案例](http://www.ms509.com/?p=718)
++ [Hacking iSCSI](https://ricterz.me/posts/Hacking%20iSCSI)
++ [技术详解：基于Web的LDAP注入漏洞](http://www.4hou.com/technology/9090.html)
++ [未授权访问漏洞总结](https://www.secpulse.com/archives/61101.html)
++ [未授权访问漏洞的检测与利用 ](https://thief.one/2017/12/08/1/)
+
 
 
 ## 安全测试
