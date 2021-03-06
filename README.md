@@ -134,7 +134,7 @@
 - [黑盒扫描器自研](https://milkfr.github.io/%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91/2018/11/10/dev-black-box-scanner-1/)
 - [漫谈漏洞扫描器的设计与开发](https://thief.one/2018/03/16/1/)
 - [安全开发之扫描器迭代记：W9Scan](https://www.freebuf.com/sectool/162120.html)
-- [XSS扫描器成长记](https://wemp.app/posts/e15438d4-8358-40fa-a1aa-50a6d93b4fe0
+- [XSS扫描器成长记](https://wemp.app/posts/e15438d4-8358-40fa-a1aa-50a6d93b4fe0)
 
 ### 蜜罐
 
