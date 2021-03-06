@@ -19,7 +19,8 @@
   - [容器安全](#容器安全)
   - [开发安全](#开发安全)
     - [SDL](#sdl)
-    - [扫描器相关](#扫描器相关)
+    - [扫描器](#扫描器)
+    - [蜜罐](#蜜罐)
     - [JAVA安全](#java安全)
       - [反序列](#反序列)
       - [Struct2](#struct2)
@@ -117,16 +118,46 @@
 ### SDL
 
 - [SDL的各个阶段](https://www.jianshu.com/p/dd147e84931b)
+- [SDL开发安全生命周期管理](https://www.securitypaper.org/)
 - [SDL的深入探究及实践](https://pek3a.qingstor.com/community/resource/QCon2016-Beijing/SDL%E7%9A%84%E6%B7%B1%E5%85%A5%E6%8E%A2%E7%A9%B6%E5%8F%8A%E5%AE%9E%E8%B7%B5.pdf)
 - [SDL探索之路](https://xz.aliyun.com/t/6625#toc-7)
 - [精简版SDL落地实践](https://xz.aliyun.com/t/5656)
 - [值得读的书籍securitypaper关于SDL](https://www.securitypaper.org/1.sdl%E4%BB%8B%E7%BB%8D/1-%E4%BB%80%E4%B9%88%E6%98%AFsdl/)
 - [SDL建设-三方依赖库扫描系统](https://www.secpulse.com/archives/73373.html)
+- [金融科技SDL安全设计checklist](https://xz.aliyun.com/t/2089)
 
-### 扫描器相关
+### 扫描器
 
 - [携程安全自动化测试之路](https://zhuanlan.zhihu.com/p/28115732)
 - [黑盒扫描器自研](https://milkfr.github.io/%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91/2018/11/10/dev-black-box-scanner-1/)
+
+### 蜜罐
+
+- [蜜罐开源技术收集](https://github.com/paralax/awesome-honeypots )
+- [现代蜜网，集成了多种蜜罐的安装脚本，可以快速部署、使用，也能够快速的从节点收集数据](https://github.com/threatstream/mhn )
+- [T-POT，里面使用docker技术实现多个蜜罐组合，配合ELK进行研究与数据捕获](https://github.com/dtag-dev-sec/tpotce)
+- [T-Pot多蜜罐平台使用心法](https://www.freebuf.com/sectool/190840.html)
+- [将fork的T-POT蜜罐的一键安装脚本替换为国内加速镜像](https://github.com/n3uz/t-pot-autoinstall)
+- **Web蜜罐内网监测**
+  https://github.com/micheloosterhof/cowrie py2使用ELK（ElasticSearch，LogStash，Kibana）进行数据分析，目前支持ssh，telnet，sftp等协议
+  https://github.com/mushorg/snare py3，web安全蜜罐，可克隆指定Web页面
+  https://github.com/honeynet/beeswarm py，使用agent探针与蜜罐进行实时交互来引诱攻击者
+  https://github.com/thinkst/opencanary PY2,SNMP\RDP\SAMBA蜜罐
+  https://github.com/p1r06u3/opencanary_web PY,TORNADO,内网低交互蜜罐。支持自动化安装，目前支持常见的16中协议，现为探针/蜜罐-管理的架构，可以考虑二次开发为探针-沙盒-管理的架构
+  https://github.com/p1r06u3/opencanary_web
+  https://github.com/Cymmetria 知名欺骗防御蜜罐组织。Struct、weblogic、telnet、Cisco ASA、Micros等仿真蜜罐
+  https://github.com/Cymmetria/honeycomb Cymmetria公司开源蜜罐框架，低交互
+  https://github.com/honeytrap/honeytrap 可扩展蜜罐框架，支持探针部署与高交互蜜罐
+  https://gosecure.net/2018/12/19/rdp-man-in-the-middle-smile-youre-on-camera/ RDP MITM，打造可记录图像和按键的 RDP 蜜罐（https://github.com/gosecure/pyrdp）
+  
+- **摄像头蜜罐**
+  https://github.com/alexbredo/honeypot-camera 摄像头蜜罐。tornado模拟WEB服务，图片代替视频，可以考虑后期多加点图片和按钮
+  https://github.com/EasyDarwin/EasyIPCamera C，RTSP服务器组件用以构建摄像头蜜罐
+- **工控蜜罐**
+  https://github.com/sjhilt/GasPot 模拟油电燃气工控系统
+  https://github.com/djformby/GRFICS IoT工业仿真系统模拟框架，采用MODBUS协议对PLC虚拟机监视和控制
+  https://github.com/RabitW/IoTSecurityNAT IoT测试系统，方便快速接入各种设备，进行安全测试
+  https://github.com/mushorg/conpot 针对ICS/SCADA的低交互工控蜜罐，模拟Modbus和S7comm
 
 ### JAVA安全
 
@@ -235,7 +266,19 @@
 + [Node.js 中遇到含空格 URL 的神奇“Bug”——小范围深入 HTTP 协议](https://segmentfault.com/a/1190000012407268)
 
 ## 漏洞相关
-
+- **开源漏洞库**
+  - [2016年之前，乌云Drops文章，公开漏洞详情文章](https://wooyun.kieran.top/#!/ )
+  - [2016年之前，乌云Drops文章，公开漏洞详情文章](https://wooyun.js.org/)
+  - [公开漏洞详情文章](https://dvpnet.io/list/index/state/3)
+  - [同程安全公开漏洞详情文章](https://sec.ly.com/bugs)
+  - [中国国家工控漏洞库](http://ics.cnvd.org.cn)
+  - [美国国家工控漏洞库](https://ics-cert.us-cert.gov/advisories)
+  - [绿盟漏洞库，含工控](http://www.nsfocus.net/index.php?act=sec_bug)
+  - [威努特工控漏洞库](http://ivd.winicssec.com/)
+  - [CVE中文工控漏洞库](http://cve.scap.org.cn/view/ics)
+  - [美国MITRE公司负责维护的CVE漏洞库](https://cve.mitre.org/cve/search_cve_list.html)
+  - [美国Offensive Security的漏洞库](https://www.exploit-db.com)
+  - [美国国家信息安全漏洞库](https://nvd.nist.gov/vuln/search)
 - [一些漏洞情报的网站](https://github.com/r0eXpeR/VulnerabilityIntelligence)
 - [CVE-2020:2020年的部分漏洞整理](https://github.com/r0eXpeR/CVE-2020)
 - [红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
@@ -352,6 +395,29 @@
 + [SheepSec: 7 Reflected Cross-site Scripting (XSS) Examples](http://sheepsec.com/blog/7-reflected-xss.html)
 + [Browser's XSS Filter Bypass Cheat Sheet](https://github.com/masatokinugawa/filterbypass/wiki/Browser's-XSS-Filter-Bypass-Cheat-Sheet)
 + [妙用JavaScript绕过XSS过滤](https://www.anquanke.com/post/id/86849)
++ **XSS跨站脚本检测利用**
+  - [XSS Awesome系列](https://github.com/UltimateHackers/AwesomeXSS )
+  - [很全面的xss工具包与资料](http://www.xss-payloads.com)
+  - [XSS 漏洞Payload列表](https://github.com/ismailtasdelen/xss-payload-list)
+  - [经典的xss利用框架](https://github.com/beefproject/beef)
+  - [类似beef的xss利用框架](https://github.com/samdenty99/injectify)
+  - [蓝莲花战队为CTF打造的xss利用框架](https://github.com/firesunCN/BlueLotus_XSSReceiver)
+  - [根据特定标签生成xss payload](https://github.com/NytroRST/XSSFuzzer)
+  - [余弦写的xss利用辅助工具](https://github.com/evilcos/xssor2)
+  - [可识别并绕过WAF的XSS扫描工具](https://github.com/UltimateHackers/XSStrike)
+  - [go,利用xss漏洞返回一个js交互shell](https://github.com/raz-varren/xsshell)
+  - [利用xss漏洞返回一个js交互shell](https://github.com/UltimateHackers/JShell)
+  - [一款XSS扫描器,可暴力注入参数](https://github.com/shawarkhanethicalhacker/BruteXSS)
+  - [小型XSS扫描器,也可检测CRLF、XSS、点击劫持的](https://github.com/1N3/XSSTracer)
+  - [PHP版本的反射型xss扫描](https://github.com/0x584A/fuzzXssPHP)
+  - [批量扫描XSS的python脚本](https://github.com/chuhades/xss_scan)
+  - [自动化检测页面是否存在XSS和CSRF漏洞的浏览器插件](https://github.com/BlackHole1/autoFindXssAndCsrf)
+  - [使用命令行进行XSS批量检测](https://github.com/shogunlab/shuriken)
+  - [支持GET、POST方式的高效XSS扫描器](https://github.com/stamparm/DSXS)
+  - [kali下无法使用的话，请下载正确的PhantomJS到目录thirdparty/phantomjs/Linux](https://github.com/bsmali4/xssfork)
+  - [flash xss扫描](https://github.com/riusksk/FlashScanner)
+  - [针对检测网站中的反射XSS](https://github.com/Damian89/xssfinder )
+  - [自动化利用XSS入侵内网](https://github.com/BlackHole1/WebRtcXSS)
 
 #### CSRF跨站请求伪造
 
