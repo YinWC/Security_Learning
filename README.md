@@ -128,8 +128,13 @@
 
 ### 扫描器
 
+- [自研之路：腾讯漏洞扫描系统的十年历程](https://security.tencent.com/index.php/blog/msg/100)
+- [小米安全：漏洞扫描技巧之Web漏洞扫描器研究](https://www.freebuf.com/articles/web/212015.html)
 - [携程安全自动化测试之路](https://zhuanlan.zhihu.com/p/28115732)
 - [黑盒扫描器自研](https://milkfr.github.io/%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91/2018/11/10/dev-black-box-scanner-1/)
+- [漫谈漏洞扫描器的设计与开发](https://thief.one/2018/03/16/1/)
+- [安全开发之扫描器迭代记：W9Scan](https://www.freebuf.com/sectool/162120.html)
+- [XSS扫描器成长记](https://wemp.app/posts/e15438d4-8358-40fa-a1aa-50a6d93b4fe0
 
 ### 蜜罐
 
@@ -139,25 +144,25 @@
 - [T-Pot多蜜罐平台使用心法](https://www.freebuf.com/sectool/190840.html)
 - [将fork的T-POT蜜罐的一键安装脚本替换为国内加速镜像](https://github.com/n3uz/t-pot-autoinstall)
 - **Web蜜罐内网监测**
-  https://github.com/micheloosterhof/cowrie py2使用ELK（ElasticSearch，LogStash，Kibana）进行数据分析，目前支持ssh，telnet，sftp等协议
-  https://github.com/mushorg/snare py3，web安全蜜罐，可克隆指定Web页面
-  https://github.com/honeynet/beeswarm py，使用agent探针与蜜罐进行实时交互来引诱攻击者
-  https://github.com/thinkst/opencanary PY2,SNMP\RDP\SAMBA蜜罐
-  https://github.com/p1r06u3/opencanary_web PY,TORNADO,内网低交互蜜罐。支持自动化安装，目前支持常见的16中协议，现为探针/蜜罐-管理的架构，可以考虑二次开发为探针-沙盒-管理的架构
-  https://github.com/p1r06u3/opencanary_web
-  https://github.com/Cymmetria 知名欺骗防御蜜罐组织。Struct、weblogic、telnet、Cisco ASA、Micros等仿真蜜罐
-  https://github.com/Cymmetria/honeycomb Cymmetria公司开源蜜罐框架，低交互
-  https://github.com/honeytrap/honeytrap 可扩展蜜罐框架，支持探针部署与高交互蜜罐
-  https://gosecure.net/2018/12/19/rdp-man-in-the-middle-smile-youre-on-camera/ RDP MITM，打造可记录图像和按键的 RDP 蜜罐（https://github.com/gosecure/pyrdp）
+  - https://github.com/micheloosterhof/cowrie py2使用ELK（ElasticSearch，LogStash，Kibana）进行数据分析，目前支持ssh，telnet，sftp等协议
+  - https://github.com/mushorg/snare py3，web安全蜜罐，可克隆指定Web页面
+  - https://github.com/honeynet/beeswarm py，使用agent探针与蜜罐进行实时交互来引诱攻击者
+  - https://github.com/thinkst/opencanary PY2,SNMP\RDP\SAMBA蜜罐
+  - https://github.com/p1r06u3/opencanary_web PY,TORNADO,内网低交互蜜罐。支持自动化安装，目前支持常见的16中协议，现为探针/蜜罐-管理的架构，可以考虑二次开发为探针-沙盒-管理的架构
+  - https://github.com/p1r06u3/opencanary_web
+  - https://github.com/Cymmetria 知名欺骗防御蜜罐组织。Struct、weblogic、telnet、Cisco ASA、Micros等仿真蜜罐
+  - https://github.com/Cymmetria/honeycomb Cymmetria公司开源蜜罐框架，低交互
+  - https://github.com/honeytrap/honeytrap 可扩展蜜罐框架，支持探针部署与高交互蜜罐
+  - https://gosecure.net/2018/12/19/rdp-man-in-the-middle-smile-youre-on-camera/ RDP MITM，打造可记录图像和按键的 RDP 蜜罐（https://github.com/gosecure/pyrdp）
   
 - **摄像头蜜罐**
-  https://github.com/alexbredo/honeypot-camera 摄像头蜜罐。tornado模拟WEB服务，图片代替视频，可以考虑后期多加点图片和按钮
-  https://github.com/EasyDarwin/EasyIPCamera C，RTSP服务器组件用以构建摄像头蜜罐
+  - https://github.com/alexbredo/honeypot-camera 摄像头蜜罐。tornado模拟WEB服务，图片代替视频，可以考虑后期多加点图片和按钮
+  - https://github.com/EasyDarwin/EasyIPCamera C，RTSP服务器组件用以构建摄像头蜜罐
 - **工控蜜罐**
-  https://github.com/sjhilt/GasPot 模拟油电燃气工控系统
-  https://github.com/djformby/GRFICS IoT工业仿真系统模拟框架，采用MODBUS协议对PLC虚拟机监视和控制
-  https://github.com/RabitW/IoTSecurityNAT IoT测试系统，方便快速接入各种设备，进行安全测试
-  https://github.com/mushorg/conpot 针对ICS/SCADA的低交互工控蜜罐，模拟Modbus和S7comm
+  - https://github.com/sjhilt/GasPot 模拟油电燃气工控系统
+  - https://github.com/djformby/GRFICS IoT工业仿真系统模拟框架，采用MODBUS协议对PLC虚拟机监视和控制
+  - https://github.com/RabitW/IoTSecurityNAT IoT测试系统，方便快速接入各种设备，进行安全测试
+  - https://github.com/mushorg/conpot 针对ICS/SCADA的低交互工控蜜罐，模拟Modbus和S7comm
 
 ### JAVA安全
 
