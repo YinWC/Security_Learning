@@ -25,6 +25,7 @@
       - [反序列](#反序列)
       - [Struct2](#struct2)
       - [JavaWeb](#javaweb)
+      - [Solr](#solr)
       - [Fastjson](#fastjson)
       - [Shiro](#shiro)
       - [Jenkins](#jenkins)
@@ -87,6 +88,9 @@
 - [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
 - [信息安全面试题汇总](https://github.com/Dollarsss/sec-interview)
 - [腾讯、阿里实习移动安全面试](https://la0s.github.io/2019/05/13/chunzhao/)
+- [404notfound'blog](https://4o4notfound.org/index.php/archives/183/)
+- [yulige's blog](http://yulige.top/?p=685)
+- [yangrz's blog](https://yangrz.github.io/blog/2016/12/15/mianshi/)
 
 ## 生活
 
@@ -202,6 +206,11 @@
 + [JAVA安全编码与代码审计.md](https://github.com/Cryin/JavaID/blob/master/JAVA%E5%AE%89%E5%85%A8%E7%BC%96%E7%A0%81%E4%B8%8E%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1.md)
 + [Java代码审计PPT ](https://xianzhi.aliyun.com/forum/read/1904.html)
 
+
+#### Solr
+
+- [Skay:Apache Solr 组件安全概览](https://mp.weixin.qq.com/s/3WuWUGO61gM0dBpwqTfenQ)
+
 #### Fastjson
 
 + [Fastjson反序列化漏洞史](https://paper.seebug.org/1192)
@@ -291,6 +300,7 @@
 - [白阁文库漏洞汇总](https://baizesec.github.io/bylibrary/#_10)
 
 ### 常见漏洞
+
 [Web安全攻防实战](https://github.com/hongriSec/Web-Security-Attack)
 
 #### sql注入
