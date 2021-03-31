@@ -884,6 +884,9 @@
 ### 比较好的前沿文章归档
 - [Flutter逆向工程](https://tinyhack.com/2021/03/07/reversing-a-flutter-app-by-recompiling-flutter-engine/)
 
+### 逆向
+- [基础逆向教程](https://www.begin.re/)
+
 # CTF
 
 ## 技巧总结
