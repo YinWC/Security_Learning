@@ -34,23 +34,22 @@
     - [PHP安全](#php安全)
     - [Node-js安全](#node-js安全)
   - [漏洞相关](#漏洞相关)
-    - [常见漏洞](#常见漏洞)
-      - [sql注入](#sql注入)
-      - [XSS跨站脚本攻击](#xss跨站脚本攻击)
-      - [CSRF跨站请求伪造](#csrf跨站请求伪造)
+    - [sql注入](#sql注入)
+    - [XSS跨站脚本攻击](#xss跨站脚本攻击)
+    - [CSRF跨站请求伪造](#csrf跨站请求伪造)
       - [其他前端安全](#其他前端安全)
       - [SSRF服务器端请求伪造](#ssrf服务器端请求伪造)
-      - [XXE(xml外部实体注入)](#xxexml外部实体注入)
-      - [JSONP注入](#jsonp注入)
-      - [SSTI服务器模板注入](#ssti服务器模板注入)
-      - [代码执行 / 命令执行](#代码执行--命令执行)
-      - [文件包含](#文件包含)
-      - [文件上传 / 解析漏洞](#文件上传--解析漏洞)
-      - [逻辑漏洞](#逻辑漏洞)
-      - [PHP相关](#php相关)
-      - [DDOS](#ddos)
-      - [CORS漏洞](#cors漏洞)
-      - [其他漏洞](#其他漏洞)
+    - [XXE(xml外部实体注入)](#xxexml外部实体注入)
+    - [JSONP注入](#jsonp注入)
+    - [SSTI服务器模板注入](#ssti服务器模板注入)
+    - [代码执行 / 命令执行](#代码执行--命令执行)
+    - [文件包含](#文件包含)
+    - [文件上传 / 解析漏洞](#文件上传--解析漏洞)
+    - [逻辑漏洞](#逻辑漏洞)
+    - [PHP相关](#php相关)
+    - [CORS漏洞](#cors漏洞)
+    - [DDOS](#ddos)
+    - [其他漏洞](#其他漏洞)
   - [安全测试](#安全测试)
     - [信息收集](#信息收集)
     - [渗透实战](#渗透实战)
@@ -105,6 +104,7 @@
 - [Web安全学习笔记](https://websec.readthedocs.io/zh/latest/index.html)
 - [Web安全研究人员是如何炼成的](https://xz.aliyun.com/t/2358#toc-0)
 - [Web安全中比较好的文章](https://github.com/spoock1024/web-security)
+- [Web安全攻防实战](https://github.com/hongriSec/Web-Security-Attack)
 
 ## 容器安全
 
@@ -198,6 +198,7 @@
 
 **java-Web代码审计**
 
++ [Java Web代码审计入门一周纪实：6枚CNVD通用漏洞](https://mp.weixin.qq.com/s/YvHOa9gMJpj6pne317ul0Q)
 + [JAVA代码审计的一些Tips(附脚本)](https://xianzhi.aliyun.com/forum/topic/1633/)
 + [Java代码审计连载之—SQL注入](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=22170&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
 + [Java代码审计连载之—任意文件下载](https://bbs.ichunqiu.com/forum.php?mod=viewthread&tid=23587&highlight=Java%E4%BB%A3%E7%A0%81%E5%AE%A1%E8%AE%A1%E8%BF%9E%E8%BD%BD)
@@ -299,11 +300,7 @@
 - [红队中易被攻击的一些重点系统漏洞整理](https://github.com/r0eXpeR/redteam_vul)
 - [白阁文库漏洞汇总](https://baizesec.github.io/bylibrary/#_10)
 
-### 常见漏洞
-
-[Web安全攻防实战](https://github.com/hongriSec/Web-Security-Attack)
-
-#### sql注入
+### sql注入
 [原理+实战掌握SQL注入](https://xz.aliyun.com/t/6677)
 [为什么参数化查询可以防止SQL注入?](https://www.waitalone.cn/sql-preparestatement.html)
 
@@ -380,7 +377,7 @@
 + [记一份SQLmap使用手册小结（一）](https://xz.aliyun.com/t/3010)
 + [记一份SQLmap使用手册小结（二）](https://xz.aliyun.com/t/3011)
 
-#### XSS跨站脚本攻击
+### XSS跨站脚本攻击
 
 + [漫谈同源策略攻防](https://www.anquanke.com/post/id/86078)
 + [再谈同源策略 ](https://lightless.me/archives/review-SOP.html)
@@ -435,7 +432,7 @@
   - [针对检测网站中的反射XSS](https://github.com/Damian89/xssfinder )
   - [自动化利用XSS入侵内网](https://github.com/BlackHole1/WebRtcXSS)
 
-#### CSRF跨站请求伪造
+### CSRF跨站请求伪造
 
 + [Wiping Out CSRF](https://medium.com/@jrozner/wiping-out-csrf-ded97ae7e83f)
 + [CSRF攻击与防御](https://www.cnblogs.com/phpstudy2015-6/p/6771239.html)
@@ -479,7 +476,7 @@
 + [SSRF to GET SHELL](http://blog.feei.cn/ssrf/)
 + [SSRF Tips](http://blog.safebuff.com/2016/07/03/SSRF-Tips/)
 
-#### XXE(xml外部实体注入)
+### XXE(xml外部实体注入)
 
 + [一篇文章带你深入理解漏洞之 XXE 漏洞](https://xz.aliyun.com/t/3357)
 + [PHP与JAVA之XXE漏洞详解与审计](https://xz.aliyun.com/t/6829#toc-1)
@@ -504,7 +501,7 @@
 + [Java XXE Vulnerability](https://joychou.org/web/java-xxe-vulnerability.html)
 + [xml-attacks.md](https://gist.github.com/mgeeky/4f726d3b374f0a34267d4f19c9004870)
 
-#### JSONP注入
+### JSONP注入
 
 + [JSONP注入解析 ](http://www.freebuf.com/articles/web/126347.html)
 + [JSONP 安全攻防技术](http://blog.knownsec.com/2015/03/jsonp_security_technic/)
@@ -513,7 +510,7 @@
 + [关于跨域和jsonp的一些理解(新手向)](https://segmentfault.com/a/1190000009577990)
 + [水坑攻击之Jsonp hijacking-信息劫持](http://www.mottoin.com/88237.html)
 
-#### SSTI服务器模板注入
+### SSTI服务器模板注入
 
 + [Jinja2 template injection filter bypasses](https://0day.work/jinja2-template-injection-filter-bypasses/)
 + [乱弹Flask注入](http://www.freebuf.com/articles/web/88768.html)
@@ -530,7 +527,7 @@
 + [Ruby ERB Template Injection](https://www.trustedsec.com/2017/09/rubyerb-template-injection/)
 + [服务端模板注入攻击](https://zhuanlan.zhihu.com/p/28823933)
 
-#### 代码执行 / 命令执行
+### 代码执行 / 命令执行
 
 + [从PHP源码与扩展开发谈PHP任意代码执行与防御](https://blog.zsxsoft.com/post/30)
 + [Command Injection/Shell Injection](https://www.exploit-db.com/docs/42593.pdf)
@@ -544,7 +541,7 @@
 + [正则表达式使用不当引发的系统命令执行漏洞](http://bobao.360.cn/learning/detail/3609.html)
 + [命令注入突破长度限制 ](http://www.freebuf.com/articles/web/154453.html)
 
-#### 文件包含
+### 文件包含
 
 + [php文件包含漏洞 ](https://chybeta.github.io/2017/10/08/php%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB%E6%BC%8F%E6%B4%9E/)
 + [Turning LFI into RFI](https://l.avala.mp/?p=241)
@@ -555,7 +552,7 @@
 + [文件包含漏洞 一](http://drops.blbana.cc/2016/08/12/e6-96-87-e4-bb-b6-e5-8c-85-e5-90-ab-e6-bc-8f-e6-b4-9e/)
 + [文件包含漏洞 二](http://drops.blbana.cc/2016/12/03/e6-96-87-e4-bb-b6-e5-8c-85-e5-90-ab-e6-bc-8f-e6-b4-9e-ef-bc-88-e4-ba-8c-ef-bc-89/)
 
-#### 文件上传 / 解析漏洞
+### 文件上传 / 解析漏洞
 
 + [文件上传和WAF的攻与防](https://www.secfree.com/article-585.html)
 + [我的WafBypass之道（upload篇）](https://xianzhi.aliyun.com/forum/read/458.html)
@@ -570,7 +567,7 @@
 + [关于文件名解析的一些探索](https://landgrey.me/filetype-parsing-attack/)
 + [Web安全 — 上传漏洞绕过 ](http://www.freebuf.com/column/161357.html)
 
-#### 逻辑漏洞
+### 逻辑漏洞
 
 + [A couple more common OAuth 2.0 vulnerabilities ](https://blog.avuln.com/article/4)
 + [代码审计之逻辑上传漏洞挖掘](http://wooyun.jozxing.cc/static/drops/papers-1957.html)
@@ -585,7 +582,7 @@
 + [漏洞挖掘之逻辑漏洞挖掘](https://bbs.ichunqiu.com/thread-21161-1-1.html)
 + [tom0li: 逻辑漏洞小结](https://tom0li.github.io/2017/07/17/%E9%80%BB%E8%BE%91%E6%BC%8F%E6%B4%9E%E5%B0%8F%E7%BB%93/)
 
-#### PHP相关
+### PHP相关
 
 **弱类型**
 
@@ -653,8 +650,11 @@
 + [挖掘PHP禁用函数绕过利用姿势](http://blog.th3s3v3n.xyz/2016/11/20/web/%E6%8C%96%E6%8E%98PHP%E7%A6%81%E7%94%A8%E5%87%BD%E6%95%B0%E7%BB%95%E8%BF%87%E5%88%A9%E7%94%A8%E5%A7%BF%E5%8A%BF/)
 + [.user.ini文件构成的PHP后门](http://wooyun.jozxing.cc/static/drops/tips-3424.html)
 
+### CORS漏洞
 
-#### DDOS
+- [cors安全完全指南](https://xz.aliyun.com/t/2745)
+
+### DDOS
 
 + [DDoS攻防补遗 ](https://yq.aliyun.com/articles/1795)
 + [反射DDOS攻击防御的一点小想法 ](http://www.freebuf.com/column/138163.html)
@@ -665,11 +665,7 @@
 + [freeBuf专栏 ](http://www.freebuf.com/author/%e9%bb%91%e6%88%88%e7%88%be)
 + [遭受CC攻击的处理](http://www.xuxiaobo.com/?p=3923)
 
-#### CORS漏洞
-
-- [cors安全完全指南](https://xz.aliyun.com/t/2745)
-
-#### 其他漏洞
+### 其他漏洞
 
 - CDN2021完全攻击指南
   - [CDN 2021 完全攻击指南 （一）](https://www.anquanke.com/post/id/227818)
@@ -699,7 +695,6 @@
 + [技术详解：基于Web的LDAP注入漏洞](http://www.4hou.com/technology/9090.html)
 + [未授权访问漏洞总结](https://www.secpulse.com/archives/61101.html)
 + [未授权访问漏洞的检测与利用 ](https://thief.one/2017/12/08/1/)
-
 
 
 ## 安全测试
@@ -749,6 +744,7 @@
 
 ### 渗透技巧
 
++ [域渗透知识总结](http://echocipher.life/index.php/archives/52/)
 + [Powershell攻击指南----黑客后渗透之道](https://github.com/rootclay/Powershell-Attack-Guide)
 + [乙方渗透测试之Fuzz爆破](http://www.cnnetarmy.com/%E4%B9%99%E6%96%B9%E6%B8%97%E9%80%8F%E6%B5%8B%E8%AF%95%E4%B9%8BFuzz%E7%88%86%E7%A0%B4/)
 + [域渗透神器Empire安装和简单使用 ](https://mp.weixin.qq.com/s/VqrUTW9z-yi3LqNNy-lE-Q)
@@ -831,15 +827,18 @@
 + [Oracle数据库运维中的攻防实战（全） ](https://mp.weixin.qq.com/s/dpvBo6Bat5u4t8kSFRcv9w)
 + [Linux服务器上监控网络带宽的18个常用命令](http://www.xuxiaobo.com/?p=3950)
 
+
 ## SRC
 
 - [业务漏洞挖掘笔记](https://xz.aliyun.com/t/9028)
 - [一个有趣的任意密码重置](https://legoc.github.io/2020/07/07/%E4%B8%80%E4%B8%AA%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BB%BB%E6%84%8F%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/)
 - [记一次短信验证码的"梅开五度"](https://xz.aliyun.com/t/8974)
 - [挖洞经验 | 看我如何综合利用4个漏洞实现GitHub Enterprise远程代码执行 ](http://www.freebuf.com/news/142680.html)
+- [来自榜一的公益SRC挖掘思路分享](https://www.freebuf.com/articles/web/265782.html)
 
 ## Others
 
++ [剑指钓鱼基建自动化的想法](https://mp.weixin.qq.com/s/5ofJ6J1KVQIvVB3dZdIVng)
 + [钓鱼框架 —— gophish](http://leuk0cyte.com/2020/11/06/%E9%92%93%E9%B1%BC%E6%A1%86%E6%9E%B6%20%E2%80%94%E2%80%94%20gophish/#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
 + [细致分析Padding Oracle渗透测试全解析 ](http://www.freebuf.com/articles/database/150606.html)
 + [Exploring Compilation from TypeScript to WebAssembly](https://medium.com/web-on-the-edge/exploring-compilation-from-typescript-to-webassembly-f846d6befc12)
@@ -882,6 +881,7 @@
 - [Ollvm原理](https://sq.163yun.com/blog/article/175307579596922880)
 
 ### 比较好的前沿文章归档
+
 - [Flutter逆向工程](https://tinyhack.com/2021/03/07/reversing-a-flutter-app-by-recompiling-flutter-engine/)
 
 ### 逆向
