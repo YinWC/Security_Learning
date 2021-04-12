@@ -65,6 +65,7 @@
   - [IOT Security](#iot-security)
   - [Mobile Security](#mobile-security)
     - [Frida相关文章合集](#frida相关文章合集)
+    - [安全开发](#安全开发)
     - [脱壳相关](#脱壳相关)
     - [游戏安全系列](#游戏安全系列)
     - [奇淫技巧](#奇淫技巧)
@@ -905,6 +906,9 @@
 ### 比较好的前沿文章归档
 
 - [Flutter逆向工程](https://tinyhack.com/2021/03/07/reversing-a-flutter-app-by-recompiling-flutter-engine/)
+
+### 安全开发
+- [Hook框架检测](https://tech.meituan.com/2018/02/02/android-anti-hooking.html)
 
 ### 逆向
 
