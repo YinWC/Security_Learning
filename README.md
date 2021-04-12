@@ -65,11 +65,11 @@
   - [IOT Security](#iot-security)
   - [Mobile Security](#mobile-security)
     - [Frida相关文章合集](#frida相关文章合集)
-    - [安全开发](#安全开发)
     - [脱壳相关](#脱壳相关)
     - [游戏安全系列](#游戏安全系列)
     - [奇淫技巧](#奇淫技巧)
     - [比较好的前沿文章归档](#比较好的前沿文章归档)
+    - [安全开发](#安全开发)
     - [逆向](#逆向)
 - [CTF](#ctf)
   - [技巧总结](#技巧总结)
@@ -88,7 +88,7 @@
 - [野生前端码农的内功修炼和自我修养笔记](https://github.com/dashnowords/blogs)
 
 ## 一些面经
-
+- [万字攻略，详解腾讯面试](https://mp.weixin.qq.com/s/6pEFg_OwsT6RkueE-FV6hA)
 - [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
 - [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
 - [信息安全面试题汇总](https://github.com/Dollarsss/sec-interview)
@@ -759,7 +759,7 @@
   - [剑指钓鱼基建自动化的想法](https://mp.weixin.qq.com/s/5ofJ6J1KVQIvVB3dZdIVng)
   - [钓鱼框架 —— gophish](http://leuk0cyte.com/2020/11/06/%E9%92%93%E9%B1%BC%E6%A1%86%E6%9E%B6%20%E2%80%94%E2%80%94%20gophish/#%E5%8A%9F%E8%83%BD%E4%BB%8B%E7%BB%8D)
   - [如何批量发送钓鱼邮箱](https://mp.weixin.qq.com/s/8U9Nbrg0jDnTvoWxY7hAdg)
-
+  - [钓鱼演练踩坑笔记](https://mp.weixin.qq.com/s/6mTl8C7NmsyXtOObqTNQAw)
 
 ### 渗透技巧
 
