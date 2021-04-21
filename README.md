@@ -15,6 +15,7 @@
   - [一些面经](#一些面经)
   - [生活](#生活)
     - [购房知识](#购房知识)
+    - [其他](#其他)
 - [Web Security](#web-security)
   - [容器安全](#容器安全)
   - [开发安全](#开发安全)
@@ -29,7 +30,7 @@
       - [Fastjson](#fastjson)
       - [Shiro](#shiro)
       - [Jenkins](#jenkins)
-      - [其他](#其他)
+      - [其他](#其他-1)
     - [Python安全](#python安全)
     - [PHP安全](#php安全)
     - [Node-js安全](#node-js安全)
@@ -104,6 +105,9 @@
 - [北京购房知识分享](https://github.com/online-books/beijing_house_knowledge)
 - [上海购房知识分享](https://github.com/ayuer/shanghai_house_knowledge)
 - [杭州购房知识分享](https://github.com/houshanren/hangzhou_house_knowledge)
+
+### 其他
+- [投资regular-investing-in-box](https://github.com/xiaolai/regular-investing-in-box)
 
 # Web Security
 
@@ -663,7 +667,7 @@
 
 ### DDOS
 
-- [DDoS攻防补遗 ](https://yq.aliyun.com/articles/1795)
+- [DDoS攻防补遗](https://yq.aliyun.com/articles/1795)
 - [反射DDOS攻击防御的一点小想法 ](http://www.freebuf.com/column/138163.html)
 - [DDOS攻击方式总结](https://www.secpulse.com/archives/64088.html	)
 - [DDoS防御和DDoS防护方法 你帮忙看看这7个说法靠不靠谱](http://toutiao.secjia.com/ddos-7tips)
@@ -705,6 +709,7 @@
 
 ### SRC漏洞挖掘
 
+- [SRC漏洞挖掘实用技巧](https://xz.aliyun.com/t/6155)
 - [业务漏洞挖掘笔记](https://xz.aliyun.com/t/9028)
 - [一个有趣的任意密码重置](https://legoc.github.io/2020/07/07/%E4%B8%80%E4%B8%AA%E6%9C%89%E8%B6%A3%E7%9A%84%E4%BB%BB%E6%84%8F%E5%AF%86%E7%A0%81%E9%87%8D%E7%BD%AE/)
 - [记一次短信验证码的"梅开五度"](https://xz.aliyun.com/t/8974)
@@ -815,7 +820,6 @@
 - [Cobalt strike在内网渗透中的使用 ](http://www.freebuf.com/sectool/125237.html)
 - [通过双重跳板漫游隔离内网](https://xianzhi.aliyun.com/forum/read/768.html)
 
-
 #### WAF攻防
 
 - [WAF攻防研究之四个层次Bypass WAF](http://weibo.com/ttarticle/p/show?id=2309404007261092631700)
@@ -829,7 +833,6 @@
 - [无文件攻击的各种姿势](https://www.freebuf.com/column/203131.html)
 - [60字节 - 无文件渗透测试实验](https://www.n0tr00t.com/2017/03/09/penetration-test-without-file.html)
 
-
 #### 提权
 
 - [提权技巧](http://www.secbox.cn/skill/5583.html)
@@ -839,7 +842,6 @@
 - [windows提权系列上篇](http://mp.weixin.qq.com/s/uOArxXIfcI4fjqnF9BDJGA)
 - [Windows提权系列中篇](https://mp.weixin.qq.com/s/ERXOLhWo0-lJbMV143I8hA)
 - [获取SYSTEM权限的多种姿势](http://bobao.360.cn/learning/detail/4740.html)
-
 
 ## 安全运维
 
@@ -860,7 +862,6 @@
 - [Oracle数据库运维中的攻防实战（全） ](https://mp.weixin.qq.com/s/dpvBo6Bat5u4t8kSFRcv9w)
 - [Linux服务器上监控网络带宽的18个常用命令](http://www.xuxiaobo.com/?p=3950)
 
-
 ## Others
 
 - [细致分析Padding Oracle渗透测试全解析 ](http://www.freebuf.com/articles/database/150606.html)
@@ -874,7 +875,6 @@
 - [深入理解hash长度扩展攻击（sha1为例） ](http://www.freebuf.com/articles/web/69264.html)
 - [Joomla 框架的程序执行流程及目录结构分析](http://bobao.360.cn/learning/detail/3909.html)
 - [如何通过恶意插件在Atom中植入后门](http://bobao.360.cn/learning/detail/4268.html)
-
 
 
 # Binary security
