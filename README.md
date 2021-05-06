@@ -17,6 +17,7 @@
     - [购房知识](#购房知识)
     - [其他](#其他)
 - [Web Security](#web-security)
+  - [企业安全建设](#企业安全建设)
   - [容器安全](#容器安全)
   - [开发安全](#开发安全)
     - [SDL](#sdl)
@@ -116,6 +117,10 @@
 - [Web安全中比较好的文章](https://github.com/spoock1024/web-security)
 - [Web安全攻防实战](https://github.com/hongriSec/Web-Security-Attack)
 
+## 企业安全建设
+
+- [企业安全建设 - 软件供应链](https://0x0d.im/archives/enterprise-security-construction-software-supply-chain.html)
+
 ## 容器安全
 
 - [腾讯安全:红蓝对抗中的云原生漏洞挖掘及利用实录](https://mp.weixin.qq.com/s/Aq8RrH34PTkmF8lKzdY38g)
@@ -143,6 +148,7 @@
 
 ### 扫描器
 
+- [黑盒扫描器自研之路（一）——侃侃构架](https://milkfr.github.io/%E5%AE%89%E5%85%A8%E5%BC%80%E5%8F%91/2018/11/10/dev-black-box-scanner-1/)
 - [自研之路：腾讯漏洞扫描系统的十年历程](https://security.tencent.com/index.php/blog/msg/100)
 - [小米安全：漏洞扫描技巧之Web漏洞扫描器研究](https://www.freebuf.com/articles/web/212015.html)
 - [携程安全自动化测试之路](https://zhuanlan.zhihu.com/p/28115732)
