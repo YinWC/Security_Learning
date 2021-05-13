@@ -18,6 +18,7 @@
     - [其他](#其他)
 - [Web Security](#web-security)
   - [企业安全建设](#企业安全建设)
+  - [主机安全](#主机安全)
   - [容器安全](#容器安全)
   - [开发安全](#开发安全)
     - [SDL](#sdl)
@@ -120,6 +121,23 @@
 ## 企业安全建设
 
 - [企业安全建设 - 软件供应链](https://0x0d.im/archives/enterprise-security-construction-software-supply-chain.html)
+
+## 主机安全
+- [美团分布式HIDS集群架构设计](https://tech.meituan.com/2019/01/17/distributed-hids-cluster-architecture-design.html)
+- [Osquery架构设计分析](https://blog.spoock.com/2018/12/29/osquery-under-the-hood/)
+- [ATT&CK防御逃逸](https://paper.seebug.org/1103/#_1)
+- [透过eBPF观测系统行为](https://www.bilibili.com/video/av37642583?from=search&seid=3945678335588410992)
+- [Osquery官方文档](https://osquery.readthedocs.io/en/stable/)
+- [利用Osquery监控反弹shell](https://clo.ng/blog/osquery_reverse_shell/)
+- [安全运营流程](https://zhuanlan.zhihu.com/p/39467201)
+- [Linux bash命令审计](https://mp.weixin.qq.com/s/suRCuK0ctC6F9v2dOg5Wcg)
+- [Linux 提权检测](https://zgao.top/长亭实习二-linux本地提权漏洞复现与检测思路/)
+- [Ali云安全告警中心检测项](https://help.aliyun.com/document_detail/180843.html?spm=5176.11065259.1996646101.searchclickresult.344a7e8fIJz6h4)
+- [AgentSmith-HIDS](https://github.com/EBWi11/AgentSmith-HIDS/blob/master/doc/How-to-use-AgentSmith-HIDS-to-detect-reverse-shell/%E5%A6%82%E4%BD%95%E5%88%A9%E7%94%A8AgentSmith-HIDS%E6%A3%80%E6%B5%8B%E5%8F%8D%E5%BC%B9shell.md)
+- [Elkied-HIDS](https://github.com/bytedance/Elkeid/blob/main/driver/README-zh_CN.md)
+- [Yulong-HIDS](https://github.com/ysrc/yulong-hids-archived/blob/master/server/models/common.go)
+- [Linux入侵检测进程创建监控](https://sq.163yun.com/blog/article/311384915510648832)
+- [Linux Hook方式汇总](https://xz.aliyun.com/t/6961)
 
 ## 容器安全
 
