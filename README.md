@@ -702,6 +702,9 @@
 
 ### 其他漏洞
 
+- API安全测试
+  - [API安全测试31个Tips](https://github.com/inonshk/31-days-of-API-Security-Tips)
+
 - CDN2021完全攻击指南
   - [CDN 2021 完全攻击指南 （一）](https://www.anquanke.com/post/id/227818)
   - [CDN 2021 完全攻击指南 （二）](https://www.anquanke.com/post/id/231437)
