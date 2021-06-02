@@ -91,6 +91,8 @@
 - [野生前端码农的内功修炼和自我修养笔记](https://github.com/dashnowords/blogs)
 
 ## 一些面经
+
+- [sec-interview](https://github.com/d1nfinite/sec-interview/blob/master/README.md)
 - [万字攻略，详解腾讯面试](https://mp.weixin.qq.com/s/6pEFg_OwsT6RkueE-FV6hA)
 - [信息安全实习和校招的面经](https://github.com/SecYouth/sec-jobs)
 - [信息安全方面面试清单](https://github.com/tiaotiaolong/sec_interview_know_list)
