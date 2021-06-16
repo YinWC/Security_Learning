@@ -64,6 +64,8 @@
       - [提权](#提权)
   - [安全运维](#安全运维)
   - [Others](#others)
+    - [RASP](#rasp)
+    - [other](#other)
 - [Binary security](#binary-security)
   - [IOT Security](#iot-security)
   - [Mobile Security](#mobile-security)
@@ -125,6 +127,7 @@
 - [企业安全建设 - 软件供应链](https://0x0d.im/archives/enterprise-security-construction-software-supply-chain.html)
 
 ## 主机安全
+
 - [美团分布式HIDS集群架构设计](https://tech.meituan.com/2019/01/17/distributed-hids-cluster-architecture-design.html)
 - [Osquery架构设计分析](https://blog.spoock.com/2018/12/29/osquery-under-the-hood/)
 - [ATT&CK防御逃逸](https://paper.seebug.org/1103/#_1)
@@ -893,6 +896,15 @@
 
 ## Others
 
+### RASP
+
+- [腾讯：RASP攻防 —— RASP安全应用与局限性浅析](https://security.tencent.com/index.php/blog/msg/166)
+- [从0开始的PHP RASP的学习](https://xz.aliyun.com/t/7316)
+- [一类PHP RASP的实现](https://c0d3p1ut0s.github.io/%E4%B8%80%E7%B1%BBPHP-RASP%E7%9A%84%E5%AE%9E%E7%8E%B0/)
+- [鸟哥：taint](https://github.com/laruence/taint)
+
+
+### other
 - [细致分析Padding Oracle渗透测试全解析 ](http://www.freebuf.com/articles/database/150606.html)
 - [Exploring Compilation from TypeScript to WebAssembly](https://medium.com/web-on-the-edge/exploring-compilation-from-typescript-to-webassembly-f846d6befc12)
 - [High-Level Approaches for Finding Vulnerabilities](http://jackson.thuraisamy.me/finding-vulnerabilities.html)
